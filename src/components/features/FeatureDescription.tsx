@@ -40,8 +40,8 @@ export default function FeatureDescription({
   };
 
   return (
-    <div className="flex flex-row flex-wrap gap-9">
-      <div className="flex flex-col gap-9">
+    <div className="flex flex-col lg:flex-row gap-9 lg:gap-0">
+      <div className="flex flex-col gap-9 lg:flex-[1_1_0%]">
         <h2 className="font-bold text-neutral-900 text-2xl mt-5">{title}</h2>
 
         <div className="flex flex-col gap-9">
@@ -74,35 +74,41 @@ export default function FeatureDescription({
             ))}
           </div>
 
-          <WhiteButton
-            text={`Explore ${type}`}
-            icon={
-              <HiArrowNarrowRight
-                size={16}
-                className={`mt-1 ${
-                  conditionColor[
-                    type.toLowerCase() as keyof typeof conditionColor
-                  ]["textActive"]
-                } group-hover:text-white group-hover:scale-125 duration-300 ease-in-out`}
-              />
-            }
-            link="#"
-            customColorBgClass={`${
-              conditionColor[type.toLowerCase() as keyof typeof conditionColor][
-                "button"
-              ]
-            }`}
-            cusotmColorTextClass={`${
-              conditionColor[type.toLowerCase() as keyof typeof conditionColor][
-                "textActive"
-              ]
-            }`}
-          />
+          <div className="w-full sm:w-52">
+            <WhiteButton
+              text={`Explore ${type}`}
+              icon={
+                <HiArrowNarrowRight
+                  size={16}
+                  className={`mt-1 ${
+                    conditionColor[
+                      type.toLowerCase() as keyof typeof conditionColor
+                    ]["textActive"]
+                  } group-hover:text-white group-hover:scale-125 duration-300 ease-in-out`}
+                />
+              }
+              link="#"
+              customColorBgClass={`${
+                conditionColor[
+                  type.toLowerCase() as keyof typeof conditionColor
+                ]["button"]
+              }`}
+              cusotmColorTextClass={`${
+                conditionColor[
+                  type.toLowerCase() as keyof typeof conditionColor
+                ]["textActive"]
+              }`}
+            />
+          </div>
         </div>
+      </div>
 
-        <div className="flex h-full max-h-[508px]">
-          <img src={image} className="w-full h-full" alt={title} />
-        </div>
+      <div className="flex h-full max-h-[508px] overflow-hidden lg:flex-[1_1_0%]">
+        <img
+          src={image}
+          className="w-full h-full object-cover object-center"
+          alt={title}
+        />
       </div>
     </div>
   );

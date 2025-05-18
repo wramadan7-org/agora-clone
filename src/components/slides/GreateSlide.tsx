@@ -86,8 +86,6 @@ export default function GreateSlide({ items }: GreateSlideProps) {
     return () => clearTimeout(timeout);
   }, [items]);
 
-  console.log("MAX HEIGHT: ", maxHeight);
-
   return (
     <div className="slider-container h-fit">
       <Slider {...settings}>

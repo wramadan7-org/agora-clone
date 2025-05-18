@@ -12,7 +12,7 @@ export default function EffectiveSocialMediaManagementSlide({
   const settings: Settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     lazyLoad: "ondemand" as LazyLoadTypes,
     autoplay: true,
@@ -22,10 +22,28 @@ export default function EffectiveSocialMediaManagementSlide({
     pauseOnHover: true,
     nextArrow: <NextArrowSlider />,
     prevArrow: <PrevArrowSlider />,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="slider-container relative">
+    <div className="slider-container relative effective-social-media-management">
       <Slider {...settings}>
         {!!items?.length &&
           items.map((item, index) => (

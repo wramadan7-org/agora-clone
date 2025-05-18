@@ -37,8 +37,8 @@ export default function DashboardPage() {
   };
 
   return (
-    <main className="flex flex-col gap-10 pb-10 pt-24 max-w-6xl mx-auto">
-      <section id="hero" className="px-5 flex flex-col">
+    <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto">
+      <section id="hero" className="px-5 flex flex-col md:flex-row">
         <div className="flex flex-col gap-5">
           <span className="text-neutral-900 text-wrap text-4xl font-bold">
             Drive Real Impact on Social Media.{" "}
@@ -51,30 +51,35 @@ export default function DashboardPage() {
             campaigns-all in one platform.
           </p>
 
-          <div className="flex flex-col gap-4">
-            <WhiteButton
-              text="Try for free"
-              icon={
-                <HiArrowNarrowRight
-                  size={16}
-                  className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
-                />
-              }
-              link="/try-for-free"
-            />
+          <div className="flex flex-col sm:flex-row md:flex-col gap-4">
+            <div className="w-full sm:max-w-36">
+              <WhiteButton
+                text="Try for free"
+                icon={
+                  <HiArrowNarrowRight
+                    size={16}
+                    className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
+                  />
+                }
+                link="/try-for-free"
+              />
+            </div>
 
-            <OrangeButton
-              text="Watch an On-Demand demo"
-              icon={
-                <HiArrowNarrowRight
-                  size={16}
-                  className="mt-1 text-white group-hover:text-orange-600 group-hover:scale-125 duration-300 ease-in-out"
-                />
-              }
-              link="demo"
-            />
+            <div className="w-full sm:max-w-72">
+              <OrangeButton
+                text="Watch an On-Demand demo"
+                icon={
+                  <HiArrowNarrowRight
+                    size={16}
+                    className="mt-1 text-white group-hover:text-orange-600 group-hover:scale-125 duration-300 ease-in-out"
+                  />
+                }
+                link="demo"
+              />
+            </div>
           </div>
-          <div className="flex items-center justify-center">
+
+          <div className="flex items-center justify-center sm:justify-start">
             <span className="text-xs font-semibold">
               Free for 30 days - No card required
             </span>
@@ -91,9 +96,9 @@ export default function DashboardPage() {
 
       <section
         id="social-media-managers"
-        className="flex flex-col items-center gap-10"
+        className="flex flex-col items-center p-5 gap-10"
       >
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col sm:flex-row md:flex-col justify-center sm:justify-between md:justify-start w-full items-center md:items-start">
           <div className="flex flex-row flex-nowrap gap-2 items-center">
             <BiRefresh size={40} className="text-neutral-900" />
 
@@ -107,7 +112,7 @@ export default function DashboardPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-12 gap-2 max-w-xs">
+          <div className="grid grid-cols-12 gap-2 max-w-xs sm:max-w-full">
             <div className="col-span-6">
               <span className="text-[10px] font-semibold text-neutral-500">
                 Best results, Summer 2024
@@ -219,27 +224,31 @@ export default function DashboardPage() {
         />
 
         <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
-          <WhiteButton
-            text="Try for free"
-            icon={
-              <HiArrowNarrowRight
-                size={16}
-                className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
-              />
-            }
-            link="https://app.agorapulse.com"
-          />
+          <div className="w-full sm:max-w-48">
+            <WhiteButton
+              text="Try for free"
+              icon={
+                <HiArrowNarrowRight
+                  size={16}
+                  className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
+                />
+              }
+              link="https://app.agorapulse.com"
+            />
+          </div>
 
-          <OrangeButton
-            text="Book a demo"
-            icon={
-              <HiArrowNarrowRight
-                size={16}
-                className="mt-1 text-white group-hover:text-orange-600 group-hover:scale-125 duration-300 ease-in-out"
-              />
-            }
-            link="https://www.agorapulse.com"
-          />
+          <div className="w-full sm:max-w-52">
+            <OrangeButton
+              text="Book a demo"
+              icon={
+                <HiArrowNarrowRight
+                  size={16}
+                  className="mt-1 text-white group-hover:text-orange-600 group-hover:scale-125 duration-300 ease-in-out"
+                />
+              }
+              link="https://www.agorapulse.com"
+            />
+          </div>
         </div>
       </section>
 
@@ -247,7 +256,7 @@ export default function DashboardPage() {
         id="integration"
         className="flex flex-col flex-nowrap sm:flex-row gap-10 px-5 py-10 bg-red-50 items-center sm:justify-between"
       >
-        <div className="flex flex-col max-w-sm text-neutral-900">
+        <div className="flex flex-col sm:max-w-sm text-neutral-900">
           <h2 className="font-bold text-base mb-2">Integrations</h2>
 
           <h1 className="font-extrabold text-xl mb-5">
@@ -299,12 +308,15 @@ export default function DashboardPage() {
         <GreateSlide items={greateItems} />
       </section>
 
-      <section id="success-stories" className="flex flex-col gap-10 p-5 mt-20">
-        <div className="relative w-full h-full max-h-48 max-w-[689px] rounded-md overflow-hidden bg-gray-300">
+      <section
+        id="success-stories"
+        className="flex flex-col md:flex-row gap-10 p-5 mt-20"
+      >
+        <div className="relative flex flex-[1_1_0%] w-full h-full max-h-48 sm:max-h-64 md:max-h-96 max-w-[689px] rounded-md overflow-hidden bg-gray-300 sm:min-w-80">
           <img
             src="https://media.istockphoto.com/id/1392016982/photo/mixed-group-of-business-people-sitting-around-a-table-and-talking.jpg?s=612x612&w=0&k=20&c=d7mWQhdzKrowHYTWXXcCrNn02uyfLYQYB78M75G8lKg="
             alt="agora-success-thumbnail"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center "
           />
 
           <button
@@ -318,21 +330,47 @@ export default function DashboardPage() {
           </button>
         </div>
 
-        <div className="flex flex-col gap-7">
-          <span className="text-gray-900 font-bold text-base">
-            "Agorapulse has really changed our ability to follow up with
-            customers and make sure we're being responsive and interacting with
-            them when they want."
-          </span>
+        <div className="flex flex-[1_1_0%] items-center justify-center">
+          <div className="flex flex-col gap-7 md:gap-4">
+            <span className="text-gray-900 font-bold text-base sm:text-lg md:text-2xl">
+              "Agorapulse has really changed our ability to follow up with
+              customers and make sure we're being responsive and interacting
+              with them when they want."
+            </span>
 
-          <span className="leading-5 text-base font-semibold text-orange-600">
-            Jamie Mendelsohn, <br />
-            Director of Customer Happiness Lovepop
-          </span>
+            <span className="leading-5 font-semibold text-orange-600 text-start text-sm sm:text-base md:text-lg">
+              Jamie Mendelsohn, <br />
+              Director of Customer Happiness Lovepop
+            </span>
 
+            <div className="w-full sm:max-w-52">
+              <WhiteButton
+                text="See success stories"
+                link="https://www.agorapulse.com"
+                icon={
+                  <HiArrowNarrowRight
+                    size={16}
+                    className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
+                  />
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="frequently-question" className="flex flex-col gap-10 p-5">
+        <h1 className="font-bold text-3xl text-neutral-900">
+          Frequently Asked Questions
+        </h1>
+
+        <div>
+          <AccordionDashboard />
+        </div>
+
+        <div className="w-full sm:max-w-44 cursor-pointer">
           <WhiteButton
-            text="See success stories"
-            link="https://www.agorapulse.com"
+            text="More Question"
             icon={
               <HiArrowNarrowRight
                 size={16}
@@ -343,28 +381,12 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      <section id="frequently-question" className="flex flex-col gap-10 p-5">
-        <div>
-          <AccordionDashboard />
-        </div>
-
-        <WhiteButton
-          text="More Question"
-          icon={
-            <HiArrowNarrowRight
-              size={16}
-              className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
-            />
-          }
-        />
-      </section>
-
       <section
         id="try-agora"
         className="grid grid-cols-12 bg-red-50 pt-5 px-5 space-y-10"
       >
         <div className="grid col-span-12 sm:col-span-4 items-center">
-          <h1 className="font-bold text-2xl leading-7 text-neutral-900">
+          <h1 className="font-bold text-2xl sm:text-[28px] leading-7 text-neutral-900">
             Supercharge your social media goals with Agorapulse
           </h1>
         </div>
