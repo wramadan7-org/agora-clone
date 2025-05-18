@@ -5,6 +5,8 @@ import { GreateSlideProps } from "../../types/slideTypes";
 import { BiSolidLike } from "react-icons/bi";
 import "./styles.css";
 import { useEffect, useRef, useState } from "react";
+import NextArrowSlider from "./NextArrowSlider";
+import PrevArrowSlider from "./PrevArrowSlider";
 
 export default function GreateSlide({ items }: GreateSlideProps) {
   const settings: Settings = {
@@ -37,6 +39,8 @@ export default function GreateSlide({ items }: GreateSlideProps) {
           initialSlide: 1,
           autoplay: true,
           autoplaySpeed: 3000,
+          nextArrow: <NextArrowSlider />,
+          prevArrow: <PrevArrowSlider />,
         },
       },
       {
@@ -46,6 +50,8 @@ export default function GreateSlide({ items }: GreateSlideProps) {
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 3000,
+          nextArrow: <NextArrowSlider />,
+          prevArrow: <PrevArrowSlider />,
         },
       },
     ],
@@ -83,7 +89,7 @@ export default function GreateSlide({ items }: GreateSlideProps) {
   console.log("MAX HEIGHT: ", maxHeight);
 
   return (
-    <div className="slider-container overflow-hidden h-fit">
+    <div className="slider-container h-fit">
       <Slider {...settings}>
         {!!items?.length &&
           items.map((item, index) => (
