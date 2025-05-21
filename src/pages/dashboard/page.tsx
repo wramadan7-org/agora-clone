@@ -37,10 +37,13 @@ export default function Page() {
   };
 
   return (
-    <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto">
-      <section id="hero" className="px-5 flex flex-col md:flex-row">
-        <div className="flex flex-col gap-5">
-          <span className="text-neutral-900 text-wrap text-4xl font-bold">
+    <main className="flex flex-col gap-10 pb-10 pt-24">
+      <section
+        id="hero"
+        className="px-5 flex flex-col md:flex-row max-w-[1400px] mx-auto"
+      >
+        <div className="flex flex-col flex-[1_1_0%] gap-5">
+          <span className="text-neutral-900 text-wrap text-4xl xl:text-6xl font-extrabold">
             Drive Real Impact on Social Media.{" "}
             <span className="text-orange-600">From Engagement to ROI.</span>
           </span>
@@ -51,7 +54,7 @@ export default function Page() {
             campaigns-all in one platform.
           </p>
 
-          <div className="flex flex-col sm:flex-row md:flex-col gap-4">
+          <div className="flex flex-col sm:flex-row 3xl:flex-col gap-4">
             <div className="w-full sm:max-w-36">
               <WhiteButton
                 text="Try for free"
@@ -86,7 +89,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div>
+        <div className="flex flex-[1_1_0%]">
           <img
             src="https://www.agorapulse.com/assets/hv2-home2/hero-image-en-5.webp"
             alt="Hero Image"
@@ -96,7 +99,7 @@ export default function Page() {
 
       <section
         id="social-media-managers"
-        className="flex flex-col items-center p-5 gap-10"
+        className="flex flex-col items-center p-5 gap-10 max-w-[1400px] mx-auto"
       >
         <div className="flex flex-col sm:flex-row md:flex-col justify-center sm:justify-between md:justify-start w-full items-center md:items-start">
           <div className="flex flex-row flex-nowrap gap-2 items-center">
@@ -148,60 +151,62 @@ export default function Page() {
         </div>
       </section>
 
-      <section
-        id="business-outcomes"
-        className="flex flex-col gap-5 p-5 bg-red-50"
-      >
-        <span className="text-neutral-900 font-bold text-3xl">
-          Effective social media management with{" "}
-          <span className="text-orange-600">impactful business outcomes</span>
-        </span>
+      <section id="business-outcomes" className="w-full bg-red-50">
+        <div className="flex flex-col gap-5 p-5 max-w-[1400px] mx-auto">
+          <span className="text-neutral-900 font-bold text-3xl">
+            Effective social media management with{" "}
+            <span className="text-orange-600">impactful business outcomes</span>
+          </span>
 
-        <p className="text-neutral-900 text-base">
-          Easily overcome the challenges of managing, building, and maintaining
-          social media profiles. All while capturing the real business value of
-          your efforts.
-        </p>
+          <p className="text-neutral-900 text-base">
+            Easily overcome the challenges of managing, building, and
+            maintaining social media profiles. All while capturing the real
+            business value of your efforts.
+          </p>
 
-        <EffectiveSocialMediaManagementSlide
-          items={effectiveSocialMediaManagement}
-        />
+          <EffectiveSocialMediaManagementSlide
+            items={effectiveSocialMediaManagement}
+          />
 
-        <div className="rounded-md bg-orange-100 p-7 flex flex-col-reverse sm:flex-row mt-20 gap-5">
-          <div className="space-y-4 flex flex-[1] flex-col">
-            <span className="font-semibold text-xl text-neutral-900">
-              "It's our go-to social media management platform!"
-            </span>
+          <div className="rounded-md bg-orange-100 p-7 flex flex-col-reverse sm:flex-row mt-20 gap-5">
+            <div className="space-y-4 flex flex-[1] flex-col">
+              <span className="font-semibold text-xl text-neutral-900">
+                "It's our go-to social media management platform!"
+              </span>
 
-            <p className="text-base text-orange-600 font-semibold">
-              "We've got everyone on board, from marketing to product
-              management, using this awesome platform. It's super easy to
-              schedule posts in advance, collaborate with our teams, and share
-              the right metrics across all stakeholders -- all in one place."
-            </p>
+              <p className="text-base text-orange-600 font-semibold">
+                "We've got everyone on board, from marketing to product
+                management, using this awesome platform. It's super easy to
+                schedule posts in advance, collaborate with our teams, and share
+                the right metrics across all stakeholders -- all in one place."
+              </p>
 
-            <p className="text-neutral-900 text-xs text-end">
-              Joanne Watt, Marketing Lead
-            </p>
+              <p className="text-neutral-900 text-xs text-end">
+                Joanne Watt, Marketing Lead
+              </p>
 
-            <img
-              src="https://www.agorapulse.com/assets/hv2-home2/stream-yard-logo.svg"
-              className="w-28 ml-auto"
-              alt="Stram Yard"
-            />
-          </div>
+              <img
+                src="https://www.agorapulse.com/assets/hv2-home2/stream-yard-logo.svg"
+                className="w-28 ml-auto"
+                alt="Stram Yard"
+              />
+            </div>
 
-          <div className="flex flex-[1] sm:max-w-36 sm:max-h-40">
-            <img
-              src="https://www.agorapulse.com/assets/hv2-home2/user-avatar-2.png"
-              className="h-14 sm:h-full sm:w-full"
-              alt="Joanne Watt"
-            />
+            <div className="flex flex-[1] sm:max-w-36 sm:max-h-40">
+              <img
+                src="https://www.agorapulse.com/assets/hv2-home2/user-avatar-2.png"
+                className="h-14 sm:h-full sm:w-full"
+                alt="Joanne Watt"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="features" className="flex flex-col gap-10 p-5">
+      <section
+        id="features"
+        className="flex flex-col gap-10 p-5 max-w-[1400px] mx-auto"
+      >
         <h1 className="font-bold text-3xl text-neutral-900 text-center">
           Features to boost efficiency and save time
         </h1>
@@ -252,55 +257,57 @@ export default function Page() {
         </div>
       </section>
 
-      <section
-        id="integration"
-        className="flex flex-col flex-nowrap sm:flex-row gap-10 px-5 py-10 bg-red-50 items-center sm:justify-between"
-      >
-        <div className="flex flex-col sm:max-w-sm text-neutral-900">
-          <h2 className="font-bold text-base mb-2">Integrations</h2>
+      <section id="integration" className="bg-red-50 w-full">
+        <div className="flex flex-col flex-nowrap sm:flex-row gap-10 px-5 py-10  items-center sm:justify-between max-w-[1400px] mx-auto">
+          <div className="flex flex-col sm:max-w-sm text-neutral-900">
+            <h2 className="font-bold text-base mb-2">Integrations</h2>
 
-          <h1 className="font-extrabold text-xl mb-5">
-            Works perfectly with your favorite tools and platforms
-          </h1>
+            <h1 className="font-extrabold text-xl mb-5">
+              Works perfectly with your favorite tools and platforms
+            </h1>
 
-          <p className="font-semibold text-base mb-4">
-            No more jumping between social networks and other solutions. Use
-            Agorapulse to centralize all of your team's social media marketing
-            activities.
-          </p>
+            <p className="font-semibold text-base mb-4">
+              No more jumping between social networks and other solutions. Use
+              Agorapulse to centralize all of your team's social media marketing
+              activities.
+            </p>
 
-          <div className="w-full sm:max-w-52">
-            <WhiteButton
-              text="See all integrations"
-              icon={
-                <HiArrowNarrowRight
-                  size={16}
-                  className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
-                />
-              }
-              link="https://app.agorapulse.com"
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-row flex-auto max-w-lg flex-wrap gap-1 gap-y-7 items-center justify-center">
-          {favoriteToolsAndPlatforms.map((tool, index) => (
-            <div
-              key={`${tool.name}-${index}`}
-              className="flex flex-2/12 items-center justify-center"
-            >
-              <img
-                src={tool.image}
-                alt={tool.name}
-                className="w-7"
-                loading="lazy"
+            <div className="w-full sm:max-w-52">
+              <WhiteButton
+                text="See all integrations"
+                icon={
+                  <HiArrowNarrowRight
+                    size={16}
+                    className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
+                  />
+                }
+                link="https://app.agorapulse.com"
               />
             </div>
-          ))}
+          </div>
+
+          <div className="flex flex-row flex-auto max-w-lg flex-wrap gap-1 gap-y-7 items-center justify-center">
+            {favoriteToolsAndPlatforms.map((tool, index) => (
+              <div
+                key={`${tool.name}-${index}`}
+                className="flex flex-2/12 items-center justify-center"
+              >
+                <img
+                  src={tool.image}
+                  alt={tool.name}
+                  className="w-7"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section id="greate" className="flex flex-col gap-10 p-5">
+      <section
+        id="greate"
+        className="flex flex-col gap-10 p-5 max-w-[1400px] mx-auto"
+      >
         <h1 className="font-bold text-3xl text-neutral-900 text-center">
           What makes <span className="text-orange-600">Agorapulse greate?</span>
         </h1>
@@ -310,7 +317,7 @@ export default function Page() {
 
       <section
         id="success-stories"
-        className="flex flex-col md:flex-row gap-10 p-5 mt-20"
+        className="flex flex-col md:flex-row gap-10 p-5 mt-20 max-w-[1400px] mx-auto"
       >
         <div className="relative flex flex-[1_1_0%] w-full h-full max-h-48 sm:max-h-64 md:max-h-96 max-w-[689px] rounded-md overflow-hidden bg-gray-300 sm:min-w-80">
           <img
@@ -359,7 +366,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="frequently-question" className="flex flex-col gap-10 p-5">
+      <section
+        id="frequently-question"
+        className="flex flex-col gap-10 p-5 max-w-[1400px] mx-auto"
+      >
         <h1 className="font-bold text-3xl text-neutral-900">
           Frequently Asked Questions
         </h1>
@@ -381,50 +391,49 @@ export default function Page() {
         </div>
       </section>
 
-      <section
-        id="try-agora"
-        className="grid grid-cols-12 bg-red-50 pt-5 px-5 space-y-10"
-      >
-        <div className="grid col-span-12 sm:col-span-4 items-center">
-          <h1 className="font-bold text-2xl sm:text-[28px] leading-7 text-neutral-900">
-            Supercharge your social media goals with Agorapulse
-          </h1>
-        </div>
-
-        <div className="flex flex-col-reverse sm:grid col-span-12 sm:col-span-8 grid-cols-12 space-y-10">
-          <div className="grid col-span-12 sm:col-span-8 max-h-60 sm:max-h-60 overflow-hidden mb-0">
-            <img
-              src="https://www.agorapulse.com/assets/hv2-home2/social-media-goals.png"
-              alt="try-agora-icon"
-              className="w-full h-full object-contain"
-            />
+      <section id="try-agora" className="bg-red-50">
+        <div className="grid grid-cols-12 pt-5 px-5 space-y-10 max-w-[1400px] mx-auto">
+          <div className="grid col-span-12 sm:col-span-4 items-center">
+            <h1 className="font-bold text-2xl sm:text-[28px] leading-7 text-neutral-900">
+              Supercharge your social media goals with Agorapulse
+            </h1>
           </div>
 
-          <div className="grid col-span-12 sm:col-span-4 space-y-2 sm:max-w-40 h-fit">
-            <div className="h-fit">
-              <WhiteButton
-                text="Try Agorapulse"
-                link="https://app.agorapulse.com"
-                icon={
-                  <HiArrowNarrowRight
-                    size={16}
-                    className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
-                  />
-                }
+          <div className="flex flex-col-reverse sm:grid col-span-12 sm:col-span-8 grid-cols-12 space-y-10">
+            <div className="grid col-span-12 sm:col-span-8 max-h-60 sm:max-h-60 overflow-hidden mb-0">
+              <img
+                src="https://www.agorapulse.com/assets/hv2-home2/social-media-goals.png"
+                alt="try-agora-icon"
+                className="w-full h-full object-contain"
               />
             </div>
 
-            <div className="h-fit">
-              <OrangeButton
-                text="Book a demo"
-                link="https://app.agorapulse.com"
-                icon={
-                  <HiArrowNarrowRight
-                    size={16}
-                    className="mt-1 text-white group-hover:text-orange-600 group-hover:scale-125 duration-300 ease-in-out"
-                  />
-                }
-              />
+            <div className="grid col-span-12 sm:col-span-4 space-y-2 sm:max-w-40 h-fit">
+              <div className="h-fit">
+                <WhiteButton
+                  text="Try Agorapulse"
+                  link="https://app.agorapulse.com"
+                  icon={
+                    <HiArrowNarrowRight
+                      size={16}
+                      className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
+                    />
+                  }
+                />
+              </div>
+
+              <div className="h-fit">
+                <OrangeButton
+                  text="Book a demo"
+                  link="https://app.agorapulse.com"
+                  icon={
+                    <HiArrowNarrowRight
+                      size={16}
+                      className="mt-1 text-white group-hover:text-orange-600 group-hover:scale-125 duration-300 ease-in-out"
+                    />
+                  }
+                />
+              </div>
             </div>
           </div>
         </div>
