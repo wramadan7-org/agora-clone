@@ -12,7 +12,7 @@ export default function AutoPlaySlide({ items }: AutoPlaySlideProps) {
     slidesToScroll: 1,
     autoplay: true,
     speed: 4000,
-    autoplaySpeed: 10,
+    autoplaySpeed: 4000,
     cssEase: "linear",
     touchMove: false,
     pauseOnDotsHover: false,
