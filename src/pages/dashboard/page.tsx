@@ -37,11 +37,8 @@ export default function Page() {
   };
 
   return (
-    <main className="flex flex-col gap-10 pb-10 pt-24">
-      <section
-        id="hero"
-        className="px-5 flex flex-col md:flex-row max-w-[1400px] mx-auto"
-      >
+    <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto">
+      <section id="hero" className="px-5 flex flex-col md:flex-row">
         <div className="flex flex-col flex-[1_1_0%] gap-5">
           <span className="text-neutral-900 text-wrap text-4xl xl:text-6xl font-extrabold">
             Drive Real Impact on Social Media.{" "}
@@ -54,7 +51,7 @@ export default function Page() {
             campaigns-all in one platform.
           </p>
 
-          <div className="flex flex-col sm:flex-row 3xl:flex-col gap-4">
+          <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-4">
             <div className="w-full sm:max-w-36">
               <WhiteButton
                 text="Try for free"
@@ -99,7 +96,7 @@ export default function Page() {
 
       <section
         id="social-media-managers"
-        className="flex flex-col items-center p-5 gap-10 max-w-[1400px] mx-auto"
+        className="flex flex-col items-center p-5 gap-10"
       >
         <div className="flex flex-col sm:flex-row md:flex-col justify-center sm:justify-between md:justify-start w-full items-center md:items-start">
           <div className="flex flex-row flex-nowrap gap-2 items-center">
@@ -152,7 +149,7 @@ export default function Page() {
       </section>
 
       <section id="business-outcomes" className="w-full bg-red-50">
-        <div className="flex flex-col gap-5 p-5 max-w-[1400px] mx-auto">
+        <div className="flex flex-col gap-5 p-5">
           <span className="text-neutral-900 font-bold text-3xl">
             Effective social media management with{" "}
             <span className="text-orange-600">impactful business outcomes</span>
@@ -203,10 +200,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section
-        id="features"
-        className="flex flex-col gap-10 p-5 max-w-[1400px] mx-auto"
-      >
+      <section id="features" className="flex flex-col gap-10 p-5">
         <h1 className="font-bold text-3xl text-neutral-900 text-center">
           Features to boost efficiency and save time
         </h1>
@@ -258,7 +252,7 @@ export default function Page() {
       </section>
 
       <section id="integration" className="bg-red-50 w-full">
-        <div className="flex flex-col flex-nowrap sm:flex-row gap-10 px-5 py-10  items-center sm:justify-between max-w-[1400px] mx-auto">
+        <div className="flex flex-col flex-nowrap sm:flex-row gap-10 px-5 py-10  items-center sm:justify-between">
           <div className="flex flex-col sm:max-w-sm text-neutral-900">
             <h2 className="font-bold text-base mb-2">Integrations</h2>
 
@@ -304,10 +298,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section
-        id="greate"
-        className="flex flex-col gap-10 p-5 max-w-[1400px] mx-auto"
-      >
+      <section id="greate" className="flex flex-col gap-10 p-5">
         <h1 className="font-bold text-3xl text-neutral-900 text-center">
           What makes <span className="text-orange-600">Agorapulse greate?</span>
         </h1>
@@ -317,7 +308,7 @@ export default function Page() {
 
       <section
         id="success-stories"
-        className="flex flex-col md:flex-row gap-10 p-5 mt-20 max-w-[1400px] mx-auto"
+        className="flex flex-col md:flex-row gap-10 p-5 mt-20"
       >
         <div className="relative flex flex-[1_1_0%] w-full h-full max-h-48 sm:max-h-64 md:max-h-96 max-w-[689px] rounded-md overflow-hidden bg-gray-300 sm:min-w-80">
           <img
@@ -366,10 +357,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section
-        id="frequently-question"
-        className="flex flex-col gap-10 p-5 max-w-[1400px] mx-auto"
-      >
+      <section id="frequently-question" className="flex flex-col gap-10 p-5">
         <h1 className="font-bold text-3xl text-neutral-900">
           Frequently Asked Questions
         </h1>
@@ -392,7 +380,7 @@ export default function Page() {
       </section>
 
       <section id="try-agora" className="bg-red-50">
-        <div className="grid grid-cols-12 pt-5 px-5 space-y-10 max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-12 pt-5 px-5 space-y-10">
           <div className="grid col-span-12 sm:col-span-4 items-center">
             <h1 className="font-bold text-2xl sm:text-[28px] leading-7 text-neutral-900">
               Supercharge your social media goals with Agorapulse
