@@ -21,7 +21,7 @@ import { FeatureTitle } from "../../types/cardTypes";
 import GreateSlide from "../../components/slides/GreateSlide";
 import AccordionDashboard from "../../components/accordions/frequently-question/AccordionDashboard";
 
-export default function DashboardPage() {
+export default function Page() {
   const [activeFeatureState, setActiveFeatureState] = useState<{
     icon: string;
     title: string;
