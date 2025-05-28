@@ -285,3 +285,849 @@ export const greateItems = [
     },
   },
 ];
+
+export const pricings = [
+  {
+    plan: "Standard",
+    pricing: {
+      monthly: {
+        amount: 99,
+        currency: "USD",
+        per: "user/month",
+        billing_cycle: "monthly",
+      },
+      annual: {
+        amount: 79,
+        currency: "USD",
+        per: "user/month",
+        billing_cycle: "annually",
+      },
+    },
+    included_social_profiles: {
+      monthly: 10,
+      annual: 10,
+    },
+    additional_profile_cost: {
+      monthly: {
+        amount: 10,
+        currency: "USD",
+        per: "mo",
+        note: "per additional social profile",
+      },
+      annual: {
+        amount: 10,
+        currency: "USD",
+        per: "mo",
+        note: "per additional social profile",
+      },
+    },
+    cta: {
+      label: "Try for free now",
+      trial: {
+        duration_days: 30,
+        note: "No card required",
+      },
+    },
+    features: [
+      {
+        label: "Posts scheduling",
+      },
+      {
+        label: "Unlimited posts",
+      },
+      {
+        label: "Draft posts",
+      },
+      {
+        label: "Unified Publishing Calendar",
+        info: "View all your past and upcoming posts for all your social profiles in one, convenient Publishing Calendar",
+      },
+      {
+        label: "Standard Social Inbox",
+        info: "Up to 5000 messages or comments per month, ideal for moderately engaged audiences",
+      },
+      {
+        label: "Automated Inbox Assistant",
+      },
+      {
+        label: "Instant translations",
+        info: "Instantly translate your messages and comments into any language",
+      },
+      {
+        label: "Report export",
+      },
+      {
+        label: "Basic Social Media ROI",
+        info: "Simplified Google Analytics reports that highlight how networks and campaigns are contributing to ROI",
+      },
+      {
+        label: "Custom Report date range",
+        info: "Choose a custom date range for your reports",
+      },
+      {
+        label: "White-label reporting",
+        info: "Add your own logo to your reports",
+      },
+      {
+        label: "Mobile application (iOS & Android)",
+      },
+      {
+        label: "Google Analytics Integration",
+      },
+    ],
+  },
+  {
+    plan: "Professional",
+    pricing: {
+      monthly: {
+        amount: 149,
+        currency: "USD",
+        per: "user/month",
+        billing_cycle: "monthly",
+      },
+      annual: {
+        amount: 119,
+        currency: "USD",
+        per: "user/month",
+        billing_cycle: "annually",
+      },
+    },
+    included_social_profiles: {
+      monthly: 10,
+      annual: 10,
+    },
+    additional_profile_cost: {
+      monthly: {
+        amount: 10,
+        currency: "USD",
+        per: "mo",
+        note: "per additional social profile",
+      },
+      annual: {
+        amount: 10,
+        currency: "USD",
+        per: "mo",
+        note: "per additional social profile",
+      },
+    },
+    cta: {
+      label: "Try for free now",
+      trial: {
+        duration_days: 30,
+        note: "No card required",
+      },
+    },
+    features: [
+      {
+        label: "Instagram Product Tagging",
+      },
+      {
+        label: "PulseLink in bio",
+      },
+      {
+        label: "Instagram grid view",
+      },
+      {
+        label: "First comment scheduling (Instagram, Facebook, LinkedIn)",
+      },
+      {
+        label: "X (Twitter) threads scheduling",
+      },
+      {
+        label: "Team workflow",
+        info: "Assign posts to be approved by other team members. Ideal solution to speed up your internal approval process",
+      },
+      {
+        label: "Canva integration",
+      },
+      {
+        label: "Calendar notes",
+        info: "Add notes in your Publishing Calendar to organize your publishing calendar, as a team, ahead of time",
+      },
+      {
+        label: "Basic Ad Comment Monitoring",
+        info: "Up to 300 active ads. Monitor comments on Facebook and Instagram for moderately active ad accounts",
+      },
+      {
+        label: "TikTok & LinkedIn ad comments monitoring",
+      },
+      {
+        label: "Team performance reports",
+      },
+      {
+        label: "Priority email & chat support",
+      },
+    ],
+  },
+  {
+    plan: "Advanced",
+    pricing: {
+      monthly: {
+        amount: 199,
+        currency: "USD",
+        per: "user/month",
+        billing_cycle: "monthly",
+      },
+      annual: {
+        amount: 149,
+        currency: "USD",
+        per: "user/month",
+        billing_cycle: "annually",
+      },
+    },
+    included_social_profiles: {
+      monthly: 10,
+      annual: 10,
+    },
+    additional_profile_cost: {
+      monthly: {
+        amount: 10,
+        currency: "USD",
+        per: "mo",
+        note: "per additional social profile",
+      },
+      annual: {
+        amount: 10,
+        currency: "USD",
+        per: "mo",
+        note: "per additional social profile",
+      },
+    },
+    cta: {
+      label: "Try for free now",
+      trial: {
+        duration_days: 30,
+        note: "No card required",
+      },
+    },
+    features: [
+      {
+        label: "Content Library",
+      },
+      {
+        label: "5 Shared Calendars",
+        info: "Easily gather feedback from external stakeholders with Shared Calendars",
+      },
+      {
+        label: "Bulk publish content",
+      },
+      {
+        label: "Content queues",
+        info: "Schedule posts bulk",
+      },
+      {
+        label: "Advanced spam management",
+        info: "Hide or delete messages and comments in bulk",
+      },
+      {
+        label: "Advanced Ad comments monitoring",
+        info: "Monitor comments on Facebook and Instagram for very active ad accounts up to 2500 live ads creatives",
+      },
+      {
+        label: "Saved replies",
+      },
+      {
+        label: "Inbox bulk actions",
+        info: "Assign, label, review, hide and delete messages and comments in bulk",
+      },
+      {
+        label: "Publishing content labels",
+      },
+      {
+        label: "Advanced Social Media ROI reports",
+      },
+      {
+        label: "Power reports (customized)",
+      },
+    ],
+  },
+  {
+    plan: "Custom",
+    pricing: null,
+    included_social_profiles: null,
+    additional_profile_cost: null,
+    cta: {
+      label: "Get a quote",
+      trial: {
+        duration_days: 0,
+        note: "-",
+      },
+    },
+    features: [
+      {
+        label: "Unlimited social profiles",
+      },
+      {
+        label: "Unlimited Shared Calendars",
+      },
+      {
+        label: "Unlimited Inbox Moderation Rules",
+      },
+      {
+        label: "Priority email, chat, & video call",
+      },
+      {
+        label: "Dedicated Account Manager",
+      },
+      {
+        label: "Quarterly Business Reviews",
+      },
+      {
+        label: "Single Sign-On (SSO)",
+      },
+      {
+        label: "CRM Integration",
+        info: "Connect your Salesforce or HubSpot CRM to link customer contacts directly to your Social Inbox engagement.",
+      },
+      {
+        label: "Reply Suggestions",
+        info: "AI-powered private message replies that adapt based on your latest replies",
+      },
+      {
+        label: "Schedule Facebook Boosted Posts",
+      },
+      {
+        label: "Open Reports API",
+      },
+    ],
+  },
+  {
+    plan: "Free",
+    pricing: {
+      monthly: {
+        amount: 0,
+        currency: "USD",
+        per: "user/month",
+        billing_cycle: "monthly",
+      },
+      annual: {
+        amount: 0,
+        currency: "USD",
+        per: "user/month",
+        billing_cycle: "annually",
+      },
+    },
+    included_social_profiles: {
+      monthly: 3,
+      annual: 3,
+    },
+    include_users: 1,
+    additional_profile_cost: null,
+    cta: {
+      label: "Create a free account",
+      trial: null,
+    },
+    features: [
+      {
+        label: "10 scheduled posts",
+      },
+      {
+        label: "Basic social Inbox",
+      },
+      {
+        label: "Basic reporting",
+      },
+      {
+        label: "Limited Social Media ROI report",
+        info: "Top performing post ROI",
+      },
+      {
+        label: "Mobile app",
+        info: "Android and iOs",
+      },
+    ],
+    note: "limited to 100 messages or comments per month",
+  },
+];
+
+export const supportedNetworks = [
+  {
+    name: "Facebook",
+    image: "https://www.agorapulse.com/assets/hv2-home2/facebook-logo.svg",
+  },
+  {
+    name: "Instagram",
+    image: "https://www.agorapulse.com/assets/hv2-home2/instagram-logo.svg",
+  },
+  {
+    name: "X",
+    image: "https://www.agorapulse.com/assets/hv2-home2/x-logo.svg",
+  },
+  {
+    name: "Youtube",
+    image: "https://www.agorapulse.com/assets/hv2-home2/youtube-logo-2.svg",
+  },
+  {
+    name: "TikTok",
+    image: "https://www.agorapulse.com/assets/hv2-home2/tiktok-logo.svg",
+  },
+  {
+    name: "Pinterest",
+    image: "https://www.agorapulse.com/assets/hv2-home2/pinterest-logo.svg",
+  },
+  {
+    name: "Google Business",
+    image:
+      "https://www.agorapulse.com/assets/hv2-home2/google-business-logo.svg",
+  },
+  {
+    name: "LinkedIn",
+    image: "https://www.agorapulse.com/assets/hv2-home2/linkedin-logo.svg",
+  },
+  {
+    name: "Google Analytics",
+    image:
+      "https://www.agorapulse.com/assets/hv2-home2/google-analytics-logo.svg",
+  },
+  {
+    name: "Sales Force",
+    image: "https://www.agorapulse.com/assets/hv2-home2/sales-force-logo.svg",
+  },
+  {
+    name: "Google Drive",
+    image: "https://www.agorapulse.com/assets/hv2-home2/google-drive-logo.svg",
+  },
+  {
+    name: "Canva",
+    image: "https://www.agorapulse.com/assets/hv2-home2/canva-logo.svg",
+  },
+  {
+    name: "Tenor",
+    image: "https://www.agorapulse.com/assets/hv2-home2/tenor-logo.svg",
+  },
+  {
+    name: "Hubspot",
+    image: "https://www.agorapulse.com/assets/hv2-home2/hubspot-logo.svg",
+  },
+  {
+    name: "Slack",
+    image: "https://www.agorapulse.com/assets/hv2-home2/slack-logo.svg",
+  },
+];
+
+export const twitterCommentsPricing = [
+  {
+    profile:
+      "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
+    name: "John Francis M.",
+    username: "@johnfrancis",
+    commentAt: 1748243710,
+    linkProfile: "https://twitter.com/johnfrancis",
+    comment:
+      "Agorapulse is incredibly intuitive and user-friendly, making it easy for me to schedule posts, engage with our audience, and track performance across multiple platforms. The reporting features are also robust, providing valuable insights.",
+    likes: 10,
+  },
+  {
+    profile:
+      "https://img.freepik.com/free-photo/young-woman-wearing-her-hair-bun_273609-9988.jpg?semt=ais_hybrid&w=740",
+    name: "Sandra H.",
+    username: "@sandrah",
+    commentAt: 1748243710,
+    linkProfile: "https://twitter.com/sandrah",
+    comment:
+      "Agorapulse is incredibly intuitive and user-friendly, making it easy for me to schedule posts, engage with our audience, and track performance across multiple platforms. The reporting features are also robust, providing valuable insights.",
+    likes: 5,
+  },
+  {
+    profile:
+      "https://img.freepik.com/free-photo/close-up-portrait-serious-man-with-curly-hair_176532-7988.jpg",
+    name: "محمد وليد",
+    username: "@mohamedwalid",
+    commentAt: 1748243710,
+    linkProfile: "https://twitter.com/mohamedwalid",
+    comment:
+      "Most helpful about Agorapulse is the publishing and reporting options I have as a social media manager. It's easy to use, all my colleagues got set up in it quickly, and we use it every day.",
+    likes: 15,
+  },
+  {
+    profile:
+      "https://img.freepik.com/free-photo/indoor-shot-serious-self-assured-woman-contemplates-about-future-plans-wants-change-job-position_273609-16881.jpg?semt=ais_hybrid&w=740",
+    name: "Lisa Sicard",
+    username: "@lisasicard",
+    commentAt: 1748243710,
+    linkProfile: "https://twitter.com/lisasicard",
+    comment:
+      "I highly value Agorapulse's reporting capabilities for my clients. It clearly demonstrates how effectively their social media strategies and posts are performing.",
+    likes: 125,
+  },
+  {
+    profile:
+      "https://img.freepik.com/free-photo/young-man-with-beard-round-glasses_273609-6994.jpg?semt=ais_hybrid&w=740",
+    name: "Paul Aroga",
+    username: "@paularoga",
+    commentAt: 1748243710,
+    linkProfile: "https://twitter.com/paularoga",
+    comment:
+      "Agorapulse offers an efficient solution for monitoring social media platforms. Its user-friendly interface simplifies the process, making it accessible for anyone looking to enhance their social media management skills.",
+    likes: 0,
+  },
+];
+
+export const comparePlans = [
+  {
+    type: "thead-core",
+    image: "https://www.agorapulse.com/assets/pricing/rocket_publish.webp",
+    data: [
+      "Publishing",
+      "Free",
+      "Standard",
+      "Professional",
+      "Advanced",
+      "Custom",
+    ],
+  },
+  {
+    type: "tbody",
+    data: [
+      "Schedule post",
+      "10 Scheduled posts",
+      "Unlimited",
+      "Unlimited",
+      "Unlimited",
+      "Unlimited",
+    ],
+  },
+  {
+    type: "tbody",
+    data: ["Unified calendar", false, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Instagram Product Tagging", false, false, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["PulseLink in bio", false, false, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Instagram grid", false, false, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: [
+      "First comment scheduling (Instagram, Facebook, LinkedIn)",
+      false,
+      false,
+      true,
+      true,
+      true,
+    ],
+  },
+  {
+    type: "tbody",
+    data: ["X (Twitter) threads scheduling", false, false, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Label Content", false, false, false, true, true],
+  },
+  {
+    type: "tbody",
+    data: [
+      "Content library",
+      false,
+      "10 images/2 videos",
+      "10 images/2 videos",
+      true,
+      true,
+    ],
+  },
+  {
+    type: "tbody",
+    data: ["Facebook Boosting", false, false, false, false, true],
+  },
+  {
+    type: "thead",
+    image: "https://www.agorapulse.com/assets/pricing/hands.webp",
+    data: ["Collaboraton", "", "", "", "", ""],
+  },
+  {
+    type: "tbody",
+    data: ["Assign & approve posts", false, false, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Comments on posts", false, false, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Collision detection", false, false, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Bulk approve", false, false, false, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Multi-step approval workflows", false, false, false, false, true],
+  },
+  {
+    type: "tbody",
+    data: ["Shared calendar", false, false, false, "yes, 5", "Unlimited"],
+  },
+  {
+    type: "thead",
+    image: "https://www.agorapulse.com/assets/pricing/like_social.webp",
+    data: ["Productivity", "", "", "", "", ""],
+  },
+  {
+    type: "tbody",
+    data: ["Draft posts", false, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Canva integration", false, false, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Calendar notes", false, false, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Content queues", false, false, false, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Bulk publishing", false, false, false, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Slack Integration", false, false, false, false, true],
+  },
+  {
+    type: "thead",
+    image: "https://www.agorapulse.com/assets/pricing/like_social.webp",
+    data: ["Engagement", "", "", "", "", ""],
+  },
+  {
+    type: "tbody",
+    data: ["Advanded social inbox", false, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Manage GMB reviews", false, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Inline translation", false, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: [
+      "Automated inbox assistant",
+      false,
+      true,
+      true,
+      true,
+      "Yes, Unlimited",
+    ],
+  },
+  {
+    type: "tbody",
+    data: ["Assign content", false, false, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Ad comments monitoring", false, false, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: [
+      "TikTok & LinkedIn ad comments monitoring",
+      false,
+      false,
+      true,
+      true,
+      true,
+    ],
+  },
+  {
+    type: "tbody",
+    data: ["Advanced spam management", false, false, false, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Saved replies", false, false, false, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Reply Suggestions", false, false, false, false, true],
+  },
+  {
+    type: "tbody",
+    data: ["Bulk actions", false, false, false, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Label tags", false, false, false, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Sentiment", false, false, false, "Display", "Display & Filter"],
+  },
+  {
+    type: "thead",
+    image: "https://www.agorapulse.com/assets/pricing/watch.webp",
+    data: ["Listening", "", "", "", "", ""],
+  },
+  {
+    type: "tbody",
+    data: [
+      "Advanced Social/Web Listening Search",
+      false,
+      "$100/search/month",
+      "$100/search/month",
+      "$100/search/month",
+      "$100/search/month",
+    ],
+  },
+  {
+    type: "thead",
+    image: "https://www.agorapulse.com/assets/pricing/graph_publish.webp",
+    data: ["Reporting", "", "", "", "", ""],
+  },
+  {
+    type: "tbody",
+    data: ["Basic report", true, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Google Analytics Integration", true, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Basic social media ROI report", true, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Basic report export", false, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Top content", false, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Report date picker", false, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["White-label reporting", false, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: [
+      "Competitor benchmarking report",
+      false,
+      "Yes, 1",
+      "Yes, 1",
+      "Yes, 6",
+      "Yes, Custom",
+    ],
+  },
+  {
+    type: "tbody",
+    data: ["Team performance report", false, false, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Advanced power reports", false, false, false, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Advanced social media ROI report", false, false, false, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["Open Reports API", false, false, false, false, true],
+  },
+  {
+    type: "tbody",
+    data: [
+      "Data retention",
+      "1 month",
+      "6 month",
+      "12 month",
+      "24 month",
+      "24 month",
+    ],
+  },
+  {
+    type: "thead",
+    image: "https://www.agorapulse.com/assets/pricing/plants_reporting.webp",
+    data: ["Other benefits", "", "", "", "", ""],
+  },
+  {
+    type: "tbody",
+    data: ["Mobile app", true, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: ["X Lite", true, true, true, true, true],
+  },
+  {
+    type: "tbody",
+    data: [
+      "X Plus",
+      false,
+      "$50/month/profile",
+      "$50/month/profile",
+      "$50/month/profile",
+      "$50/month/profile",
+    ],
+  },
+  {
+    type: "tbody",
+    data: [
+      "Advocacy",
+      false,
+      "$150/month",
+      "$150/month",
+      "$150/month",
+      "Custom",
+    ],
+  },
+  {
+    type: "tbody",
+    data: [
+      "Customer support",
+      "email support",
+      "email support",
+      "email & chat support",
+      "email & chat support",
+      "email & chat & video call",
+    ],
+  },
+  {
+    type: "tbody",
+    data: [
+      "Response time",
+      "best efforts",
+      "6hrs or less",
+      "2hrs or less",
+      "1hrs or less",
+      "30mins or less",
+    ],
+  },
+  {
+    type: "tbody",
+    data: ["Training", false, false, false, false, "1-1 training"],
+  },
+  {
+    type: "tbody",
+    data: ["Dedicated account manager", false, false, true, false, true],
+  },
+  {
+    type: "tbody",
+    data: ["Quaterly business review", false, false, true, false, true],
+  },
+  {
+    type: "tbody",
+    data: ["Single Sign-On (SSO)", false, false, true, false, true],
+  },
+  {
+    type: "tbody",
+    data: ["CRM Integration", false, false, true, false, true],
+  },
+];

@@ -6,7 +6,7 @@ export default function AccordionDashboard() {
     <>
       <Accordion>
         <AccordionSummary
-          className="text-gray-700 font-bold"
+          className="text-gray-700 font-bold text-lg sm:text-xl"
           expandIcon={<ExpandMoreIcon />}
         >
           What is Ahorapulse?
@@ -15,7 +15,7 @@ export default function AccordionDashboard() {
         <AccordionDetails
           aria-controls="panel1d-content"
           id="panel1d-header"
-          className="space-y-3"
+          className="space-y-3 text-base"
         >
           <p>
             Agorapulse is a top player in social media management, known for its
@@ -38,7 +38,7 @@ export default function AccordionDashboard() {
 
       <Accordion>
         <AccordionSummary
-          className="text-gray-700 font-bold"
+          className="text-gray-700 font-bold text-lg sm:text-xl"
           expandIcon={<ExpandMoreIcon />}
         >
           How is Agorapulse diffenrent from other social media management tools?
@@ -47,7 +47,7 @@ export default function AccordionDashboard() {
         <AccordionDetails
           aria-controls="panel2d-content"
           id="panel2d-header"
-          className="space-y-3"
+          className="space-y-3 text-base"
         >
           <p>
             Where do we even start? Agorapulse offers teams and marketers a more
@@ -102,7 +102,7 @@ export default function AccordionDashboard() {
 
       <Accordion>
         <AccordionSummary
-          className="text-gray-700 font-bold"
+          className="text-gray-700 font-bold text-lg sm:text-xl"
           expandIcon={<ExpandMoreIcon />}
         >
           Who's Agorapulse for?
@@ -111,7 +111,7 @@ export default function AccordionDashboard() {
         <AccordionDetails
           aria-controls="panel3d-content"
           id="panel3d-header"
-          className="space-y-3"
+          className="space-y-3 text-base"
         >
           <p>
             Agorapulse is for businesses of all sizes, social media managers,
@@ -134,7 +134,7 @@ export default function AccordionDashboard() {
 
       <Accordion>
         <AccordionSummary
-          className="text-gray-700 font-bold"
+          className="text-gray-700 font-bold text-lg sm:text-xl"
           expandIcon={<ExpandMoreIcon />}
         >
           Can I use Ahorapulse for free?
@@ -143,7 +143,7 @@ export default function AccordionDashboard() {
         <AccordionDetails
           aria-controls="panel4d-content"
           id="panel4d-header"
-          className="space-y-3"
+          className="space-y-3 text-base"
         >
           <p>
             Yes. Our Free plan allows you to create one user and 3 social

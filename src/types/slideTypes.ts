@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { CommentTwitterCardType } from "./cardTypes";
 
 export type AutoPlaySlideProps = {
   items: string[];
@@ -16,6 +17,8 @@ export type EffectiveSocialMediaManagementSlideProps = {
 
 export type ArrowSlideProps = {
   onClick?: () => void;
+  activeArrowPosition?: "left" | "right" | null;
+  handleActiveArrowPosition?: (position: "left" | "right" | null) => void;
 };
 
 export type GreateSlideCardType = {
@@ -34,4 +37,8 @@ export type GreateSlideItemType = {
 
 export type GreateSlideProps = {
   items: GreateSlideItemType[];
+};
+
+export type TwitterCommentSlideProps = {
+  items: CommentTwitterCardType[];
 };

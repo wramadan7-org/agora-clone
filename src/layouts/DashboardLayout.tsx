@@ -35,10 +35,14 @@ export default function RootLayout() {
           id="navbar"
           className="flex flex-row justify-between lg:justify-start items-center px-5 max-w-[1400px] mx-auto"
         >
-          <div id="brand-nav" className="flex flex-row flex-nowrap gap-0">
+          <a
+            href="/"
+            id="brand-nav"
+            className="flex flex-row flex-nowrap gap-0 cursor-pointer"
+          >
             <span className="text-lg text-orange-600 font-bold">agora</span>
             <span className="text-lg text-neutral-900 font-bold">pulse</span>
-          </div>
+          </a>
 
           <button
             type="button"
@@ -78,7 +82,7 @@ export default function RootLayout() {
                 </li>
                 <li>
                   <a href="#" className="font-semibold text-gray-700">
-                    <span>Pricing</span>
+                    <a href="/pricing">Pricing</a>
                   </a>
                 </li>
                 <li>
@@ -141,7 +145,7 @@ export default function RootLayout() {
                   <IoIosArrowDown size={20} className="mt-1" />
                 </li>
                 <li className="flex flex-row items-center gap-1 cursor-pointer">
-                  <span>Pricing</span>
+                  <a href="/pricing">Pricing</a>
                 </li>
                 <li className="flex flex-row items-center gap-1 cursor-pointer">
                   <span>Resource</span>
