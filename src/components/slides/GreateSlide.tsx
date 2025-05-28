@@ -93,7 +93,7 @@ export default function GreateSlide({ items }: GreateSlideProps) {
           items.map((item, index) => (
             <div
               key={`greate-item-${index}`}
-              className="flex flex-col space-y-5 items-center justify-center sm:max-w-xs"
+              className="flex flex-col space-y-5 items-center justify-center sm:max-w-xs md:max-w-md"
             >
               <div
                 className={`flex flex-col gap-5`}
@@ -109,12 +109,12 @@ export default function GreateSlide({ items }: GreateSlideProps) {
                     <div className="absolute top-full left-1/2 transform-x-1/2 bg-orange-500 w-1 h-1 rounded-b-full"></div>
                   </div>
 
-                  <span className="text-neutral-900 text-lg text-center font-bold mt-3">
+                  <span className="text-neutral-900 text-lg lg:text-xl text-center font-bold mt-3">
                     {item.title}
                   </span>
                 </div>
 
-                <span className="text-neutral-900 text-base font-semibold text-center">
+                <span className="text-neutral-900 text-base sm:text-sm lg:text-lg font-semibold text-center">
                   {item.description}{" "}
                   <span className="font-bold">{item.subDescription}</span>
                 </span>
@@ -128,7 +128,7 @@ export default function GreateSlide({ items }: GreateSlideProps) {
                 style={{ minHeight: maxHeight.contentCard }}
               >
                 <div className="flex flex-row flex-nowrap gap-2 items-center">
-                  <div className="w-10 h-10 rounded-full bg-orange-50 bg-cover object-center">
+                  <div className="w-10 h-10 lg:w-14 lg:h-14 rounded-full bg-orange-50 bg-cover object-center">
                     <img
                       src={item.card.image}
                       alt={`Avatar ${index}`}
@@ -138,11 +138,11 @@ export default function GreateSlide({ items }: GreateSlideProps) {
                   </div>
 
                   <div className="flex flex-col gap-1">
-                    <span className="text-neutral-900 font-bold text-base">
+                    <span className="text-neutral-900 font-bold text-base lg:text-lg">
                       {item.card.name}
                     </span>
 
-                    <span className="text-xs text-neutral-900 font-semibold">
+                    <span className="text-xs text-neutral-900 font-semibold lg:text-base">
                       {item.card.topic}
                     </span>
                   </div>

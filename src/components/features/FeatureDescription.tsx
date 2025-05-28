@@ -42,10 +42,12 @@ export default function FeatureDescription({
   return (
     <div className="flex flex-col lg:flex-row gap-9 lg:gap-0">
       <div className="flex flex-col gap-9 lg:flex-[1_1_0%]">
-        <h2 className="font-bold text-neutral-900 text-2xl mt-5">{title}</h2>
+        <h2 className="font-bold text-neutral-900 text-2xl md:text-3xl mt-5">
+          {title}
+        </h2>
 
         <div className="flex flex-col gap-9">
-          <p className="font-semibold text-neutral-900 text-base">
+          <p className="font-semibold text-neutral-900 text-base sm:text-lg">
             {description}
           </p>
 
