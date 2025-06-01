@@ -147,11 +147,11 @@ export default function Page() {
               }
             />
 
-            {pricings?.find((item) => item?.plan?.toLowerCase() !== "free") && (
+            {pricings?.find((item) => item?.plan?.toLowerCase() === "free") && (
               <p className="text-center text-sm text-neutral-400 font-semibold">
                 *
                 {
-                  pricings?.find((item) => item?.plan?.toLowerCase() !== "free")
+                  pricings?.find((item) => item?.plan?.toLowerCase() === "free")
                     ?.note
                 }
               </p>
