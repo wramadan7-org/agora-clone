@@ -142,6 +142,7 @@ export default function PricingPlanSlider({
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
+          centerMode: true,
           swipeToSlide: true,
           nextArrow: (
             <NextArrow
@@ -158,7 +159,7 @@ export default function PricingPlanSlider({
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 659,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
