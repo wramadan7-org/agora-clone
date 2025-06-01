@@ -114,7 +114,7 @@ export default function PricingPlanSlider({
     ),
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1096,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -163,7 +163,7 @@ export default function PricingPlanSlider({
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          centerMode: true,
+          centerMode: false,
           swipeToSlide: true,
           nextArrow: (
             <NextArrow

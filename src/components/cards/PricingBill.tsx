@@ -12,12 +12,12 @@ export default function PricingBill({
 }) {
   return (
     <div
-      className={`flex gap-5 border border-gray-300 rounded-2xl px-3 py-5 w-full ${
+      className={`flex gap-5 border border-gray-300 rounded-2xl px-3 py-5 w-full sm:max-w-80 ${
         item?.plan?.toLowerCase() === "advanced" ? "bg-orange-50" : "bg-white"
       } ${
         item?.plan?.toLowerCase() === "free"
-          ? "max-w-80 md:max-w-full flex-col md:flex-row md:items-center md:justify-around"
-          : "max-w-80 flex-col"
+          ? "md:max-w-full flex-col md:flex-row md:items-center md:justify-around"
+          : "flex-col"
       }`}
     >
       <h3
