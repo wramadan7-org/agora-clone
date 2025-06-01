@@ -1,4 +1,4 @@
-import Slider, { LazyLoadTypes, Settings } from "react-slick";
+import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { AutoPlaySlideProps } from "../../types/slideTypes";
@@ -6,13 +6,12 @@ import { AutoPlaySlideProps } from "../../types/slideTypes";
 export default function AutoPlaySlide({ items }: AutoPlaySlideProps) {
   const settings: Settings = {
     dots: false,
-    lazyLoad: "ondemand" as LazyLoadTypes,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 4000,
+    speed: 2000,
+    autoplaySpeed: 2000,
     cssEase: "linear",
     touchMove: false,
     pauseOnDotsHover: false,
