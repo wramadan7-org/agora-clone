@@ -222,15 +222,54 @@ export default function Page() {
             {comparePlans?.map((itemParent, indexParent) => {
               if (itemParent?.type === "thead-core") {
                 return (
-                  <tr key={`thead-${indexParent}`} className="h-20">
-                    {itemParent?.data?.map((itemChild, indexChild) => {
-                      if (indexChild === 0) {
-                        return (
-                          <th
-                            key={`th-${indexParent}-${indexChild}`}
-                            className="bg-[#f6f8ff] sticky top-0 z-10 min-w-60 text-nowrap px-6 text-start w-fit"
-                          >
-                            <div className="flex flex-row items-center justify-start gap-1">
+                  <thead key={`thead-${indexParent}`}>
+                    <tr key={`tr-${indexParent}`} className="h-20">
+                      {itemParent?.data?.map((itemChild, indexChild) => {
+                        if (indexChild === 0) {
+                          return (
+                            <th
+                              key={`th-${indexParent}-${indexChild}`}
+                              className="bg-[#f6f8ff] sticky top-0 z-10 min-w-60 text-nowrap px-6 text-start w-fit"
+                            >
+                              <div className="flex flex-row items-center justify-start gap-1">
+                                {itemParent?.image && (
+                                  <img
+                                    src={itemParent?.image}
+                                    alt={`icon-${itemChild}`}
+                                    className="w-[65px] h-[55px]"
+                                  />
+                                )}
+                                {itemChild}
+                              </div>
+                            </th>
+                          );
+                        } else {
+                          return (
+                            <th
+                              key={`th-${indexParent}-${indexChild}`}
+                              className="bg-[#f6f8ff] sticky top-0 z-20 min-w-24 text-nowrap px-6 text-center"
+                            >
+                              {itemChild}
+                            </th>
+                          );
+                        }
+                      })}
+                    </tr>
+                  </thead>
+                );
+              } else if (itemParent?.type === "thead") {
+                return (
+                  <thead key={`thead-${indexParent}`}>
+                    <tr key={`tr-${indexParent}`} className="h-20">
+                      {itemParent?.data?.map((itemChild, indexChild) => (
+                        <th
+                          key={`th-${indexParent}-${indexChild}`}
+                          className={`bg-[#f6f8ff] sticky top-0 z-10 ${
+                            indexChild === 0 ? "min-w-60" : "min-w-24"
+                          } text-nowrap px-6 text-start`}
+                        >
+                          {indexChild === 0 ? (
+                            <div className="flex flex-row items-center justify-start gap-1 text-start">
                               {itemParent?.image && (
                                 <img
                                   src={itemParent?.image}
@@ -240,81 +279,48 @@ export default function Page() {
                               )}
                               {itemChild}
                             </div>
-                          </th>
-                        );
-                      } else {
-                        return (
-                          <th
-                            key={`th-${indexParent}-${indexChild}`}
-                            className="bg-[#f6f8ff] sticky top-0 z-20 min-w-24 text-nowrap px-6 text-center"
-                          >
-                            {itemChild}
-                          </th>
-                        );
-                      }
-                    })}
-                  </tr>
-                );
-              } else if (itemParent?.type === "thead") {
-                return (
-                  <tr key={`thead-${indexParent}`} className="h-20">
-                    {itemParent?.data?.map((itemChild, indexChild) => (
-                      <th
-                        key={`th-${indexParent}-${indexChild}`}
-                        className={`bg-[#f6f8ff] sticky top-0 z-10 ${
-                          indexChild === 0 ? "min-w-60" : "min-w-24"
-                        } text-nowrap px-6 text-start`}
-                      >
-                        {indexChild === 0 ? (
-                          <div className="flex flex-row items-center justify-start gap-1 text-start">
-                            {itemParent?.image && (
-                              <img
-                                src={itemParent?.image}
-                                alt={`icon-${itemChild}`}
-                                className="w-[65px] h-[55px]"
-                              />
-                            )}
-                            {itemChild}
-                          </div>
-                        ) : (
-                          itemChild
-                        )}
-                      </th>
-                    ))}
-                  </tr>
+                          ) : (
+                            itemChild
+                          )}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
                 );
               } else {
                 return (
-                  <tr key={`tbody-${indexParent}`}>
-                    {itemParent?.data?.map((itemChild, indexChild) => (
-                      <td
-                        key={`td-${indexParent}-${indexChild}`}
-                        className={
-                          indexChild === 0
-                            ? "px-6 text-start py-2.5"
-                            : "px-6 text-center w-fit max-w-[169px] py-2.5"
-                        }
-                      >
-                        {typeof itemChild === "boolean" ? (
-                          itemChild ? (
-                            <img
-                              src="https://www.agorapulse.com/assets/pricing/icon_available.svg"
-                              alt="available"
-                              className="w-[37px] h-[36px] mx-auto"
-                            />
+                  <tbody key={`tbody-${indexParent}`}>
+                    <tr key={`tr-${indexParent}`}>
+                      {itemParent?.data?.map((itemChild, indexChild) => (
+                        <td
+                          key={`td-${indexParent}-${indexChild}`}
+                          className={
+                            indexChild === 0
+                              ? "px-6 text-start py-2.5"
+                              : "px-6 text-center w-fit max-w-[169px] py-2.5"
+                          }
+                        >
+                          {typeof itemChild === "boolean" ? (
+                            itemChild ? (
+                              <img
+                                src="https://www.agorapulse.com/assets/pricing/icon_available.svg"
+                                alt="available"
+                                className="w-[37px] h-[36px] mx-auto"
+                              />
+                            ) : (
+                              <img
+                                src="https://www.agorapulse.com/assets/pricing/icon_unvailable.svg"
+                                alt="unavailable"
+                                className="w-[37px] h-[36px] mx-auto"
+                              />
+                            )
                           ) : (
-                            <img
-                              src="https://www.agorapulse.com/assets/pricing/icon_unvailable.svg"
-                              alt="unavailable"
-                              className="w-[37px] h-[36px] mx-auto"
-                            />
-                          )
-                        ) : (
-                          itemChild
-                        )}
-                      </td>
-                    ))}
-                  </tr>
+                            itemChild
+                          )}
+                        </td>
+                      ))}
+                    </tr>
+                  </tbody>
                 );
               }
             })}
