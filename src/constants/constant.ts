@@ -897,7 +897,8 @@ export const comparePlans = [
   },
   {
     type: "thead",
-    image: "https://www.agorapulse.com/assets/pricing/like_social.webp",
+    image:
+      "https://www.agorapulse.com/assets/pricing/balloons_celebration_reporting.webp",
     data: ["Engagement", "", "", "", "", ""],
   },
   {

@@ -228,7 +228,7 @@ export default function Page() {
                         return (
                           <th
                             key={`th-${indexParent}-${indexChild}`}
-                            className="bg-[#f6f8ff] sticky top-0 z-10 min-w-24 text-nowrap px-6 text-start w-fit"
+                            className="bg-[#f6f8ff] sticky top-0 z-10 min-w-60 text-nowrap px-6 text-start w-fit"
                           >
                             <div className="flex flex-row items-center justify-start gap-1">
                               {itemParent?.image && (
@@ -261,7 +261,9 @@ export default function Page() {
                     {itemParent?.data?.map((itemChild, indexChild) => (
                       <th
                         key={`th-${indexParent}-${indexChild}`}
-                        className="bg-[#f6f8ff] sticky top-0 z-10 min-w-24 text-nowrap px-6 text-start"
+                        className={`bg-[#f6f8ff] sticky top-0 z-10 ${
+                          indexChild === 0 ? "min-w-60" : "min-w-24"
+                        } text-nowrap px-6 text-start`}
                       >
                         {indexChild === 0 ? (
                           <div className="flex flex-row items-center justify-start gap-1 text-start">
