@@ -76,7 +76,7 @@ export default function Page() {
                       className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
                     />
                   }
-                  link="/try-for-free"
+                  link="https://app.agorapulse.com/auth/signup?language=en&_gl=1*10n8f7c*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg2MzQ1JGo2MCRsMCRoMA.."
                 />
               </div>
 
@@ -89,7 +89,7 @@ export default function Page() {
                       className="mt-1 text-white group-hover:text-orange-600 group-hover:scale-125 duration-300 ease-in-out"
                     />
                   }
-                  link="demo"
+                  link="https://www.agorapulse.com/request-demo/"
                 />
               </div>
             </div>
@@ -256,7 +256,7 @@ export default function Page() {
                     className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
                   />
                 }
-                link="https://app.agorapulse.com"
+                link="https://app.agorapulse.com/auth/signup?language=en&_gl=1*10n8f7c*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg2MzQ1JGo2MCRsMCRoMA.."
               />
             </div>
 
@@ -269,7 +269,7 @@ export default function Page() {
                     className="mt-1 text-white group-hover:text-orange-600 group-hover:scale-125 duration-300 ease-in-out"
                   />
                 }
-                link="https://www.agorapulse.com"
+                link="https://www.agorapulse.com/request-demo/"
               />
             </div>
           </div>
@@ -441,7 +441,7 @@ export default function Page() {
                 <div className="h-fit">
                   <OrangeButton
                     text="Book a demo"
-                    link="https://app.agorapulse.com"
+                    link="https://www.agorapulse.com/request-demo/"
                     icon={
                       <HiArrowNarrowRight
                         size={16}

@@ -116,7 +116,7 @@ export default function PricingBill({
       {item?.plan?.toLowerCase() !== "free" && (
         <button
           type="button"
-          className={`inset-ring inset-ring-gray-100 font-bold py-3 px-4 rounded-full hover:shadow-xs transform ease-in-out duration-300 cursor-pointer flex flex-row items-center justify-center gap-5 ${
+          className={`inset-ring inset-ring-gray-100 font-bold py-3 px-4 rounded-full hover:shadow-xs transform ease-in-out duration-300 cursor-pointer flex flex-row items-center justify-center gap-5 group ${
             item?.plan?.toLowerCase() === "advanced"
               ? "bg-orange-500 hover:bg-white text-white hover:text-orange-600"
               : "bg-white hover:bg-blue-400 text-blue-500 hover:text-white shadow-xs/30 "
@@ -136,7 +136,7 @@ export default function PricingBill({
 
       {item?.plan?.toLowerCase() === "custom" && (
         <a
-          href="#"
+          href="https://www.agorapulse.com/request-demo/"
           className="text-neutral-900 font-semibold underline hover:text-blue-600 hover:no-underline cursor-pointer mx-auto"
         >
           Book a demo
@@ -174,7 +174,7 @@ export default function PricingBill({
       {item?.plan?.toLowerCase() === "free" && (
         <button
           type="button"
-          className="bg-white hover:bg-blue-400 text-blue-500 shadow-xs/30 inset-ring inset-ring-gray-100 hover:text-white font-bold py-3 px-4 rounded-full hover:shadow-xs transform ease-in-out duration-300 cursor-pointer flex flex-row flex-nowrap text-nowrap items-center justify-center gap-5"
+          className="bg-white hover:bg-blue-400 text-blue-500 shadow-xs/30 inset-ring inset-ring-gray-100 hover:text-white font-bold py-3 px-4 rounded-full hover:shadow-xs transform ease-in-out duration-300 cursor-pointer flex flex-row flex-nowrap text-nowrap items-center justify-center gap-5 group"
         >
           {item?.cta?.label}{" "}
           <HiArrowNarrowRight

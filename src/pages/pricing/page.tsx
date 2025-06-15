@@ -228,9 +228,12 @@ export default function Page() {
               className="w-32 object-center object-contain"
             />
 
-            <button
+            <a
               type="button"
-              className="text-purple-600 bg-white py-2 px-2.5 md:px-5 md:py-3 border-none cursor-pointer flex flex-row flex-nowrap items-center justify-center gap-2 rounded-full group duration-200 ease-out shadow"
+              role="button"
+              aria-label="contact-us-button"
+              href="https://www.agorapulse.com/contact/"
+              className="text-purple-600 bg-white py-2 px-2.5 md:px-5 md:py-3 border-none cursor-pointer flex flex-row flex-nowrap items-center justify-center gap-2 rounded-full group duration-200 ease-out shadow group hover:bg-purple-400 hover:text-white"
             >
               <span className="font-bold text-base">Contact Us</span>
 
@@ -238,7 +241,7 @@ export default function Page() {
                 size={16}
                 className="mt-1 text-purple-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
               />
-            </button>
+            </a>
           </div>
         </section>
 

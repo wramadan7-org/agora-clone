@@ -322,6 +322,7 @@ export const pricings = [
       },
     },
     cta: {
+      link: "https://app.agorapulse.com/auth/signup?language=en&plan_intent=advanced-y&_gl=1*68kkso*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg2NTMxJGoxOCRsMCRoMA..",
       label: "Try for free now",
       trial: {
         duration_days: 30,
@@ -411,6 +412,7 @@ export const pricings = [
       },
     },
     cta: {
+      link: "https://app.agorapulse.com/auth/signup?language=en&plan_intent=advanced-y&_gl=1*68kkso*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg2NTMxJGoxOCRsMCRoMA..",
       label: "Try for free now",
       trial: {
         duration_days: 30,
@@ -494,6 +496,7 @@ export const pricings = [
       },
     },
     cta: {
+      link: "https://app.agorapulse.com/auth/signup?language=en&plan_intent=advanced-y&_gl=1*68kkso*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg2NTMxJGoxOCRsMCRoMA..",
       label: "Try for free now",
       trial: {
         duration_days: 30,
@@ -547,6 +550,7 @@ export const pricings = [
     included_social_profiles: null,
     additional_profile_cost: null,
     cta: {
+      link: "https://app.agorapulse.com/auth/signup?language=en&plan_intent=advanced-y&_gl=1*68kkso*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg2NTMxJGoxOCRsMCRoMA..",
       label: "Get a quote",
       trial: {
         duration_days: 0,
@@ -614,6 +618,7 @@ export const pricings = [
     include_users: 1,
     additional_profile_cost: null,
     cta: {
+      link: "https://app.agorapulse.com/auth/signup?language=en&plan_intent=advanced-y&_gl=1*68kkso*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg2NTMxJGoxOCRsMCRoMA..",
       label: "Create a free account",
       trial: null,
     },
