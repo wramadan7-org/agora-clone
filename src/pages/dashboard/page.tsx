@@ -7,6 +7,7 @@ import { TfiLayoutLineSolid } from "react-icons/tfi";
 import AutoPlaySlide from "../../components/slides/AutoPlaySlide";
 import { Helmet } from "react-helmet-async";
 import {
+  accordionDashboard,
   descriptionFeature,
   effectiveSocialMediaManagement,
   favoriteToolsAndPlatforms,
@@ -20,7 +21,7 @@ import { useState } from "react";
 import FeatureDescription from "../../components/features/FeatureDescription";
 import { FeatureTitle } from "../../types/cardTypes";
 import GreateSlide from "../../components/slides/GreateSlide";
-import AccordionDashboard from "../../components/accordions/frequently-question/AccordionDashboard";
+import AccordionComponent from "../../components/accordions/frequently-question/AccordionComponent";
 
 export default function Page() {
   const [activeFeatureState, setActiveFeatureState] = useState<{
@@ -28,6 +29,12 @@ export default function Page() {
     title: string;
     color: string;
   }>(featureOptions[0]);
+  const [isShowMoreQuestionState, setIsShowMoreQuestionState] =
+    useState<boolean>(false);
+
+  const handleShowMoreQuestion = () => {
+    setIsShowMoreQuestionState(!isShowMoreQuestionState);
+  };
 
   const handleFeatureClick = (feature: {
     icon: string;
@@ -389,21 +396,27 @@ export default function Page() {
           </h1>
 
           <div>
-            <AccordionDashboard />
-          </div>
-
-          <div className="w-full sm:max-w-44 cursor-pointer">
-            <WhiteButton
-              text="More Question"
-              icon={
-                <HiArrowNarrowRight
-                  size={16}
-                  className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
-                />
-              }
-              link="#"
+            <AccordionComponent
+              data={accordionDashboard}
+              isShowAll={isShowMoreQuestionState}
             />
           </div>
+
+          {!isShowMoreQuestionState && (
+            <div className="w-full sm:max-w-44 cursor-pointer">
+              <WhiteButton
+                text="More Question"
+                icon={
+                  <HiArrowNarrowRight
+                    size={16}
+                    className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
+                  />
+                }
+                isButton
+                onClick={handleShowMoreQuestion}
+              />
+            </div>
+          )}
         </section>
 
         <section id="try-agora" className="bg-red-50">

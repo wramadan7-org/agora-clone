@@ -5,9 +5,10 @@ import OrangeButton from "../../components/buttons/OrangeButton";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import LaptopSvg from "../../assets/laptop.svg";
 import TwitterCommentSlider from "../../components/slides/TwitterCommentSlider";
-import AccordionDashboard from "../../components/accordions/frequently-question/AccordionDashboard";
+import AccordionComponent from "../../components/accordions/frequently-question/AccordionComponent";
 import WhiteButton from "../../components/buttons/WhiteButton";
 import {
+  accordionPricing,
   comparePlans,
   pricings,
   supportedNetworks,
@@ -78,6 +79,12 @@ const Switcher = styled((props: SwitchProps) => (
 
 export default function Page() {
   const [isAnnualBillState, setIsAnnualBillState] = useState<boolean>(true);
+  const [isShowMoreQuestionState, setIsShowMoreQuestionState] =
+    useState<boolean>(false);
+
+  const handleShowMoreQuestion = () => {
+    setIsShowMoreQuestionState(!isShowMoreQuestionState);
+  };
 
   return (
     <>
@@ -413,21 +420,27 @@ export default function Page() {
           </h1>
 
           <div>
-            <AccordionDashboard />
-          </div>
-
-          <div className="w-full sm:max-w-44 cursor-pointer">
-            <WhiteButton
-              text="More Question"
-              icon={
-                <HiArrowNarrowRight
-                  size={16}
-                  className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
-                />
-              }
-              link="#"
+            <AccordionComponent
+              data={accordionPricing}
+              isShowAll={isShowMoreQuestionState}
             />
           </div>
+
+          {!isShowMoreQuestionState && (
+            <div className="w-full sm:max-w-44 cursor-pointer">
+              <WhiteButton
+                text="More Question"
+                icon={
+                  <HiArrowNarrowRight
+                    size={16}
+                    className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
+                  />
+                }
+                isButton
+                onClick={handleShowMoreQuestion}
+              />
+            </div>
+          )}
         </section>
       </main>
     </>

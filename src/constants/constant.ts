@@ -1,3 +1,4 @@
+import { AccordionItem } from "../components/accordions/frequently-question/AccordionComponent";
 import { FeatureTitle } from "../types/cardTypes";
 
 export const socialMediaManagers = [
@@ -1135,5 +1136,565 @@ export const comparePlans = [
   {
     type: "tbody",
     data: ["CRM Integration", false, false, true, false, true],
+  },
+];
+
+export const accordionDashboard: AccordionItem[] = [
+  {
+    title: "What is Agorapulse?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Agorapulse is a top player in social media management, known for its award-winning platform and industry-leading customer support. But we're more than just accolades. Our Social ROI feature goes a step further, allowing users to measure the real business impact of their organic social media efforts, beyond just engagement metrics.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Diving into the details, our user-friendly dashboard equips businesses, agencies, and marketers with the tools to schedule posts, monitor social conversations, engage with followers, and analyze performance seamlessly. Whether you're a small business or a large enterprise, Agorapulse has tailored solutions to fit your brand's needs.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title:
+      "How is Agorapulse different from other social media management tools?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Where do we even start? Agorapulse offers teams and marketers a more streamlined workflow, more features, and more support at a more affordable price than other popular tools like ",
+          },
+          {
+            type: "link",
+            text: "Hootsuite™",
+            url: "https://www.agorapulse.com/hootsuite-alternatives/",
+          },
+          {
+            type: "text",
+            text: " or ",
+          },
+          {
+            type: "link",
+            text: "Sprout Social™",
+            url: "https://www.agorapulse.com/blog/social-media-management-tools/agorapulse-vs-sprout-social/",
+          },
+          {
+            type: "text",
+            text: ".",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Plus, with the #1 customer support team in the industry, Agorapulse users routinely receive fast, thorough support and even opportunities to request features, leave feedback, and help us improve our tool.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "To date, we've won awards from third-party review sites like G2, Capterra, and TrustRadius in critical categories, such as:",
+          },
+        ],
+      },
+      {
+        type: "list",
+        items: [
+          "Estimated social media ROI",
+          "Usability",
+          "Results",
+          "Audience engagement analysis",
+          "User satisfaction",
+          "Ease of setup",
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Currently, we're also the only social media management scheduling tool that allows you to quickly and easily track sales, traffic, and leads generated from your organic social media posts so you can make data-driven decisions.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Who's Agorapulse for?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Agorapulse is for businesses of all sizes, social media managers, digital marketers, and agencies looking for a comprehensive tool to manage multiple social media accounts. Whether you're a solopreneur, a growing start-up, or a large enterprise with complex social media needs, Agorapulse can help you accelerate your workflow and optimize your social media performance.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "link",
+            text: "Click here to start your free account.",
+            url: "https://www.agorapulse.com/blog/success-stories/",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Can I use Agorapulse for free?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Yes. Our Free plan allows you to create one user and 3 social profiles. Features include:",
+          },
+        ],
+      },
+      {
+        type: "list",
+        items: [
+          "10 scheduled posts",
+          "Basic social Inbox",
+          "Basic reporting",
+          "Limited Social Media ROI report",
+          "Mobile app",
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "link",
+            text: "Click here to start your free account.",
+            url: "https://app.agorapulse.com/auth/signup?plan=free&language=en&_gl=1*98o9gn*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDc1NzMxMjEkbzE1JGcxJHQxNzQ3NTczMjAzJGo0OSRsMCRoMCRkR091OThPaHJ6R2RxQi1UaUNDYS1aWnF1N292NDhJTTlsZw..",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Can I connect multiple social media platforms?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Yes. You can connect Facebook, Instagram, LinkedIn, Twitter (X), YouTube, and other supported platforms to manage all your accounts from a single interface.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Does Agorapulse support team collaboration?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Absolutely! You can invite team members, assign roles, review content, and collaborate on your social media strategy in real-time.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "How does Agorapulse help with reporting?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Agorapulse offers comprehensive reports on engagement, reach, audience growth, and ROI. You can customize reports and schedule automated report delivery to stakeholders.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Is there a limit to scheduled posts?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Depending on your plan, you can schedule hundreds of posts in advance across multiple social profiles, allowing you to stay organized and maintain consistent posting schedules.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Can I monitor brand mentions?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Yes, Agorapulse includes social listening features that allow you to monitor brand mentions, keywords, hashtags, and competitors, helping you stay on top of relevant conversations.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Is there customer support available?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Our award-winning support team is available 24/7 to assist you via chat or email. We pride ourselves on fast response times and helpful solutions.",
+          },
+        ],
+      },
+    ],
+  },
+];
+
+export const accordionPricing: AccordionItem[] = [
+  {
+    title: "How does the 30-day trial work?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Your free trial lets you explore Agorapulse with no credit card needed! After your first 15 days of trial, you can either subscribe or renew it once for another 15 days ",
+          },
+          {
+            type: "link",
+            text: "(instructions here)",
+            url: "https://support.agorapulse.com/en/articles/8762631-how-can-i-renew-my-free-trial-with-agorapulse?_gl=1*rsv2yr*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg4NDc1JGo1NSRsMCRoMA..",
+          },
+          {
+            type: "text",
+            text: ".",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "By default, your trial includes 1 user and 20 social profiles, and you will be able to add up to 3 more users. You also have access to our most advanced features such as the content Library and advanced Social Media ROI reports.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "If you need more social media profiles or users during your trial, contact us ",
+          },
+          {
+            type: "link",
+            text: "here",
+            url: "https://www.agorapulse.com/contact/",
+          },
+          {
+            type: "text",
+            text: ".",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "If at any point during the trial you plan to subscribe to Agorapulse, great! ",
+          },
+          {
+            type: "link",
+            text: "Here ",
+            url: "https://support.agorapulse.com/en/articles/8762844-how-to-subscribe-to-agorapulse?_gl=1*2lor77*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg5NzY0JGo1NyRsMCRoMA..",
+          },
+          {
+            type: "text",
+            text: "are detailed instructions and screenshots on how to subscribe.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "If you take the trial and decide not to subscribe to Agorapulse, we wish you well in finding a great social media management tool. We’re constantly evolving to make social media management even easier.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "link",
+            text: "Subscribe to our release notes ",
+            url: "https://www.agorapulse.com/release-notes/",
+          },
+          {
+            type: "text",
+            text: "or check back in a few months to see if we better meet your needs.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "What is a social profile?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "The social profiles we support are Facebook pages, Facebook groups, X (Twitter) accounts, Instagram business profiles, LinkedIn profiles, LinkedIn company pages, and YouTube channels. You can mix and match these profiles up to the cumulative social profile limit of each plan. ",
+          },
+          {
+            type: "link",
+            text: "More info",
+            url: "https://support.agorapulse.com/en/articles/8762832-what-is-a-social-profile?_gl=1*aqa2fv*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg5NzY0JGo1NyRsMCRoMA..",
+          },
+          {
+            type: "text",
+            text: ".",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "What should I do if I have a question during my trial?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "We're here to help! Just reach out to support@agorapulse.com.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "We offer around-the-clock customer service. Our support team has an average response time of 16 minutes and a happiness score of 96%. Don’t believe us? ",
+          },
+          {
+            type: "link",
+            text: "Check out what G2 reviewers say ",
+            url: "https://www.g2.com/products/agorapulse/reviews?utf8=%E2%9C%93&filters%5Bnps_score%5D=5",
+          },
+          {
+            type: "text",
+            text: "about us versus other social media management tools.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Does Agorapulse offer nonprofit pricing?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Indeed. All registered nonprofit organizations are entitled to a 20% discount on our self-service plans, monthly or yearly.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "What payment options do you offer?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "We accept Visa, Mastercard, AmEx, or PayPal through our secure online payment system. If you subscribe to a monthly plan, you will be billed each month on the anniversary of your subscription. No contracts or commitments necessary—and you can cancel at any time.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "We do offer invoicing for our annual plans as needed. Payment must be made via EFT (no checks). Please contact sales@agorapulse.com if you require manual payment.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Can I change my plan after subscribing?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Yes, you can upgrade or downgrade your plan at any time directly from your billing settings. The changes will be prorated based on your current billing cycle.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Do you offer discounts for annual subscriptions?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Absolutely! We offer a significant discount if you choose to pay yearly instead of monthly. Annual plans can save you up to 20% compared to paying monthly.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Are there any setup fees?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "No, we do not charge any setup fees. You can get started immediately after signing up.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "What happens if I cancel my subscription?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "If you cancel, you’ll continue to have access to your subscription features until the end of your current billing period. After that, your account will revert to our free plan.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Is my payment information secure?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Yes. We use industry-standard SSL encryption and partner with certified PCI DSS-compliant payment processors to ensure your payment information is fully secure.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Can I get a refund if I change my mind?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "We do not offer refunds for subscriptions, but you can cancel anytime to prevent future charges. Please review our full ",
+          },
+          {
+            type: "link",
+            text: "Refund Policy",
+            url: "https://www.agorapulse.com/refund-policy/",
+          },
+          {
+            type: "text",
+            text: " for more details.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Do you offer custom enterprise pricing?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Yes, for larger organizations with complex needs, we offer custom enterprise plans with tailored features, onboarding, and dedicated support. Please contact our sales team for a personalized quote.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Are taxes included in the pricing?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Applicable taxes (such as VAT or GST) will be calculated and added at checkout based on your location and local regulations.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Do you support multiple currencies?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Currently, all payments are processed in USD. Currency conversion may be applied by your bank or credit card provider.",
+          },
+        ],
+      },
+    ],
   },
 ];
