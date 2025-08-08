@@ -165,7 +165,7 @@ export default function NavbarComponent() {
                           </a>
                         ))}
                       </div>
-                      <div className="grid grid-cols-2 sm:grid-cols-1 px-8 bg-gray-50 rounded-md">
+                      <div className="grid grid-cols-2 sm:grid-cols-1 px-8 bg-gray-50 rounded-md py-4">
                         <div className="flex items-center justify-center">
                           <img
                             src="https://www.agorapulse.com/assets/nav/product-promo-advocacy.png"
