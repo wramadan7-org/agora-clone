@@ -8,6 +8,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import DynamicIcon from "../icons/DynamicIcon";
 import {
   advancedFeatureNavbarOptions,
+  resourceLearnConnectNavbarOptions,
+  resourceStrengthYourSkillNavbarOptions,
   solutionsIndustrieNavbarOptions,
   solutionsNetworkIntegrationNavbarOptions,
   topFeatureNavbarOptions,
@@ -266,7 +268,7 @@ export default function NavbarComponent() {
                     </a>
                     <div className="bg-orange-100 px-8 -mx-5 py-4 rounded-md">
                       <span className="font-bold text-gray-700 -mx-3">
-                        Advanced features
+                        Industries
                       </span>
                       {solutionsIndustrieNavbarOptions.map(
                         (solution, index) => (
@@ -304,15 +306,76 @@ export default function NavbarComponent() {
                   Pricing
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://www.agorapulse.com/"
-                  className="font-semibold text-gray-700 flex flex-row items-center justify-between"
+              <li className="space-y-3">
+                <button
+                  onClick={() => handleToggleSubMenu("resources")}
+                  className="font-semibold text-gray-700 flex flex-row items-center justify-between w-full cursor-pointer"
                 >
                   <span>Resources</span>
 
-                  <RiArrowDownSLine size={24} />
-                </a>
+                  <RiArrowDownSLine
+                    size={24}
+                    className={`transition-transform duration-100 ${
+                      subMenuActiveState === "resources" && "rotate-180"
+                    }`}
+                  />
+                </button>
+                {subMenuActiveState === "resources" && (
+                  <div className="flex flex-col gap-3">
+                    <div>
+                      <span className="font-bold text-gray-700">
+                        Strengthen Your Skills
+                      </span>
+                      <div className="grid grid-cols-12 px-3">
+                        {resourceStrengthYourSkillNavbarOptions.map(
+                          (resource, index) => (
+                            <a
+                              key={index}
+                              href="/"
+                              className={`${
+                                index > 4 && "hidden sm:inline-grid"
+                              } col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2`}
+                            >
+                              <div className="col-span-12 flex flex-col">
+                                <span className="font-bold text-gray-700">
+                                  {resource.title}
+                                </span>
+                                <span className={"text-sm"}>
+                                  {resource.description}
+                                </span>
+                              </div>
+                            </a>
+                          )
+                        )}
+                      </div>
+                    </div>
+                    <div className="bg-orange-100 px-8 -mx-5 py-4 rounded-md">
+                      <span className="font-bold text-gray-700 -mx-3">
+                        Learn & Connect
+                      </span>
+                      {resourceLearnConnectNavbarOptions.map(
+                        (resource, index) => (
+                          <a
+                            key={index}
+                            href="/"
+                            className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1"
+                          >
+                            <div className="col-span-12 flex flex-col">
+                              <div className="flex flex-row items-center justify-start flex-nowrap gap-2">
+                                <span className="font-bold text-gray-700">
+                                  {resource.title}
+                                </span>
+                              </div>
+                              <span className={"text-sm"}>
+                                {resource.description}
+                              </span>
+                            </div>
+                          </a>
+                        )
+                      )}
+                    </div>
+                  </div>
+                )}
               </li>
             </ul>
 

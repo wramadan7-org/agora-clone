@@ -1844,3 +1844,52 @@ export const solutionsIndustrieNavbarOptions = [
     hoverColor: "group-hover:text-red-400",
   },
 ];
+
+export const resourceStrengthYourSkillNavbarOptions = [
+  {
+    title: "Blog",
+    description: "Insight, ternds, and winning strategies",
+  },
+  {
+    title: "Community",
+    description:
+      "Get inspired by your peers in discussions, sharing tips, and more",
+  },
+  {
+    title: "Ebooks & Downloads",
+    description:
+      "Get fresh, actionable tips on the social media channels you use most",
+  },
+  {
+    title: "Events & Webinars",
+    description: "Insight from industry experts",
+  },
+  {
+    title: "Free Tools",
+    description: "Improve your results at no cost",
+  },
+  {
+    title: "Resource Center",
+    description: "Reports and content to shape strategy",
+  },
+  {
+    title: "Podcast",
+    description:
+      "Listen to stories and strategies from social media professionals, just like you",
+  },
+];
+
+export const resourceLearnConnectNavbarOptions = [
+  {
+    title: "Case Studies",
+    description: "Loved by marketers and agencies worlwide",
+  },
+  {
+    title: "Help Center",
+    description: "Get answer about using Agorapulse",
+  },
+  {
+    title: "Video Tutorials",
+    description: "Explore all of Agorapulse's powerfull features",
+  },
+];
