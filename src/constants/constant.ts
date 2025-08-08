@@ -1698,3 +1698,64 @@ export const accordionPricing: AccordionItem[] = [
     ],
   },
 ];
+
+export const topFeatureNavbarOptions = [
+  {
+    icon: "FaInbox",
+    title: "Inbox",
+    color: "orange",
+    description: "Take control of your social media",
+    hoverColor: "group-hover:text-orange-600",
+  },
+  {
+    icon: "LuSend",
+    title: "Publishing",
+    color: "indigo",
+    description: "Everything you need to publish on social media",
+    hoverColor: "group-hover:text-indigo-400",
+  },
+  {
+    icon: "TbWorldSearch",
+    title: "Listening",
+    color: "emerald",
+    description:
+      "Discover what people are saying about your brand, industry, and competitors",
+    hoverColor: "group-hover:text-emerald-300",
+  },
+  {
+    icon: "LuChartNoAxesCombined",
+    title: "Reporting",
+    color: "blue",
+    description: "Measeure the business result of your social media efforts",
+    hoverColor: "group-hover:text-sky-600",
+  },
+  {
+    icon: "BiTachometer",
+    title: "ROI",
+    color: "red",
+    description: "Get actionable insights to inform your social strategy",
+    hoverColor: "group-hover:text-red-400",
+  },
+];
+
+export const advancedFeatureNavbarOptions = [
+  {
+    icon: "RxMagicWand",
+    title: "AI Writing Assistant",
+    description: "Write better, faster",
+    hoverColor: "group-hover:text-red-400",
+  },
+  {
+    icon: "RxMagicWand",
+    title: "PulseLink in Bio",
+    description: "Link in bio tool from Agorapulse",
+    hoverColor: "group-hover:text-indigo-400",
+  },
+  {
+    icon: "RxMagicWand",
+    title: "Advocacy",
+    description: "Amplify your message to boost reach",
+    hoverColor: "group-hover:text-red-400",
+    tag: "New!",
+  },
+];

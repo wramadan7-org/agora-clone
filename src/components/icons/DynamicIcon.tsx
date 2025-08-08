@@ -10,6 +10,7 @@ import * as BsIcons from "react-icons/bs";
 import * as GiIcons from "react-icons/gi";
 import * as LuIcons from "react-icons/lu";
 import * as TbIcons from "react-icons/tb";
+import * as RxIcons from "react-icons/rx";
 import { IconType } from "react-icons";
 import { DynamicIconProps } from "../../types/iconTypes";
 
@@ -30,6 +31,7 @@ const iconLibraries: IconLibraries = {
   Gi: GiIcons,
   Lu: LuIcons,
   Tb: TbIcons,
+  Rx: RxIcons,
 };
 
 export default function DynamicIcon({
