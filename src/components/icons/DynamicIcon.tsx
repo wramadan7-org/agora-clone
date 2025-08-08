@@ -11,6 +11,9 @@ import * as GiIcons from "react-icons/gi";
 import * as LuIcons from "react-icons/lu";
 import * as TbIcons from "react-icons/tb";
 import * as RxIcons from "react-icons/rx";
+import * as Fa6Icons from "react-icons/fa6";
+import * as PiIcons from "react-icons/pi";
+import * as SiIcons from "react-icons/si";
 import { IconType } from "react-icons";
 import { DynamicIconProps } from "../../types/iconTypes";
 
@@ -19,6 +22,7 @@ type IconLibraries = {
 };
 
 const iconLibraries: IconLibraries = {
+  Fa6: Fa6Icons,
   Fa: FaIcons,
   Md: MdIcons,
   Bi: BiIcons,
@@ -32,6 +36,8 @@ const iconLibraries: IconLibraries = {
   Lu: LuIcons,
   Tb: TbIcons,
   Rx: RxIcons,
+  Pi: PiIcons,
+  Si: SiIcons,
 };
 
 export default function DynamicIcon({

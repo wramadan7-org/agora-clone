@@ -1746,16 +1746,101 @@ export const advancedFeatureNavbarOptions = [
     hoverColor: "group-hover:text-red-400",
   },
   {
-    icon: "RxMagicWand",
+    icon: "IoIosLink",
     title: "PulseLink in Bio",
     description: "Link in bio tool from Agorapulse",
     hoverColor: "group-hover:text-indigo-400",
   },
   {
-    icon: "RxMagicWand",
+    icon: "HiOutlineSpeakerphone",
     title: "Advocacy",
     description: "Amplify your message to boost reach",
-    hoverColor: "group-hover:text-red-400",
+    hoverColor: "group-hover:text-sky-600",
     tag: "New!",
+  },
+];
+
+export const solutionsNetworkIntegrationNavbarOptions = [
+  {
+    icon: "FaFacebook",
+    title: "Facebook",
+    description: "Stramline your Facebook management",
+    hoverColor: "group-hover:text-blue-400",
+  },
+  {
+    icon: "FaInstagram",
+    title: "Instagram",
+    description: "Build your organic growth on Instagram",
+    hoverColor: "group-hover:text-pink-400",
+  },
+  {
+    icon: "BsTwitterX",
+    title: "X (Twitter)",
+    description: "Grow your X (Twitter) effortlessly",
+    hoverColor: "group-hover:text-black",
+  },
+  {
+    icon: "FaLinkedin",
+    title: "LinkedIn",
+    description: "Build a strong LinkedIn presence",
+    hoverColor: "group-hover:text-blue-500",
+  },
+  {
+    icon: "FaPinterest",
+    title: "Pinterest",
+    description: "Plan, schedule and pin",
+    hoverColor: "group-hover:text-red-500",
+  },
+  {
+    icon: "FaTiktok",
+    title: "TikTok",
+    description: "Grow your TikTok channels",
+    hoverColor: "group-hover:text-black",
+  },
+  {
+    icon: "FaYoutube",
+    title: "YouTube",
+    description: "Conquer the world of videos",
+    hoverColor: "group-hover:text-red-500",
+  },
+  {
+    icon: "BsThreads",
+    title: "Threads",
+    description:
+      "Share ideas, ask question, post random throughts, find your people and more.",
+    hoverColor: "group-hover:text-black",
+  },
+  {
+    icon: "SiGoogleanalytics",
+    title: "Google Analytics",
+    description: "Track and measure the business results of your compaigns",
+    hoverColor: "group-hover:text-orange-500",
+  },
+];
+
+export const solutionsIndustrieNavbarOptions = [
+  {
+    icon: "LuBuilding2",
+    title: "For Agencies",
+    description: "Preferred choice for agencies, priced for growing teams",
+    hoverColor: "group-hover:text-red-400",
+  },
+  {
+    icon: "GiShoppingCart",
+    title: "For E-Commerce",
+    description: "Sell online easily and efficiently",
+    hoverColor: "group-hover:text-red-400",
+  },
+  {
+    icon: "RiHandbagLine",
+    title: "For Multi-Location Retail Stores",
+    description: "Build a better retail experience on social media",
+    hoverColor: "group-hover:text-red-400",
+  },
+  {
+    icon: "PiSwap",
+    title: "For B2B Companies",
+    description: "Tailored social media solutions for B2B success",
+    hoverColor: "group-hover:text-red-400",
   },
 ];
