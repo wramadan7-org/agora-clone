@@ -457,7 +457,6 @@ export default function NavbarComponent() {
               </li>
             </ul>
           </div>
-
           <div className="flex flex-row gap-5 items-center">
             <a
               role="button"
@@ -467,7 +466,6 @@ export default function NavbarComponent() {
             >
               Log In
             </a>
-
             <div className="flex flex-row gap-3">
               <div className="w-full min-w-36 text-nowrap cursor-pointer">
                 <WhiteButton
@@ -481,7 +479,6 @@ export default function NavbarComponent() {
                   link="https://app.agorapulse.com/auth/signup?language=en&_gl=1*fdqixt*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDg3ODMxNDkkbzM2JGcwJHQxNzQ4NzgzMTQ5JGo2MCRsMCRoMA.."
                 />
               </div>
-
               <div className="w-full min-w-52 text-nowrap cursor-pointer">
                 <OrangeButton
                   text="Schedule a demo"
@@ -499,9 +496,9 @@ export default function NavbarComponent() {
         </div>
         {/* Dropdown Menu */}
         {subMenuActiveState && (
-          <div className="hidden lg:block w-full bg-white shadow absolute top-[125%] px-5">
+          <div className="hidden lg:block w-full bg-white shadow absolute top-[125%]">
             {subMenuActiveState === "top-feature" && (
-              <div className="flex flex-row h-full">
+              <div className="flex flex-row h-full px-5">
                 <div className="mt-10">
                   <span className="font-bold text-gray-700 text-lg">
                     Core features
@@ -511,7 +508,7 @@ export default function NavbarComponent() {
                       <a
                         key={index}
                         href="/"
-                        className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2  items-center"
+                        className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2 items-center"
                       >
                         <div className="col-span-1 flex items-center justify-center">
                           <DynamicIcon
@@ -533,7 +530,7 @@ export default function NavbarComponent() {
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 px-3">
-                  <div className="bg-orange-100 px-5 py-4 rounded-md pt-10">
+                  <div className="bg-orange-100 px-5 py-4 pt-10">
                     <span className="font-bold text-gray-700 text-lg">
                       Advanced features
                     </span>
@@ -542,7 +539,7 @@ export default function NavbarComponent() {
                         <a
                           key={index}
                           href="/"
-                          className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1  items-center"
+                          className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1 items-center"
                         >
                           <div className="col-span-1 flex items-center justify-center">
                             <DynamicIcon
@@ -570,7 +567,7 @@ export default function NavbarComponent() {
                       ))}
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 sm:grid-cols-1 px-8 bg-gray-50 rounded-md py-4">
+                  <div className="grid grid-cols-2 sm:grid-cols-1 px-5 bg-gray-50 py-4">
                     <div className="flex items-center justify-center">
                       <img
                         src="https://www.agorapulse.com/assets/nav/product-promo-advocacy.png"
@@ -605,41 +602,43 @@ export default function NavbarComponent() {
               </div>
             )}
             {subMenuActiveState === "solutions" && (
-              <div className="grid grid-cols-3">
-                <div className="col-span-2 mt-10">
-                  <span className="font-bold text-gray-700 text-lg">
-                    Network & integrations
-                  </span>
-                  <div className="grid grid-cols-12 px-3 pb-5">
-                    {solutionsNetworkIntegrationNavbarOptions.map(
-                      (solution, index) => (
-                        <a
-                          key={index}
-                          href="/"
-                          className={`${
-                            index > 4 && "hidden sm:inline-grid"
-                          } col-span-12 sm:col-span-4 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2  items-center`}
-                        >
-                          <div className="col-span-1 flex items-center justify-center">
-                            <DynamicIcon
-                              iconName={solution.icon as string}
-                              size={20}
-                              className={`${solution.hoverColor}`}
-                            />
-                          </div>
-                          <div className="col-span-11 flex flex-col">
-                            <span className="font-bold text-gray-700">
-                              {solution.title}
-                            </span>
-                            <span className={"text-sm"}>
-                              {solution.description}
-                            </span>
-                          </div>
-                        </a>
-                      )
-                    )}
+              <div className="grid grid-cols-12">
+                <div className="col-span-9 mt-10 flex flex-col justify-between">
+                  <div className="pl-5">
+                    <span className="font-bold text-gray-700 text-lg">
+                      Network & integrations
+                    </span>
+                    <div className="grid grid-cols-12 px-3">
+                      {solutionsNetworkIntegrationNavbarOptions.map(
+                        (solution, index) => (
+                          <a
+                            key={index}
+                            href="/"
+                            className={`${
+                              index > 4 && "hidden sm:inline-grid"
+                            } col-span-12 sm:col-span-4 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2  items-center`}
+                          >
+                            <div className="col-span-1 flex items-center justify-center">
+                              <DynamicIcon
+                                iconName={solution.icon as string}
+                                size={20}
+                                className={`${solution.hoverColor}`}
+                              />
+                            </div>
+                            <div className="col-span-11 flex flex-col">
+                              <span className="font-bold text-gray-700">
+                                {solution.title}
+                              </span>
+                              <span className={"text-sm"}>
+                                {solution.description}
+                              </span>
+                            </div>
+                          </a>
+                        )
+                      )}
+                    </div>
                   </div>
-                  <a className="col-span-3 -mx-5 gap-3 bg-indigo-100 cursor-pointer py-3 px-5 flex flex-row flex-nowrap items-center justify-start rounded-md">
+                  <a className="col-span-3 gap-3 bg-indigo-100 cursor-pointer py-3 px-5 flex flex-row flex-nowrap items-center justify-start">
                     <DynamicIcon
                       iconName={"BsFillPuzzleFill"}
                       size={20}
@@ -656,7 +655,7 @@ export default function NavbarComponent() {
                     </div>
                   </a>
                 </div>
-                <div className="col-span-1 bg-orange-100 px-5 py-4 rounded-md pt-10">
+                <div className="col-span-3 bg-orange-100 px-5 py-4 pt-10">
                   <span className="font-bold text-gray-700 text-lg">
                     Industries
                   </span>
@@ -665,7 +664,7 @@ export default function NavbarComponent() {
                       <a
                         key={index}
                         href="/"
-                        className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1 "
+                        className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1 items-center"
                       >
                         <div className="col-span-1 flex items-center justify-center">
                           <DynamicIcon
@@ -691,8 +690,8 @@ export default function NavbarComponent() {
               </div>
             )}
             {subMenuActiveState === "resources" && (
-              <div className="flex flex-row flex-nowrap">
-                <div className="mt-10">
+              <div className="grid grid-cols-12">
+                <div className="mt-10 pl-5 col-span-9">
                   <span className="font-bold text-gray-700 text-lg">
                     Strengthen Your Skills
                   </span>
@@ -704,7 +703,7 @@ export default function NavbarComponent() {
                           href="/"
                           className={`${
                             index > 4 && "hidden sm:inline-grid"
-                          } col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2`}
+                          } col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2 items-center`}
                         >
                           <div className="col-span-12 flex flex-col">
                             <span className="font-bold text-gray-700">
@@ -719,7 +718,7 @@ export default function NavbarComponent() {
                     )}
                   </div>
                 </div>
-                <div className="bg-orange-100 px-5 py-4 rounded-md pt-10">
+                <div className="col-span-3 bg-orange-100 px-5 py-4 pt-10">
                   <span className="font-bold text-gray-700 text-lg">
                     Learn & Connect
                   </span>
@@ -729,7 +728,7 @@ export default function NavbarComponent() {
                         <a
                           key={index}
                           href="/"
-                          className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1"
+                          className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1 items-center"
                         >
                           <div className="col-span-12 flex flex-col">
                             <div className="flex flex-row items-center justify-start flex-nowrap gap-2">
