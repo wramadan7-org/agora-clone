@@ -529,7 +529,7 @@ export default function NavbarComponent() {
                         <DynamicIcon
                           iconName={feature.icon as string}
                           size={20}
-                          className={`${feature.hoverColor}`}
+                          className={`${feature.hoverColor} min-w-5`}
                         />
                       </div>
                       <div className="col-span-11 flex flex-col">
@@ -558,7 +558,7 @@ export default function NavbarComponent() {
                           <DynamicIcon
                             iconName={advanced.icon as string}
                             size={20}
-                            className={`${advanced.hoverColor}`}
+                            className={`${advanced.hoverColor} min-w-5`}
                           />
                         </div>
                         <div className="col-span-11 flex flex-col">
@@ -635,7 +635,7 @@ export default function NavbarComponent() {
                             <DynamicIcon
                               iconName={solution.icon as string}
                               size={20}
-                              className={`${solution.hoverColor}`}
+                              className={`${solution.hoverColor} min-w-5`}
                             />
                           </div>
                           <div className="col-span-11 flex flex-col">
@@ -655,7 +655,7 @@ export default function NavbarComponent() {
                   <DynamicIcon
                     iconName={"BsFillPuzzleFill"}
                     size={20}
-                    className={`text-indigo-400 rotate-45`}
+                    className={`text-indigo-400 rotate-45 min-w-5`}
                   />
                   <div className="flex flex-row flex-nowrap gap-2 group">
                     <span className="text-indigo-400 underline font-bold">
@@ -683,7 +683,7 @@ export default function NavbarComponent() {
                         <DynamicIcon
                           iconName={solution.icon as string}
                           size={20}
-                          className={`${solution.hoverColor}`}
+                          className={`${solution.hoverColor} min-w-5`}
                         />
                       </div>
                       <div className="col-span-11 flex flex-col">
