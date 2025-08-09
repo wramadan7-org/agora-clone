@@ -506,12 +506,12 @@ export default function NavbarComponent() {
                   <span className="font-bold text-gray-700 text-lg">
                     Core features
                   </span>
-                  <div className="grid grid-cols-12 px-3">
+                  <div className="grid grid-cols-12 px-3 pb-10">
                     {topFeatureNavbarOptions.map((feature, index) => (
                       <a
                         key={index}
                         href="/"
-                        className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2 h-20 lg:h-24 items-center"
+                        className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2  items-center"
                       >
                         <div className="col-span-1 flex items-center justify-center">
                           <DynamicIcon
@@ -533,40 +533,42 @@ export default function NavbarComponent() {
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 px-3">
-                  <div className="bg-orange-100 px-8 py-4 rounded-md pt-10">
+                  <div className="bg-orange-100 px-5 py-4 rounded-md pt-10">
                     <span className="font-bold text-gray-700 text-lg">
                       Advanced features
                     </span>
-                    {advancedFeatureNavbarOptions.map((advanced, index) => (
-                      <a
-                        key={index}
-                        href="/"
-                        className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1 h-20 lg:h-24 items-center"
-                      >
-                        <div className="col-span-1 flex items-center justify-center">
-                          <DynamicIcon
-                            iconName={advanced.icon as string}
-                            size={20}
-                            className={`${advanced.hoverColor}`}
-                          />
-                        </div>
-                        <div className="col-span-11 flex flex-col">
-                          <div className="flex flex-row items-center justify-start flex-nowrap gap-2">
-                            <span className="font-bold text-gray-700">
-                              {advanced.title}
-                            </span>
-                            {advanced.tag && (
-                              <span className="bg-orange-500 font-semibold py-0.5 px-1 text-sm rounded-md text-[#ffefe9]">
-                                {advanced.tag}
-                              </span>
-                            )}
+                    <div className="px-3">
+                      {advancedFeatureNavbarOptions.map((advanced, index) => (
+                        <a
+                          key={index}
+                          href="/"
+                          className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1  items-center"
+                        >
+                          <div className="col-span-1 flex items-center justify-center">
+                            <DynamicIcon
+                              iconName={advanced.icon as string}
+                              size={20}
+                              className={`${advanced.hoverColor}`}
+                            />
                           </div>
-                          <span className={"text-sm"}>
-                            {advanced.description}
-                          </span>
-                        </div>
-                      </a>
-                    ))}
+                          <div className="col-span-11 flex flex-col">
+                            <div className="flex flex-row items-center justify-start flex-nowrap gap-2">
+                              <span className="font-bold text-gray-700">
+                                {advanced.title}
+                              </span>
+                              {advanced.tag && (
+                                <span className="bg-orange-500 font-semibold py-0.5 px-1 text-sm rounded-md text-[#ffefe9]">
+                                  {advanced.tag}
+                                </span>
+                              )}
+                            </div>
+                            <span className={"text-sm"}>
+                              {advanced.description}
+                            </span>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
                   </div>
                   <div className="grid grid-cols-2 sm:grid-cols-1 px-8 bg-gray-50 rounded-md py-4">
                     <div className="flex items-center justify-center">
@@ -598,6 +600,150 @@ export default function NavbarComponent() {
                         />
                       </a>
                     </div>
+                  </div>
+                </div>
+              </div>
+            )}
+            {subMenuActiveState === "solutions" && (
+              <div className="grid grid-cols-3">
+                <div className="col-span-2 mt-10">
+                  <span className="font-bold text-gray-700 text-lg">
+                    Network & integrations
+                  </span>
+                  <div className="grid grid-cols-12 px-3 pb-5">
+                    {solutionsNetworkIntegrationNavbarOptions.map(
+                      (solution, index) => (
+                        <a
+                          key={index}
+                          href="/"
+                          className={`${
+                            index > 4 && "hidden sm:inline-grid"
+                          } col-span-12 sm:col-span-4 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2  items-center`}
+                        >
+                          <div className="col-span-1 flex items-center justify-center">
+                            <DynamicIcon
+                              iconName={solution.icon as string}
+                              size={20}
+                              className={`${solution.hoverColor}`}
+                            />
+                          </div>
+                          <div className="col-span-11 flex flex-col">
+                            <span className="font-bold text-gray-700">
+                              {solution.title}
+                            </span>
+                            <span className={"text-sm"}>
+                              {solution.description}
+                            </span>
+                          </div>
+                        </a>
+                      )
+                    )}
+                  </div>
+                  <a className="col-span-3 -mx-5 gap-3 bg-indigo-100 cursor-pointer py-3 px-5 flex flex-row flex-nowrap items-center justify-start rounded-md">
+                    <DynamicIcon
+                      iconName={"BsFillPuzzleFill"}
+                      size={20}
+                      className={`text-indigo-400 rotate-45`}
+                    />
+                    <div className="flex flex-row flex-nowrap gap-2 group">
+                      <span className="text-indigo-400 underline font-bold">
+                        See all integrations
+                      </span>
+                      <HiArrowNarrowRight
+                        size={20}
+                        className="mt-1 text-indigo-400 group-hover:text-indigo-500 group-hover:scale-105 duration-300 ease-in-out"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div className="col-span-1 bg-orange-100 px-5 py-4 rounded-md pt-10">
+                  <span className="font-bold text-gray-700 text-lg">
+                    Industries
+                  </span>
+                  <div className="px-3">
+                    {solutionsIndustrieNavbarOptions.map((solution, index) => (
+                      <a
+                        key={index}
+                        href="/"
+                        className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1 "
+                      >
+                        <div className="col-span-1 flex items-center justify-center">
+                          <DynamicIcon
+                            iconName={solution.icon as string}
+                            size={20}
+                            className={`${solution.hoverColor}`}
+                          />
+                        </div>
+                        <div className="col-span-11 flex flex-col">
+                          <div className="flex flex-row items-center justify-start flex-nowrap gap-2">
+                            <span className="font-bold text-gray-700">
+                              {solution.title}
+                            </span>
+                          </div>
+                          <span className={"text-sm"}>
+                            {solution.description}
+                          </span>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+            {subMenuActiveState === "resources" && (
+              <div className="flex flex-row flex-nowrap">
+                <div className="mt-10">
+                  <span className="font-bold text-gray-700 text-lg">
+                    Strengthen Your Skills
+                  </span>
+                  <div className="grid grid-cols-12 px-3 pb-10">
+                    {resourceStrengthYourSkillNavbarOptions.map(
+                      (resource, index) => (
+                        <a
+                          key={index}
+                          href="/"
+                          className={`${
+                            index > 4 && "hidden sm:inline-grid"
+                          } col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2`}
+                        >
+                          <div className="col-span-12 flex flex-col">
+                            <span className="font-bold text-gray-700">
+                              {resource.title}
+                            </span>
+                            <span className={"text-sm"}>
+                              {resource.description}
+                            </span>
+                          </div>
+                        </a>
+                      )
+                    )}
+                  </div>
+                </div>
+                <div className="bg-orange-100 px-5 py-4 rounded-md pt-10">
+                  <span className="font-bold text-gray-700 text-lg">
+                    Learn & Connect
+                  </span>
+                  <div className="px-3">
+                    {resourceLearnConnectNavbarOptions.map(
+                      (resource, index) => (
+                        <a
+                          key={index}
+                          href="/"
+                          className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1"
+                        >
+                          <div className="col-span-12 flex flex-col">
+                            <div className="flex flex-row items-center justify-start flex-nowrap gap-2">
+                              <span className="font-bold text-gray-700">
+                                {resource.title}
+                              </span>
+                            </div>
+                            <span className={"text-sm"}>
+                              {resource.description}
+                            </span>
+                          </div>
+                        </a>
+                      )
+                    )}
                   </div>
                 </div>
               </div>
