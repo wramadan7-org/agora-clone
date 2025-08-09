@@ -12,17 +12,17 @@ export default function FeatureDescription({
   image,
 }: FeatureDescriptionProps) {
   const conditionColor = {
-    inbox: {
+    customer: {
       button: "border-orange-600 hover:bg-orange-600",
       textHover: "text-orange-600 hover:text-white",
       textActive: "text-orange-600",
     },
-    publishing: {
+    sales: {
       button: "border-indigo-400 hover:bg-indigo-400",
       textHover: "text-indigo-400 hover:text-white",
       textActive: "text-indigo-400",
     },
-    listening: {
+    omnichannel: {
       button: "border-emerald-300 hover:bg-emerald-300",
       textHover: "text-emerald-300 hover:text-white",
       textActive: "text-emerald-300",
@@ -32,7 +32,7 @@ export default function FeatureDescription({
       textHover: "text-sky-600 hover:text-white",
       textActive: "text-sky-600",
     },
-    roi: {
+    mobile: {
       button: "border-red-400 hover:bg-red-400",
       textHover: "text-red-400 hover:text-white",
       textActive: "text-red-400",

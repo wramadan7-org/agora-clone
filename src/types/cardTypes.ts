@@ -5,11 +5,11 @@ export type FeatureCardProps = {
 };
 
 export type FeatureTitle =
-  | "inbox"
-  | "publishing"
-  | "listening"
+  | "customer"
+  | "sales"
+  | "omnichannel"
   | "reporting"
-  | "roi";
+  | "mobile";
 
 export type FeatureItem = {
   title: string;

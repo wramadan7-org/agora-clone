@@ -40,18 +40,18 @@ export const effectiveSocialMediaManagement = [
 
 export const featureOptions = [
   {
-    icon: "FaInbox",
-    title: "Inbox",
+    icon: "FaUsers",
+    title: "Customer",
     color: "orange",
   },
   {
     icon: "LuSend",
-    title: "Publishing",
+    title: "Sales",
     color: "indigo",
   },
   {
     icon: "TbWorldSearch",
-    title: "Listening",
+    title: "Omnichannel",
     color: "emerald",
   },
   {
@@ -61,7 +61,7 @@ export const featureOptions = [
   },
   {
     icon: "BiTachometer",
-    title: "ROI",
+    title: "Mobile",
     color: "red",
   },
 ];
@@ -75,19 +75,19 @@ export const conditionColorFeature: Record<
     textActive: string;
   }
 > = {
-  inbox: {
+  customer: {
     backgroundHover: "hover:bg-orange-50",
     backgroundActive: "bg-orange-50",
     textHover: "group-hover:text-orange-600",
     textActive: "text-orange-600",
   },
-  publishing: {
+  sales: {
     backgroundHover: "hover:bg-indigo-50",
     backgroundActive: "bg-indigo-50",
     textHover: "group-hover:text-indigo-400",
     textActive: "text-indigo-400",
   },
-  listening: {
+  omnichannel: {
     backgroundHover: "hover:bg-emerald-50",
     backgroundActive: "bg-emerald-50",
     textHover: "group-hover:text-emerald-300",
@@ -99,7 +99,7 @@ export const conditionColorFeature: Record<
     textHover: "group-hover:text-sky-600",
     textActive: "text-sky-600",
   },
-  roi: {
+  mobile: {
     backgroundHover: "hover:bg-red-50",
     backgroundActive: "bg-red-50",
     textHover: "group-hover:text-red-400",
@@ -107,74 +107,84 @@ export const conditionColorFeature: Record<
   },
 };
 
+
+
 export const descriptionFeature = {
-  inbox: {
-    icon: "FaInbox",
-    title: "Keep tabs, without switching tabs",
+  customer: {
+    icon: "FaUsers",
+    title: "Kelola tiap pelanggan secara personal dan bangun loyalitas",
     description:
-      "Track and respond to all your social media interactions in one centralized inbox.",
+      "Ketahui kebutuhan setiap pelanggan melalui daftar riwayat aktivitas pelanggan dan bangun loyalitas pelanggan.",
     adventages: [
-      "Prioritize, automate, and respond more efficiently.",
-      "Centralize comment moderation and facilitate better teamwork.",
-      "Enhance your engagement and improve customer experience.",
+      "Manajemen Prospek",
+      "Manajemen Organisasi",
+      "Integrasi API Data Prospek",
+      "Manajemen Kontak",
+      "Riwayat Aktivitas Pelanggan"
     ],
-    type: "Inbox",
+    type: "Customer",
     image:
       "https://www.agorapulse.com/assets/hv2-home2/screenshot-social-media-inbox-2.webp",
   },
-  publishing: {
+  sales: {
     icon: "LuSend",
-    title: "Master your social media content strategy",
+    title: "Pantau Progress Penjualan dengan Analisa yang Tepat",
     description:
-      "Plan and schedule your social media content across all platforms with an intuitive post scheduler and shared calendars.",
+      "Pantau progress tahapan penjualan bisnis Anda lebih mudah di satu halaman dan buat analisa yang lebih baik",
     adventages: [
-      "Streamline your content management.",
-      "Customize your post content for each platform.",
-      "Enhance internal and external team collaboration.",
+      "Pipeline Penjualan",
+      "Multiple Pipeline",
+      "Analisis Pencapaian Penjualan",
+      "Riwayat Aktivitas Penjualan",
     ],
-    type: "Publishing",
+    type: "Sales",
     image:
       "https://www.agorapulse.com/assets/hv2-home2/screenshot-social-media-publishing-2.webp",
   },
-  listening: {
+  omnichannel: {
     icon: "TbWorldSearch",
-    title: "Listen to the conversations that matter most",
+    title: "Terhubung dengan Pelanggan dari Saluran Mana Pun",
     description:
-      "Monitor and track mentions of your brand, industry, and competitors. Capture conversations from social networks, news websites, and blogs.",
+      "Permudah proses penjualan Anda dengan pelanggan karena bisa berinteraksi dari saluran mana pun",
     adventages: [
-      "Measure and protect your brand reputation.",
-      "Uncover new ideas to create engaging content.",
-      "Find out customer requirements and enhance brand loyalty.",
+      "Integrasi Pesan",
+      "Integrasi Call Center",
+      "Integrasi Sosial Media",
+      "Integrasi Sistem Lainnya"
     ],
-    type: "Listening",
+    type: "Omnichannel",
     image:
       "https://www.agorapulse.com/assets/hv2-home2/screenshot-social-media-monitoring-2.webp",
   },
   reporting: {
     icon: "LuChartNoAxesCombined",
-    title: "Create meaningful reports, without the headache",
+    title: "Pantau KPI Setiap Sales dengan Objektif, Akurat, dan Realtime",
     description:
-      "Make better business decisions with actionable social media reports that don’t take all day to create.",
+      "Lihat kinerja tim sales Anda dengan akurat berdasarkan laporan pekerjaan yang telah dilakukan",
     adventages: [
-      "Compare key social metrics across all channels from a centralized dashboard.",
-      "Easily identify your top-performing posts for each platform.",
-      "Build and automate custom, presentation-ready social media reports.",
+      "Pantau KPI Harian Staf",
+      "Target Revenue Staf",
+      "Ekspor Laporan Pencapaian",
+      "Dashboard Pencapaian",
+      "Analisis Kinerja Setiap Staf"
     ],
     type: "Reporting",
     image:
       "https://www.agorapulse.com/assets/hv2-home2/screenshot-social-media-reporting.webp",
   },
-  roi: {
+  mobile: {
     icon: "BiTachometer",
-    title: "Measure and prove your social media ROI",
+    title: "Lakukan Penjualan Di Mana Saja dan Kapan Saja",
     description:
-      "You already know that social media is more than brand awareness. But now you can actually prove it by uncovering what posts and conversations drive sales, leads, and traffic.",
+      "Aplikasi mobile Barantum mempermudah tim ketika sedang melakukan kunjungan lapangan ke tempat pelanggan",
     adventages: [
-      "Automatically pull data from Google Analytics.",
-      "Tie your social media activity to real revenue goals.",
-      "Understand where to use your budget effectively.",
+     "Remote Sales",
+     "Laporan Real Time",
+     "Tersedia di IOS & Android",
+     "Akses Data dari Mana Pun",
+     "Notifikasi Agenda"
     ],
-    type: "ROI",
+    type: "Mobile",
     image:
       "https://www.agorapulse.com/assets/hv2-home2/screenshot-social-media-roi.webp",
   },
@@ -1701,15 +1711,15 @@ export const accordionPricing: AccordionItem[] = [
 
 export const topFeatureNavbarOptions = [
   {
-    icon: "FaInbox",
-    title: "Inbox",
+    icon: "FaUsers",
+    title: "Customer",
     color: "orange",
     description: "Take control of your social media",
     hoverColor: "group-hover:text-orange-600",
   },
   {
     icon: "LuSend",
-    title: "Publishing",
+    title: "Sales",
     color: "indigo",
     description: "Everything you need to publish on social media",
     hoverColor: "group-hover:text-indigo-400",
@@ -1731,7 +1741,7 @@ export const topFeatureNavbarOptions = [
   },
   {
     icon: "BiTachometer",
-    title: "ROI",
+    title: "Mobile",
     color: "red",
     description: "Get actionable insights to inform your social strategy",
     hoverColor: "group-hover:text-red-400",

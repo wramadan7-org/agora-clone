@@ -1,7 +1,7 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
 import WhiteButton from "../../components/buttons/WhiteButton";
 import OrangeButton from "../../components/buttons/OrangeButton";
-import { BiRefresh } from "react-icons/bi";
+import { BiLogoWhatsapp } from "react-icons/bi";
 import { IoMdPlay } from "react-icons/io";
 import { TfiLayoutLineSolid } from "react-icons/tfi";
 import AutoPlaySlide from "../../components/slides/AutoPlaySlide";
@@ -9,19 +9,18 @@ import { Helmet } from "react-helmet-async";
 import {
   accordionDashboard,
   descriptionFeature,
-  effectiveSocialMediaManagement,
   favoriteToolsAndPlatforms,
   featureOptions,
   greateItems,
   socialMediaManagers,
 } from "../../constants/constant";
-import EffectiveSocialMediaManagementSlide from "../../components/slides/EffectiveSocialMediaManagementSlide";
 import FeatureCard from "../../components/cards/FeatureCard";
 import { useState } from "react";
 import FeatureDescription from "../../components/features/FeatureDescription";
 import { FeatureTitle } from "../../types/cardTypes";
 import GreateSlide from "../../components/slides/GreateSlide";
 import AccordionComponent from "../../components/accordions/frequently-question/AccordionComponent";
+import { BsWhatsapp } from "react-icons/bs";
 
 export default function Page() {
   const [activeFeatureState, setActiveFeatureState] = useState<{
@@ -63,20 +62,18 @@ export default function Page() {
         <section id="hero" className="px-5 flex flex-col md:flex-row">
           <div className="flex flex-col flex-[1_1_0%] gap-5">
             <span className="text-neutral-900 text-wrap text-[40px] leading-10 md:text-4xl lg:text-5xl lg:leading-14 font-extrabold">
-              Drive Real Impact on Social Media.{" "}
-              <span className="text-orange-600">From Engagement to ROI.</span>
+              Aplikasi CRM, Chat & Call Center Terlengkap.{" "}
+              <span className="text-orange-600">Untuk tingkatkan penjualan dan pelayanan bisnis</span>
             </span>
 
             <p className="text-md font-semibold text-neutral-900 text-wrap">
-              Save time, stay organized, and easily manage your social media
-              with Agorapulse. Measure and drive real business impact from your
-              social campaigns-all in one platform.
+Percepat sales dan layanan pelanggan dengan aplikasi Omnichannel CRM
             </p>
 
             <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-4">
               <div className="w-full sm:max-w-36">
                 <WhiteButton
-                  text="Try for free"
+                  text="Coba Gratis"
                   icon={
                     <HiArrowNarrowRight
                       size={16}
@@ -89,9 +86,9 @@ export default function Page() {
 
               <div className="w-full sm:max-w-72">
                 <OrangeButton
-                  text="Watch an On-Demand demo"
+                  text="Hubungi Sales Kami"
                   icon={
-                    <HiArrowNarrowRight
+                    <BsWhatsapp
                       size={16}
                       className="mt-1 text-white group-hover:text-orange-600 group-hover:scale-125 duration-300 ease-in-out"
                     />
@@ -103,7 +100,7 @@ export default function Page() {
 
             <div className="flex items-center justify-center sm:justify-start">
               <span className="text-xs font-semibold">
-                Free for 30 days - No card required
+                Uji coba 30 hari gratis - Tidak membutuhkan kartu kredit
               </span>
             </div>
           </div>
@@ -124,7 +121,7 @@ export default function Page() {
         >
           <div className="flex flex-col sm:flex-row md:flex-col justify-center sm:justify-between md:justify-start w-full items-center md:items-start">
             <div className="flex flex-row flex-nowrap gap-2 items-center">
-              <BiRefresh size={40} className="text-neutral-900" />
+              <BiLogoWhatsapp size={40} className="text-neutral-900" />
 
               <TfiLayoutLineSolid
                 size={15}
@@ -132,32 +129,32 @@ export default function Page() {
               />
 
               <p className="text-neutral-900 font-bold text-md">
-                The industry leader where it counts
+                Percepat sales dan layanan pelanggan dengan aplikasi Omnichannel CRM
               </p>
             </div>
 
             <div className="grid grid-cols-12 gap-2 max-w-xs sm:max-w-full">
               <div className="col-span-6">
                 <span className="text-[10px] font-semibold text-neutral-500">
-                  Best results, Summer 2024
+                  Dashboard terpadu untuk kolaborasi tim yang efisien
                 </span>
               </div>
 
               <div className="col-span-6">
                 <span className="text-[10px] font-semibold text-neutral-500">
-                  Momentum leader, Summer 2024
+                  Optimalkan layanan pelanggan dengan chatbot otomatis
                 </span>
               </div>
 
               <div className="col-span-6">
                 <span className="text-[10px] font-semibold text-neutral-500">
-                  High performer for Mid-Market, Summer 2024
+                  Kirim pesan massal yang dipersonalisasi
                 </span>
               </div>
 
               <div className="col-span-6">
                 <span className="text-[10px] font-semibold text-neutral-500">
-                  Most Implementable, Summer 2024
+Laporan 360 dorong keputusan bisnis efektif
                 </span>
               </div>
             </div>
@@ -165,76 +162,16 @@ export default function Page() {
 
           <div className="flex flex-col gap-3 w-full">
             <span className="text-center font-bold text-lg lg:text-xl text-neutral-900 px-5">
-              Over 31K+ Social media managers use our tool daily
+Kami telah dipercaya oleh 1000+ industri & instansi
             </span>
 
             <AutoPlaySlide items={socialMediaManagers} />
           </div>
         </section>
 
-        <section id="business-outcomes" className="w-full bg-red-50">
-          <div className="flex flex-col gap-5 p-5">
-            <span className="text-neutral-900 font-bold text-[28px] sm:text-[32px] lg:text-4xl leading-9">
-              Effective social media management with{" "}
-              <span className="text-orange-600">
-                impactful business outcomes
-              </span>
-            </span>
-
-            <p className="text-neutral-900 text-base">
-              Easily overcome the challenges of managing, building, and
-              maintaining social media profiles. All while capturing the real
-              business value of your efforts.
-            </p>
-
-            <EffectiveSocialMediaManagementSlide
-              items={effectiveSocialMediaManagement}
-            />
-
-            <div className="rounded-md bg-orange-100 p-7 flex flex-col-reverse sm:flex-row mt-20 gap-5">
-              <div className="space-y-4 flex flex-col flex-[1_1_0%]">
-                <span className="font-bold text-xl text-neutral-900">
-                  "It's our go-to social media management platform!"
-                </span>
-
-                <p className="text-base text-orange-600 font-semibold lg:text-lg">
-                  "We've got everyone on board, from marketing to product
-                  management, using this awesome platform. It's super easy to
-                  schedule posts in advance, collaborate with our teams, and
-                  share the right metrics across all stakeholders -- all in one
-                  place."
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-4 w-fit ml-auto sm:items-center sm:justify-center">
-                  <p className="text-neutral-900 text-xs lg:text-base text-end">
-                    Joanne Watt, Marketing Lead
-                  </p>
-
-                  <img
-                    src="https://www.agorapulse.com/assets/hv2-home2/stream-yard-logo.svg"
-                    className="w-28 ml-auto"
-                    alt="Stram Yard"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-
-              <div className="flex flex-[1_1_0%] sm:max-w-36 lg:max-w-[369px] lg:items-center lg:justify-center sm:max-h-40">
-                <img
-                  src="https://www.agorapulse.com/assets/hv2-home2/user-avatar-2.png"
-                  className="h-14 sm:h-full sm:max-w-36"
-                  alt="Joanne Watt"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section id="features" className="flex flex-col gap-10 p-5">
           <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-center leading-9">
-            Features to boost efficiency and save time
-          </h1>
+Meningkatkan Produktivitas Penjualan dan Membuat Pelanggan Jadi Loyal          </h1>
 
           <div className="flex flex-row flex-wrap items-center justify-center gap-3">
             {featureOptions.map((feature, index) => (
