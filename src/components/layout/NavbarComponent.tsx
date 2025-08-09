@@ -74,7 +74,6 @@ export default function NavbarComponent() {
             <RxHamburgerMenu size={20} className="duration-150 ease-in-out" />
           )}
         </button>
-
         {isOpenMenuState && (
           <div
             className={`absolute top-[110%] border-t border-gray-200 shadow-2xl left-0 flex flex-col w-full bg-white px-5 pt-7 ${
@@ -153,7 +152,7 @@ export default function NavbarComponent() {
                                   {advanced.title}
                                 </span>
                                 {advanced.tag && (
-                                  <span className="bg-orange-300 font-semibold py-0.5 px-1 text-sm rounded-md">
+                                  <span className="bg-orange-500 font-semibold py-0.5 px-1 text-sm rounded-md text-[#ffefe9]">
                                     {advanced.tag}
                                   </span>
                                 )}
@@ -378,7 +377,6 @@ export default function NavbarComponent() {
                 )}
               </li>
             </ul>
-
             <ul className="flex flex-col gap-3 w-full">
               <li className="px-3">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
@@ -402,7 +400,6 @@ export default function NavbarComponent() {
                         link="https://app.agorapulse.com/auth/signup?language=en&_gl=1*fdqixt*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDg3ODMxNDkkbzM2JGcwJHQxNzQ4NzgzMTQ5JGo2MCRsMCRoMA.."
                       />
                     </div>
-
                     <div className="w-full sm:max-w-52">
                       <OrangeButton
                         text="Schedule demo"
@@ -421,7 +418,6 @@ export default function NavbarComponent() {
             </ul>
           </div>
         )}
-
         <div className="hidden lg:flex flex-row justify-between pl-5 items-center w-full">
           <div>
             <ul className="flex flex-row gap-5 text-base font-bold text-neutral-800">
@@ -432,7 +428,6 @@ export default function NavbarComponent() {
                   className="flex flex-row items-center gap-1 cursor-pointer"
                 >
                   <span>Top Feature</span>
-
                   <IoIosArrowDown size={20} className="mt-1" />
                 </button>
               </li>
@@ -443,7 +438,6 @@ export default function NavbarComponent() {
                   className="flex flex-row items-center gap-1 cursor-pointer"
                 >
                   <span>Solutions</span>
-
                   <IoIosArrowDown size={20} className="mt-1" />
                 </button>
               </li>
@@ -504,11 +498,112 @@ export default function NavbarComponent() {
           </div>
         </div>
         {/* Dropdown Menu */}
-        {/* {subMenuActiveState && (
-          <div className="w-full h-56 bg-white shadow absolute top-full">
-          
-        </div>
-        )} */}
+        {subMenuActiveState && (
+          <div className="hidden lg:block w-full bg-white shadow absolute top-[125%] px-5">
+            {subMenuActiveState === "top-feature" && (
+              <div className="flex flex-row h-full">
+                <div className="mt-10">
+                  <span className="font-bold text-gray-700 text-lg">
+                    Core features
+                  </span>
+                  <div className="grid grid-cols-12 px-3">
+                    {topFeatureNavbarOptions.map((feature, index) => (
+                      <a
+                        key={index}
+                        href="/"
+                        className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2 h-20 lg:h-24 items-center"
+                      >
+                        <div className="col-span-1 flex items-center justify-center">
+                          <DynamicIcon
+                            iconName={feature.icon as string}
+                            size={20}
+                            className={`${feature.hoverColor}`}
+                          />
+                        </div>
+                        <div className="col-span-11 flex flex-col">
+                          <span className="font-bold text-gray-700">
+                            {feature.title}
+                          </span>
+                          <span className={"text-sm"}>
+                            {feature.description}
+                          </span>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 px-3">
+                  <div className="bg-orange-100 px-8 py-4 rounded-md pt-10">
+                    <span className="font-bold text-gray-700 text-lg">
+                      Advanced features
+                    </span>
+                    {advancedFeatureNavbarOptions.map((advanced, index) => (
+                      <a
+                        key={index}
+                        href="/"
+                        className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1 h-20 lg:h-24 items-center"
+                      >
+                        <div className="col-span-1 flex items-center justify-center">
+                          <DynamicIcon
+                            iconName={advanced.icon as string}
+                            size={20}
+                            className={`${advanced.hoverColor}`}
+                          />
+                        </div>
+                        <div className="col-span-11 flex flex-col">
+                          <div className="flex flex-row items-center justify-start flex-nowrap gap-2">
+                            <span className="font-bold text-gray-700">
+                              {advanced.title}
+                            </span>
+                            {advanced.tag && (
+                              <span className="bg-orange-500 font-semibold py-0.5 px-1 text-sm rounded-md text-[#ffefe9]">
+                                {advanced.tag}
+                              </span>
+                            )}
+                          </div>
+                          <span className={"text-sm"}>
+                            {advanced.description}
+                          </span>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-1 px-8 bg-gray-50 rounded-md py-4">
+                    <div className="flex items-center justify-center">
+                      <img
+                        src="https://www.agorapulse.com/assets/nav/product-promo-advocacy.png"
+                        alt="New Boost"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-1 items-start justify-center">
+                      <div className="flex flex-col">
+                        <span className="font-bold">
+                          New: Boost engagement with Advocacy
+                        </span>
+                        <span className="text-sm">
+                          Get more of your brand advocates to share your message
+                          easily
+                        </span>
+                      </div>
+                      <a
+                        href="/"
+                        className="text-indigo-500 underline flex flex-row group"
+                      >
+                        <span className="group-hover:text-indigo-600 font-bold">
+                          Check It Out
+                        </span>
+                        <HiArrowNarrowRight
+                          size={20}
+                          className="mt-1 group-hover:text-indigo-600 group-hover:scale-105 duration-300 ease-in-out"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
       </nav>
     </div>
   );
