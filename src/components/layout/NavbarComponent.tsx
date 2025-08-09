@@ -23,6 +23,9 @@ export default function NavbarComponent() {
   >(null);
 
   const handleToggleMenu = () => {
+    if (isOpenMenuState) {
+      setSubMenuActiveState(null);
+    }
     setIsOpenMenuState(!isOpenMenuState);
   };
 
@@ -32,6 +35,7 @@ export default function NavbarComponent() {
     setSubMenuActiveState(
       activeSubMenu === subMenuActiveState ? null : activeSubMenu || null
     );
+    setIsOpenMenuState(true);
   };
 
   useEffect(() => {
@@ -39,9 +43,19 @@ export default function NavbarComponent() {
       setIsScrolledState(window.scrollY > 0);
     };
 
+    const handleResize = () => {
+      if (window.innerWidth >= 1024 && subMenuActiveState === null) {
+        setIsOpenMenuState(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [subMenuActiveState]);
 
   return (
     <div
@@ -494,173 +508,47 @@ export default function NavbarComponent() {
             </div>
           </div>
         </div>
-        {/* Dropdown Menu */}
-        {subMenuActiveState && (
-          <div className="hidden lg:block w-full bg-white shadow absolute top-[125%]">
-            {subMenuActiveState === "top-feature" && (
-              <div className="flex flex-row h-full px-5">
-                <div className="mt-10">
-                  <span className="font-bold text-gray-700 text-lg">
-                    Core features
-                  </span>
-                  <div className="grid grid-cols-12 px-3 pb-10">
-                    {topFeatureNavbarOptions.map((feature, index) => (
-                      <a
-                        key={index}
-                        href="/"
-                        className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2 items-center"
-                      >
-                        <div className="col-span-1 flex items-center justify-center">
-                          <DynamicIcon
-                            iconName={feature.icon as string}
-                            size={20}
-                            className={`${feature.hoverColor}`}
-                          />
-                        </div>
-                        <div className="col-span-11 flex flex-col">
-                          <span className="font-bold text-gray-700">
-                            {feature.title}
-                          </span>
-                          <span className={"text-sm"}>
-                            {feature.description}
-                          </span>
-                        </div>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 px-3">
-                  <div className="bg-orange-100 px-5 py-4 pt-10">
-                    <span className="font-bold text-gray-700 text-lg">
-                      Advanced features
-                    </span>
-                    <div className="px-3">
-                      {advancedFeatureNavbarOptions.map((advanced, index) => (
-                        <a
-                          key={index}
-                          href="/"
-                          className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1 items-center"
-                        >
-                          <div className="col-span-1 flex items-center justify-center">
-                            <DynamicIcon
-                              iconName={advanced.icon as string}
-                              size={20}
-                              className={`${advanced.hoverColor}`}
-                            />
-                          </div>
-                          <div className="col-span-11 flex flex-col">
-                            <div className="flex flex-row items-center justify-start flex-nowrap gap-2">
-                              <span className="font-bold text-gray-700">
-                                {advanced.title}
-                              </span>
-                              {advanced.tag && (
-                                <span className="bg-orange-500 font-semibold py-0.5 px-1 text-sm rounded-md text-[#ffefe9]">
-                                  {advanced.tag}
-                                </span>
-                              )}
-                            </div>
-                            <span className={"text-sm"}>
-                              {advanced.description}
-                            </span>
-                          </div>
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-2 sm:grid-cols-1 px-5 bg-gray-50 py-4">
-                    <div className="flex items-center justify-center">
-                      <img
-                        src="https://www.agorapulse.com/assets/nav/product-promo-advocacy.png"
-                        alt="New Boost"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-1 items-start justify-center">
-                      <div className="flex flex-col">
-                        <span className="font-bold">
-                          New: Boost engagement with Advocacy
-                        </span>
-                        <span className="text-sm">
-                          Get more of your brand advocates to share your message
-                          easily
-                        </span>
-                      </div>
-                      <a
-                        href="/"
-                        className="text-indigo-500 underline flex flex-row group"
-                      >
-                        <span className="group-hover:text-indigo-600 font-bold">
-                          Check It Out
-                        </span>
-                        <HiArrowNarrowRight
+      </nav>
+      {/* Dropdown Menu */}
+      {subMenuActiveState && (
+        <div className="hidden lg:block w-full bg-white shadow absolute top-full max-w-[1420px] left-1/2 transform -translate-x-1/2">
+          {subMenuActiveState === "top-feature" && (
+            <div className="flex flex-row h-full px-5">
+              <div className="mt-10">
+                <span className="font-bold text-gray-700 text-lg">
+                  Core features
+                </span>
+                <div className="grid grid-cols-12 px-3 pb-10">
+                  {topFeatureNavbarOptions.map((feature, index) => (
+                    <a
+                      key={index}
+                      href="/"
+                      className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2 items-center"
+                    >
+                      <div className="col-span-1 flex items-center justify-center">
+                        <DynamicIcon
+                          iconName={feature.icon as string}
                           size={20}
-                          className="mt-1 group-hover:text-indigo-600 group-hover:scale-105 duration-300 ease-in-out"
+                          className={`${feature.hoverColor}`}
                         />
-                      </a>
-                    </div>
-                  </div>
+                      </div>
+                      <div className="col-span-11 flex flex-col">
+                        <span className="font-bold text-gray-700">
+                          {feature.title}
+                        </span>
+                        <span className={"text-sm"}>{feature.description}</span>
+                      </div>
+                    </a>
+                  ))}
                 </div>
               </div>
-            )}
-            {subMenuActiveState === "solutions" && (
-              <div className="grid grid-cols-12">
-                <div className="col-span-9 mt-10 flex flex-col justify-between">
-                  <div className="pl-5">
-                    <span className="font-bold text-gray-700 text-lg">
-                      Network & integrations
-                    </span>
-                    <div className="grid grid-cols-12 px-3">
-                      {solutionsNetworkIntegrationNavbarOptions.map(
-                        (solution, index) => (
-                          <a
-                            key={index}
-                            href="/"
-                            className={`${
-                              index > 4 && "hidden sm:inline-grid"
-                            } col-span-12 sm:col-span-4 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2  items-center`}
-                          >
-                            <div className="col-span-1 flex items-center justify-center">
-                              <DynamicIcon
-                                iconName={solution.icon as string}
-                                size={20}
-                                className={`${solution.hoverColor}`}
-                              />
-                            </div>
-                            <div className="col-span-11 flex flex-col">
-                              <span className="font-bold text-gray-700">
-                                {solution.title}
-                              </span>
-                              <span className={"text-sm"}>
-                                {solution.description}
-                              </span>
-                            </div>
-                          </a>
-                        )
-                      )}
-                    </div>
-                  </div>
-                  <a className="col-span-3 gap-3 bg-indigo-100 cursor-pointer py-3 px-5 flex flex-row flex-nowrap items-center justify-start">
-                    <DynamicIcon
-                      iconName={"BsFillPuzzleFill"}
-                      size={20}
-                      className={`text-indigo-400 rotate-45`}
-                    />
-                    <div className="flex flex-row flex-nowrap gap-2 group">
-                      <span className="text-indigo-400 underline font-bold">
-                        See all integrations
-                      </span>
-                      <HiArrowNarrowRight
-                        size={20}
-                        className="mt-1 text-indigo-400 group-hover:text-indigo-500 group-hover:scale-105 duration-300 ease-in-out"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div className="col-span-3 bg-orange-100 px-5 py-4 pt-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 px-3">
+                <div className="bg-orange-100 px-5 py-4 pt-10">
                   <span className="font-bold text-gray-700 text-lg">
-                    Industries
+                    Advanced features
                   </span>
                   <div className="px-3">
-                    {solutionsIndustrieNavbarOptions.map((solution, index) => (
+                    {advancedFeatureNavbarOptions.map((advanced, index) => (
                       <a
                         key={index}
                         href="/"
@@ -668,49 +556,94 @@ export default function NavbarComponent() {
                       >
                         <div className="col-span-1 flex items-center justify-center">
                           <DynamicIcon
-                            iconName={solution.icon as string}
+                            iconName={advanced.icon as string}
                             size={20}
-                            className={`${solution.hoverColor}`}
+                            className={`${advanced.hoverColor}`}
                           />
                         </div>
                         <div className="col-span-11 flex flex-col">
                           <div className="flex flex-row items-center justify-start flex-nowrap gap-2">
                             <span className="font-bold text-gray-700">
-                              {solution.title}
+                              {advanced.title}
                             </span>
+                            {advanced.tag && (
+                              <span className="bg-orange-500 font-semibold py-0.5 px-1 text-sm rounded-md text-[#ffefe9]">
+                                {advanced.tag}
+                              </span>
+                            )}
                           </div>
                           <span className={"text-sm"}>
-                            {solution.description}
+                            {advanced.description}
                           </span>
                         </div>
                       </a>
                     ))}
                   </div>
                 </div>
+                <div className="grid grid-cols-2 sm:grid-cols-1 px-5 bg-gray-50 py-4">
+                  <div className="flex items-center justify-center">
+                    <img
+                      src="https://www.agorapulse.com/assets/nav/product-promo-advocacy.png"
+                      alt="New Boost"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-1 items-start justify-center">
+                    <div className="flex flex-col">
+                      <span className="font-bold">
+                        New: Boost engagement with Advocacy
+                      </span>
+                      <span className="text-sm">
+                        Get more of your brand advocates to share your message
+                        easily
+                      </span>
+                    </div>
+                    <a
+                      href="/"
+                      className="text-indigo-500 underline flex flex-row group"
+                    >
+                      <span className="group-hover:text-indigo-600 font-bold">
+                        Check It Out
+                      </span>
+                      <HiArrowNarrowRight
+                        size={20}
+                        className="mt-1 group-hover:text-indigo-600 group-hover:scale-105 duration-300 ease-in-out"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
-            )}
-            {subMenuActiveState === "resources" && (
-              <div className="grid grid-cols-12">
-                <div className="mt-10 pl-5 col-span-9">
+            </div>
+          )}
+          {subMenuActiveState === "solutions" && (
+            <div className="grid grid-cols-12">
+              <div className="col-span-9 mt-10 flex flex-col justify-between">
+                <div className="pl-5">
                   <span className="font-bold text-gray-700 text-lg">
-                    Strengthen Your Skills
+                    Network & integrations
                   </span>
-                  <div className="grid grid-cols-12 px-3 pb-10">
-                    {resourceStrengthYourSkillNavbarOptions.map(
-                      (resource, index) => (
+                  <div className="grid grid-cols-12 px-3">
+                    {solutionsNetworkIntegrationNavbarOptions.map(
+                      (solution, index) => (
                         <a
                           key={index}
                           href="/"
                           className={`${
                             index > 4 && "hidden sm:inline-grid"
-                          } col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2 items-center`}
+                          } col-span-12 sm:col-span-4 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2  items-center`}
                         >
-                          <div className="col-span-12 flex flex-col">
+                          <div className="col-span-1 flex items-center justify-center">
+                            <DynamicIcon
+                              iconName={solution.icon as string}
+                              size={20}
+                              className={`${solution.hoverColor}`}
+                            />
+                          </div>
+                          <div className="col-span-11 flex flex-col">
                             <span className="font-bold text-gray-700">
-                              {resource.title}
+                              {solution.title}
                             </span>
                             <span className={"text-sm"}>
-                              {resource.description}
+                              {solution.description}
                             </span>
                           </div>
                         </a>
@@ -718,38 +651,115 @@ export default function NavbarComponent() {
                     )}
                   </div>
                 </div>
-                <div className="col-span-3 bg-orange-100 px-5 py-4 pt-10">
-                  <span className="font-bold text-gray-700 text-lg">
-                    Learn & Connect
-                  </span>
-                  <div className="px-3">
-                    {resourceLearnConnectNavbarOptions.map(
-                      (resource, index) => (
-                        <a
-                          key={index}
-                          href="/"
-                          className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1 items-center"
-                        >
-                          <div className="col-span-12 flex flex-col">
-                            <div className="flex flex-row items-center justify-start flex-nowrap gap-2">
-                              <span className="font-bold text-gray-700">
-                                {resource.title}
-                              </span>
-                            </div>
-                            <span className={"text-sm"}>
-                              {resource.description}
-                            </span>
-                          </div>
-                        </a>
-                      )
-                    )}
+                <a className="col-span-3 gap-3 bg-indigo-100 cursor-pointer py-3 px-5 flex flex-row flex-nowrap items-center justify-start">
+                  <DynamicIcon
+                    iconName={"BsFillPuzzleFill"}
+                    size={20}
+                    className={`text-indigo-400 rotate-45`}
+                  />
+                  <div className="flex flex-row flex-nowrap gap-2 group">
+                    <span className="text-indigo-400 underline font-bold">
+                      See all integrations
+                    </span>
+                    <HiArrowNarrowRight
+                      size={20}
+                      className="mt-1 text-indigo-400 group-hover:text-indigo-500 group-hover:scale-105 duration-300 ease-in-out"
+                    />
                   </div>
+                </a>
+              </div>
+              <div className="col-span-3 bg-orange-100 px-5 py-4 pt-10">
+                <span className="font-bold text-gray-700 text-lg">
+                  Industries
+                </span>
+                <div className="px-3">
+                  {solutionsIndustrieNavbarOptions.map((solution, index) => (
+                    <a
+                      key={index}
+                      href="/"
+                      className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1 items-center"
+                    >
+                      <div className="col-span-1 flex items-center justify-center">
+                        <DynamicIcon
+                          iconName={solution.icon as string}
+                          size={20}
+                          className={`${solution.hoverColor}`}
+                        />
+                      </div>
+                      <div className="col-span-11 flex flex-col">
+                        <div className="flex flex-row items-center justify-start flex-nowrap gap-2">
+                          <span className="font-bold text-gray-700">
+                            {solution.title}
+                          </span>
+                        </div>
+                        <span className={"text-sm"}>
+                          {solution.description}
+                        </span>
+                      </div>
+                    </a>
+                  ))}
                 </div>
               </div>
-            )}
-          </div>
-        )}
-      </nav>
+            </div>
+          )}
+          {subMenuActiveState === "resources" && (
+            <div className="grid grid-cols-12">
+              <div className="mt-10 pl-5 col-span-9">
+                <span className="font-bold text-gray-700 text-lg">
+                  Strengthen Your Skills
+                </span>
+                <div className="grid grid-cols-12 px-3 pb-10">
+                  {resourceStrengthYourSkillNavbarOptions.map(
+                    (resource, index) => (
+                      <a
+                        key={index}
+                        href="/"
+                        className={`${
+                          index > 4 && "hidden sm:inline-grid"
+                        } col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-orange-100 px-1 py-2 items-center`}
+                      >
+                        <div className="col-span-12 flex flex-col">
+                          <span className="font-bold text-gray-700">
+                            {resource.title}
+                          </span>
+                          <span className={"text-sm"}>
+                            {resource.description}
+                          </span>
+                        </div>
+                      </a>
+                    )
+                  )}
+                </div>
+              </div>
+              <div className="col-span-3 bg-orange-100 px-5 py-4 pt-10">
+                <span className="font-bold text-gray-700 text-lg">
+                  Learn & Connect
+                </span>
+                <div className="px-3">
+                  {resourceLearnConnectNavbarOptions.map((resource, index) => (
+                    <a
+                      key={index}
+                      href="/"
+                      className="col-span-12 sm:col-span-6 grid grid-cols-12 group gap-2 cursor-pointer hover:bg-gray-50 py-2 px-1 items-center"
+                    >
+                      <div className="col-span-12 flex flex-col">
+                        <div className="flex flex-row items-center justify-start flex-nowrap gap-2">
+                          <span className="font-bold text-gray-700">
+                            {resource.title}
+                          </span>
+                        </div>
+                        <span className={"text-sm"}>
+                          {resource.description}
+                        </span>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
