@@ -239,6 +239,16 @@ export default function FooterComponent() {
           </div>
         </div>
       </div>
+      <hr className="border-neutral-200 my-5" />
+      <div className="flex flex-col sm:items-center sm:justify-center sm:flex-row gap-2 sm:gap-5 text-sm text-neutral-500">
+        <span>© 2025 Agorapulse. All rights reserved.</span>
+        <a href="/terms" className="hover:underline">
+          Terms of Service
+        </a>
+        <a href="/privacy" className="hover:underline">
+          Privacy Policy
+        </a>
+      </div>
     </footer>
   );
 }
