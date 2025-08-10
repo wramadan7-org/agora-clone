@@ -1,56 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { privacyPolicy } from "../../constants/constant";
-
-type TextPart =
-  | { type: "text"; content: string }
-  | { type: "bold"; content: string }
-  | { type: "italic"; content: string }
-  | { type: "link"; content: string; href?: string; isBold?: boolean };
-
-interface ListItem {
-  text?: string; // kalau mau string biasa
-  parts?: TextPart[]; // kalau mau ada formatting
-  subItems?: ListItem[]; // nested list
-}
-
-function renderParts(parts: TextPart[]) {
-  return parts.map((part, idx) => {
-    if (part.type === "text") return <span key={idx}>{part.content}</span>;
-    if (part.type === "bold") return <strong key={idx}>{part.content}</strong>;
-    if (part.type === "italic") return <em key={idx}>{part.content}</em>;
-    if (part.type === "link")
-      return (
-        <a
-          key={idx}
-          href={part.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`text-blue-600 underline ${part?.isBold && "font-bold"}`}
-        >
-          {part.content}
-        </a>
-      );
-    return null;
-  });
-}
-
-function renderList(list: { items: ListItem[] }, level = 0) {
-  // Level menentukan style list
-  const listStyles = ["list-decimal", "list-[upper-alpha]", "list-disc"];
-  const ListTag = "ol"; // bisa ubah ke ul kalau mau bullet
-  const styleClass = listStyles[level] || "list-decimal";
-
-  return (
-    <ListTag className={`${styleClass} pl-6 mb-3 text-gray-700`}>
-      {list.items.map((item, idx) => (
-        <li key={idx}>
-          {item.parts ? renderParts(item.parts) : item.text}
-          {item.subItems && renderList({ items: item.subItems }, level + 1)}
-        </li>
-      ))}
-    </ListTag>
-  );
-}
+import { RenderParts } from "../../components/renders/RenderParts";
+import { RenderList } from "../../components/renders/RenderList";
 
 export default function Page() {
   return (
@@ -76,9 +27,11 @@ export default function Page() {
           {/* Deskripsi Awal */}
           {privacyPolicy.contents?.map((content, i) => (
             <p key={i} className="mb-4 text-gray-700">
-              {typeof content === "string"
-                ? content
-                : renderParts((content.parts as TextPart[]) ?? [])}
+              {typeof content === "string" ? (
+                content
+              ) : (
+                <RenderParts parts={content.parts ?? []} />
+              )}
             </p>
           ))}
 
@@ -93,7 +46,7 @@ export default function Page() {
                 if (content.type === "paragraph") {
                   return (
                     <p key={cIdx} className="mb-3 text-gray-700">
-                      {renderParts((content.parts as TextPart[]) ?? [])}
+                      <RenderParts parts={content.parts ?? []} />
                     </p>
                   );
                 }
@@ -101,7 +54,7 @@ export default function Page() {
                 if (content.type === "list") {
                   return (
                     <div key={cIdx}>
-                      {renderList(content as { items: ListItem[] })}
+                      <RenderList list={content} />
                     </div>
                   );
                 }

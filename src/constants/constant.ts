@@ -1,5 +1,6 @@
 import { AccordionItem } from "../components/accordions/frequently-question/AccordionComponent";
 import { FeatureTitle } from "../types/cardTypes";
+import { PrivacyPolicy } from "../types/renderTypes";
 
 export const socialMediaManagers = [
   "https://www.agorapulse.com/assets/hv2-home2/wwf-logo-grey-4.svg",
@@ -1902,7 +1903,7 @@ export const resourceLearnConnectNavbarOptions = [
   },
 ];
 
-export const privacyPolicy = {
+export const privacyPolicy: PrivacyPolicy = {
   title: "Kebijakan Privacy",
   contents: [
     {
