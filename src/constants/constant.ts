@@ -107,8 +107,6 @@ export const conditionColorFeature: Record<
   },
 };
 
-
-
 export const descriptionFeature = {
   customer: {
     icon: "FaUsers",
@@ -120,7 +118,7 @@ export const descriptionFeature = {
       "Manajemen Organisasi",
       "Integrasi API Data Prospek",
       "Manajemen Kontak",
-      "Riwayat Aktivitas Pelanggan"
+      "Riwayat Aktivitas Pelanggan",
     ],
     type: "Customer",
     image:
@@ -150,7 +148,7 @@ export const descriptionFeature = {
       "Integrasi Pesan",
       "Integrasi Call Center",
       "Integrasi Sosial Media",
-      "Integrasi Sistem Lainnya"
+      "Integrasi Sistem Lainnya",
     ],
     type: "Omnichannel",
     image:
@@ -166,7 +164,7 @@ export const descriptionFeature = {
       "Target Revenue Staf",
       "Ekspor Laporan Pencapaian",
       "Dashboard Pencapaian",
-      "Analisis Kinerja Setiap Staf"
+      "Analisis Kinerja Setiap Staf",
     ],
     type: "Reporting",
     image:
@@ -178,11 +176,11 @@ export const descriptionFeature = {
     description:
       "Aplikasi mobile Barantum mempermudah tim ketika sedang melakukan kunjungan lapangan ke tempat pelanggan",
     adventages: [
-     "Remote Sales",
-     "Laporan Real Time",
-     "Tersedia di IOS & Android",
-     "Akses Data dari Mana Pun",
-     "Notifikasi Agenda"
+      "Remote Sales",
+      "Laporan Real Time",
+      "Tersedia di IOS & Android",
+      "Akses Data dari Mana Pun",
+      "Notifikasi Agenda",
     ],
     type: "Mobile",
     image:
@@ -1903,3 +1901,578 @@ export const resourceLearnConnectNavbarOptions = [
     description: "Explore all of Agorapulse's powerfull features",
   },
 ];
+
+export const privacyPolicy = {
+  title: "Kebijakan Privacy",
+  contents: [
+    {
+      type: "paragraph",
+      parts: [
+        {
+          type: "text",
+          content:
+            'Barantum.com (selanjutnya disebut "Barantum" atau "kami") merupakan lembaga yang memiliki komitmen tinggi terhadap seluruh hal yang berkaitan dengan perlindungan data yang Anda simpan pada sistem kami. Kami bertanggung jawab dan berkomitmen untuk melindungi data yang Anda percayakan kepada kami sesuai dengan prinsip-prinsip keamanan data dan peraturan yang berlaku.',
+        },
+      ],
+    },
+  ],
+  sections: [
+    {
+      heading: "Definition",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                '"Data Pribadi" mengacu pada data apapun (baik benar ataupun tidak) tentang seseorang yang dapat diidentifikasi (i) dari data tersebut; atau (ii) dari data dan informasi lain yang kami miliki atau yang akan kami akses, termasuk data dalam catatan kami.',
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                '"Data Layanan" mengacu pada data apapun yang dibuat oleh Anda sebelum menggunakan Produk dan Layanan kami, termasuk pada data penggunaan seperti jumlah pesan yang dikirim, jumlah pengguna aktif, riwayat pengiriman pesan, log, tanggal, jenis perangkat, jenis dan versi browser, perangkat lunak, lokasi geografis, alamat IP, sumber/URL rujukan, waktu yang dihabiskan di situs web kami, dan metadata pesan lainnya. Termasuk Data Pribadi yang dimiliki orang lain dan dibagikan oleh Anda.',
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                '"Pihak Ketiga" mengacu pada setiap individu atau entitas di luar kami dan afiliasi kami, termasuk Pihak Ketiga yang menyediakan layanan dan produk yang mendukung penyediaan Produk dan Layanan kami.',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Bagaimana kami mengumpulkan data Anda",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Aplikasi Barantum CRM adalah aplikasi bisnis yang bergerak di bidang Customer Relationship Management. Aplikasi ini dapat digunakan untuk semua jenis bisnis di Indonesia. Sehingga ketika Anda menggunakan aplikasi Barantum CRM yang dimulai dengan mengakses pendaftaran di situs kami, maka secara langsung atau tidak langsung Anda telah memberikan beberapa data pribadi Anda yang diperlukan untuk menjalankan aplikasi ini.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Beberapa data yang telah Anda berikan kepada kami akan langsung kami simpan dan dijaga dengan sistem keamanan dan penyimpanan data sesuai dengan ketentuan yang terdapat dalam Kebijakan ini. Ada beberapa data pribadi yang kami simpan pada awal penggunaan aplikasi ini, seperti nama lengkap, nama perusahaan dan jabatan Anda, nomor telepon, hingga usia Anda.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Kami berasumsi bahwa semua data yang Anda masukkan ke dalam Barantum adalah benar. Dan, segala hal yang berkaitan dengan data tersebut menjadi tanggung jawab Anda sebagai pengguna aplikasi CRM ini. Dimana kami sebagai penyedia aplikasi hanya berfungsi sebagai media penyimpanan data dan layanan pengelolaan data, tanpa adanya hak untuk menggunakan data tersebut untuk apapun.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Berbagai data yang Anda masukkan di aplikasi Barantum hanya digunakan sesuai dengan fungsi aplikasi itu sendiri, yaitu:",
+            },
+          ],
+        },
+        {
+          type: "list",
+          ordered: true,
+          items: [
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Kami menggunakan data pribadi sebagai basic data yang menunjukkan jumlah pengguna (pengguna aktif Barantum CRM sesuai dengan waktu ter-update).",
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Data organisasi/perusahaan adalah basic data yang kami gunakan untuk membuat analisis terkait jenis dan kategori bisnis apa saja yang tergabung menjadi anggota Barantum CRM.",
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Berbagi data ke pihak ketiga: pada dasarnya kami tidak akan pernah melakukannya dalam bentuk apapun, kecuali mendapatkan persetujuan dari Anda sebagai pemilik akun. Adapun jika Anda (pengguna) karena satu dan lain hal mengajukan permintaan kepada kami untuk berbagi data dengan pihak ketiga, prosedur yang akan kami lakukan sebagai berikut:",
+                },
+              ],
+              subItems: [
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Kami telah menerima persetujuan dari PIC (perusahaan yang bertanggung jawab).",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        'Kami mendapatkan otoritas untuk membagikan data sesuai dengan kesepakatan Anda dengan pihak ketiga setelah poin "A" terpenuhi terlebih dahulu.',
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        'Kami tidak akan mendapat sanksi apapun dari perusahaan Anda maupun dari Anda sebagai pemegang akun terkait dengan yang kami lakukan pada poin "B".',
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Kami tidak akan bertanggung jawab atas kondisi yang terjadi selanjutnya setelah poin A, B, C terpenuhi dan kami memberikan data kepada pihak ketiga.",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Bagaimana kami menggunakan data Anda",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Data dan Informasi yang Anda berikan kepada kami akan digunakan untuk tujuan berikut:",
+            },
+          ],
+        },
+        {
+          type: "list",
+          ordered: true,
+          items: [
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Untuk memberikan bantuan teknis kepada Anda atau untuk menyelesaikan tugas yang Anda minta. Misalnya, ketika Anda meminta bantuan dari tim Support kami, kami akan menggunakan Data Pribadi dan Layanan Anda dalam memberikan bantuan yang disesuaikan dengan kebutuhan Anda;",
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Untuk memantau, memelihara, dan meningkatkan Layanan kami;",
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Untuk mengelola penagihan dan pembayaran. Pembayaran Pihak Ketiga dan penyedia pemrosesan kartu kredit Pihak Ketiga terlibat dalam proses penagihan dan pembayaran kami. Pihak Ketiga tidak diizinkan untuk menyimpan atau menggunakan Informasi Penagihan selain untuk pemrosesan kartu kredit dan harus menjaga rahasia yang berkaitan dengan batasan untuk memberikan informasi yang dikumpulkan kepada Pihak Ketiga lainnya;",
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Untuk menindaklanjuti atau berkomunikasi dengan Anda tentang keinginan untuk menggunakan Barantum ketika Anda menghubungi kami untuk meminta informasi lebih lanjut, melakukan pendaftaran di acara kami, mengirimkan pertanyaan, dan sebagainya;",
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Untuk membagikan konten bermanfaat yang mungkin menarik bagi Anda dan memberi tahu Anda tentang Produk dan Layanan terbaru kami (“Marketing”);",
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "text",
+                  content: "Untuk mengatur dan mengelola akun Barantum Anda;",
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Untuk menyediakan dan mengelola komunitas acara kami. Kami dapat menyediakan blog, grup obrolan komunitas, atau bahkan forum di situs web atau aplikasi kami (disebut “Platform Komunitas”). Setiap Data Pribadi yang Anda pilih untuk dikirimkan ke Platform Komunitas tersebut dapat dibaca, dikumpulkan, atau digunakan oleh orang lain yang mengunjungi platform ini, dan dapat digunakan untuk mengirim pesan kepada Anda. Kami tidak bertanggung jawab untuk mengelola Data Pribadi yang Anda bagikan di Platform Komunitas;",
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Untuk menautkan akun Barantum Anda ke akun pihak ketiga seperti WhatsApp Business, Instagram, Google, Github, Facebook, Telegram, Instagram, LINE, email, dan sebagainya;",
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Untuk menghasilkan data pelatihan yang berasal dari Data Layanan untuk penelitian, pengembangan, dan analisis bisnis;",
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Untuk tujuan lain yang kami yakini perlu atau sesuai: (a) berdasarkan hukum yang berlaku, termasuk hukum di luar negara tempat tinggal Anda; (b) mematuhi proses hukum; (c) menanggapi permintaan dari otoritas publik dan pemerintah, termasuk otoritas publik dan pemerintah di luar negara tempat tinggal Anda; (d) menegakkan syarat dan ketentuan kami; (e) melindungi operasi kami atau operasi afiliasi kami; (f) melindungi hak, privasi, keamanan atau properti kami, dan/atau milik afiliasi kami, Anda atau orang lain; dan (g) untuk memungkinkan kami mengupayakan pemulihan yang tersedia atau membatasi kerusakan yang mungkin kami alami.",
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "text",
+                  content:
+                    "Anda menyetujui bahwa Barantum dapat menggunakan nama dan logo perusahaan Anda dalam semua materi promosi, pemasaran, siaran pers, dan di situs web Barantum. Persetujuan ini mencakup segala bentuk atau format promosi dan pemasaran, termasuk namun tidak terbatas pada cetak, digital, dan media promosi lainnya.",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Google Ads, Google OAuth, Gmail",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                'Saat menggunakan Produk dan Layanan kami, Anda mungkin diminta untuk memberikan otoritas dan membagikan data Anda ke Google OAuth (“Google OAuth”), Google Ads ("Google Ads"), dan/atau Gmail ("Google Mail"). Anda mungkin perlu memberikan persetujuan Anda kepada Google OAuth, Google Ads, dan/atau Gmail melalui Layar Persetujuan OAuth di Google API Console. Kami menjamin bahwa setiap data yang Anda berikan ke Google OAuth, Google Ads, dan/atau Gmail hanya akan digunakan untuk tujuan penyediaan layanan.',
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [{ type: "text", content: "CATATAN" }],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Penggunaan Data Layanan juga diatur oleh Perjanjian Layanan yang Anda buat dengan kami sehubungan dengan layanan langganan yang Anda gunakan. Jika ada masalah yang timbul antara Kebijakan Privasi dan Perjanjian Layanan, Perjanjian Layanan akan diperbarui.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Mengakses, memperbaiki, dan menghapus informasi Anda",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Anda dapat mengakses, memperbaiki, atau menghapus Data Pribadi yang telah Anda berikan kepada kami dengan menggunakan tools yang tersedia di dalam Produk dan/atau Layanan (misalnya, mengedit informasi profil Anda pada Produk dan Layanan) atau dengan menghubungi support@barantum.com.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Perubahan informasi yang Anda lakukan di Produk dan Layanan kami akan segera berlaku di jaringan Anda, namun data akan tersimpan dalam penyimpanan yang aman untuk jangka waktu terbatas dan setelahnya akan menjadi bagian dari proses pencadangan data standar kami.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Anak-anak",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Sulit bagi kami untuk membedakan usia pengguna yang mengakses dan menggunakan situs web. Jika seseorang menurut hukum yang berlaku dikategorikan sebagai anak di bawah umur dan telah memberikan kepada kami Data Pribadi atau Data Layanan tanpa persetujuan orang tua atau wali, maka orang tua atau wali tersebut harus menghubungi kami untuk menghapus data dan menghentikan langganan anak di bawah umur tersebut.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Jika kami mengetahui bahwa seorang pengguna berusia di bawah 13 (tiga belas tahun), dia tidak boleh mendaftarkan akun atau menggunakan Layanan kami. Kami akan mengambil langkah-langkah yang tepat untuk menghapus informasi pengguna dari database dan membatasi akses pengguna di masa mendatang ke Produk dan Layanan kami.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Sistem keamanan",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Barantum sangat serius dalam menjaga keamanan Anda. Kami menyadari dan mengetahui bahwa Anda mempercayakan Barantum dengan informasi dan dokumen penting yang Anda miliki. Informasi Anda dienkripsi dan dilindungi dengan teknologi dan keamanan terkemuka.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Untuk melindungi data Anda, kami telah menerapkan standar SSL & HTTPS Internasional dengan enkripsi sertifikat 2048-bit. Standar ini merupakan alat untuk menerapkan sistem keamanan terkait kerahasiaan, integritas, dan ketersediaan data yang tersedia bagi kami.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Kami juga selalu berusaha untuk meningkatkan keamanan data Anda dengan menggunakan teknologi terbaru dan berusaha untuk mematuhi semua peraturan yang berlaku, terutama yang terkait dengan pihak ketiga/pihak terkait. Karena kami berkomitmen bahwa semua data klien yang tersimpan di sistem kami menjadi prioritas kami untuk melindunginya dari kondisi apapun.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      heading:
+        "Kami mengenkripsi setiap data yang dapat diketahui sebagai milik pelanggan",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Di sistem kami, semua data Anda aman tersimpan dengan sandi khusus untuk setiap pengguna. Kami mengenkripsi data apapun yang dapat diketahui sebagai milik pelanggan, termasuk nama & alamat email Anda.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Untuk keamanan kata sandi Anda, kami menggunakan teknologi Hashing untuk mengurangi risiko peretasan kata sandi. Kami menerapkan teknik yang sama untuk semua file yang Anda upload.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Seperti sistem lain, keamanan informasi Anda juga bergantung pada Anda. Pilihlah kata sandi yang kuat ",
+            },
+            {
+              type: "bold",
+              content:
+                "(kami melakukan yang terbaik untuk memandu Anda melakukan ini dan melindungi Anda dari peretasan kata sandi)",
+            },
+            {
+              type: "text",
+              content:
+                ", dan tidak pernah memberi tahu atau mendistribusikannya kepada orang lain.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Amankan data Anda saat transit",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                'Bahkan jika seseorang mencoba untuk "mendengar secara diam-diam" komunikasi Anda, mereka tetap tidak dapat mendekripsi data. Semua komunikasi antara Barantum dan Anda dienkripsi dengan SSL menggunakan sertifikat 2048-bit, dan kami memerlukan SSL untuk semua komunikasi. Teknik ini dilakukan agar bahkan jika seseorang mencoba "mendengar secara diam-diam" komunikasi Anda, mereka tetap tidak akan dapat melakukan dekripsi untuk mencuri data Anda.',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Privasi",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                'Kebijakan privasi ini (selanjutnya disebut sebagai "Polis") dirancang untuk mengumpulkan dan mengelola data sesuai dengan apa yang menjadi kepentingan kami untuk melayani Anda. Khusus pengelolaan data yang terdapat pada: ',
+            },
+            {
+              type: "link",
+              isBold: true,
+              href: "https://barantum.com",
+              content: "https://barantum.com ",
+            },
+            {
+              type: "text",
+              content:
+                '(selanjutnya disebut "Situs"), dan atau aplikasi CRM yang kami kembangkan di ',
+            },
+            {
+              type: "link",
+              isBold: true,
+              href: "https://barantum.com",
+              content: "https://barantum.com ",
+            },
+            {
+              type: "text",
+              content:
+                '(selanjutnya disebut "Produk"). Dengan menggunakan produk CRM dan mengakses situs kami, Anda setuju dan terikat langsung dengan hal-hal yang tercantum dalam kebijakan.',
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Oleh karena itu, kami berharap Anda akan membaca dan memahami semua hal yang terkait dengan kebijakan privasi ini.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Penggunaan Cookie",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Cookie adalah file teks yang ditempatkan di komputer dan ponsel Anda. Dimana fungsi cookies adalah untuk keperluan pencatatan. Kami menggunakan cookie untuk membantu Anda mempermudah penggunaan produk. Cookie tidak dapat digunakan untuk menjalankan program atau mengirim virus ke komputer Anda. Namun, cookie akan berfungsi untuk merekam data Anda seperti data yang Anda simpan di situs atau Produk kami.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Contoh penggunaannya: Jika Anda membuat akun di Situs kami, cookie akan membantu kami mengingat data khusus untuk kunjungan Anda berikutnya. Saat Anda kembali ke Situs, data yang Anda berikan sebelumnya akan muncul kembali. Dengan kondisi seperti ini, proses kerja Anda menjadi lebih mudah dengan mengaktifkan cookie. Fungsi lain dari cookie adalah oleh pihak lain dapat menganalisis data untuk kami. Seperti yang dilakukan Google Analytics, mereka akan mengumpulkan data Anda yang tidak dapat diidentifikasi sebagai pribadi dengan semua aktivitas mereka, terutama saat menggunakan produk.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Kontak",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Untuk memudahkan komunikasi antara kedua belah pihak, baik dari pihak Anda maupun pihak Barantum. Jika Anda memiliki keluhan, masukkan, atau pertanyaan tentang data Anda di sistem kami, silakan menghubungi kami melalui email: support@barantum.com.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Perubahan kebijakan privasi",
+      contents: [
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Dengan segala hal yang telah kami jelaskan di atas, dengan ini kami menjelaskan bahwa kami berhak untuk mengubah atau menyempurnakan Kebijakan ini setiap kali kami merasa perlu untuk merevisi atau menyempurnakannya. Di mana kami akan secara otomatis mengunggah Kebijakan terbaru ke Situs.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          parts: [
+            {
+              type: "text",
+              content:
+                "Pembaruan kebijakan akan mempengaruhi penggunaan Anda atas Situs dan Produk. Namun, sebelumnya kami akan berusaha untuk selalu meng-update informasi terbaru terkait dengan revisi atau perubahan Polis kami (tentunya jika kami merasa perlu menyampaikan kepada klien dalam jangka waktu yang kami sesuaikan dengan kebutuhan). Dengan membaca dan memahami semua pembahasan tentang Keamanan dan Privasi, selama Anda masih menggunakan aplikasi Barantum CRM, Anda akan langsung menyetujui semua yang termuat dalam konten di halaman Keamanan dan Privasi ini.",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
