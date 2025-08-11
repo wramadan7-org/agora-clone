@@ -2477,3 +2477,1416 @@ export const privacyPolicy: PrivacyPolicy = {
     },
   ],
 };
+
+export const termsOfConditions: PrivacyPolicy = {
+  title: "Syarat dan Ketentuan",
+  contents: [
+    {
+      type: "paragraph",
+      parts: [
+        {
+          type: "text",
+          content:
+            "Syarat-syarat ini mengikat dan mulai berlaku untuk Anda saat Anda mulai mengakses layanan apapun dari Barantum.com untuk kemudian selanjutnya disebut sebagai Barantum.",
+        },
+      ],
+    },
+    {
+      type: "paragraph",
+      parts: [
+        {
+          type: "text",
+          content:
+            "Layanan Barantum dapat berubah dari waktu ke waktu berdasarkan kesan & saran dari pengguna. Syarat-syarat ini tidak dimaksudkan untuk menjawab setiap pertanyaan atau menunjukkan setiap masalah yang dapat timbul dari penggunaan layanan Barantum. Barantum berhak mengubah Syarat & Ketentuan ini kapan saja, dan mulai berlaku ketika Syarat & Ketentuan yang baru atau yang telah direvisi telah di lampirkan di Website Barantum. Kami akan selalu berusaha untuk mengumumkan perubahan-perubahannya kepada Anda melalui email. Karena cukup memungkinan bahwa Syarat & Ketentuan ini akan berubah dari waktu ke waktu, maka menjadi kewajiban Anda untuk memastikan bahwa Anda sudah membaca, mengerti, dan menyetujui Syarat & Ketentuan terbaru yang tersedia pada Website Barantum.",
+        },
+      ],
+    },
+    {
+      type: "paragraph",
+      parts: [
+        {
+          type: "text",
+          content:
+            "Dengan mendaftarkan diri untuk menggunakan layanan Barantum, Anda menyatakan bahwa Anda sudah membaca dan mengerti Syarat & Ketentuan ini, dan dianggap memiliki wewenang untuk bertindak atas nama siapapun yang terdaftar untuk menggunakan layanan kami.",
+        },
+      ],
+    },
+    {
+      type: "paragraph",
+      parts: [
+        {
+          type: "text",
+          content: "Syarat & Ketentuan berlaku sejak 1 Maret 2024.",
+        },
+      ],
+    },
+  ],
+  sections: [
+    {
+      contents: [
+        {
+          type: "list",
+          ordered: true,
+          items: [
+            {
+              parts: [{ type: "bold", content: "Syarat & Ketentuan Barantum" }],
+              subItems: [
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Perjanjian ",
+                    },
+                    {
+                      type: "text",
+                      content: "– ialah Syarat & Ketentuan ini;",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Biaya ",
+                    },
+                    {
+                      type: "text",
+                      content:
+                        "–  ialah biaya bulanan / tahunan (belum termasuk pajak) yang harus Anda bayar sesuai daftar biaya yang dicantumkan pada Website Barantum (yang dapat berubah dari waktu ke waktu sesuai dengan ketentuan Barantum dan dengan sepengetahuan Anda);",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Informasi Rahasia ",
+                    },
+                    {
+                      type: "text",
+                      content:
+                        "– mencakup semua informasi yang dikomunikasikan antara pihak Perjanjian ini, baik secara tertulis, elektronik, atau lisan, termasuk Layanan ini, tapi tidak termasuk informasi yang sudah menjadi atau akan dijadikan untuk publik, terkecuali yang sudah diungkapkan dan terbongkar tanpa hak atau oleh pihak pengguna atau lainnya secara tidak sah;",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Data ",
+                    },
+                    {
+                      type: "text",
+                      content:
+                        "– berarti data apapun yang Anda masukkan atau dimasukkan dengan kewenangan Anda kepada Website dan Aplikasi Barantum;",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Hak Kekayaan Intelektual ",
+                    },
+                    {
+                      type: "text",
+                      content:
+                        "– berarti paten, merek dagang, merek jasa atau layanan, hak cipta, hak pada disain, pengetahuan, atau hak kekayaan intelektual atau industri lainnya, maupun terdaftar atau tidak terdaftar;",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Layanan ",
+                    },
+                    {
+                      type: "text",
+                      content:
+                        "– berarti layanan pengelolaan data didalam produk kami, dan operasional yang disediakan (dan dapat dirubah atau diperbarui dari waktu ke waktu) melalui Website;",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Website ",
+                    },
+                    {
+                      type: "text",
+                      content:
+                        "– berarti situs internet di domain www.barantum.com atau situs internet lainnya yang di kelola oleh Barantum;",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Barantum ",
+                    },
+                    {
+                      type: "text",
+                      content:
+                        "– merupakan merek dagang dari PT Kosada Group Indonesia yang terdaftar di Indonesia dengan nomor TDP 09.02.1.46.50058;",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Pengguna Diundang ",
+                    },
+                    {
+                      type: "text",
+                      content:
+                        "– berarti setiap orang atau badan, selain Pelanggan, yang memakai Layanan dari waktu ke waktu atas izin dari Pelanggan;",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Pelanggan ",
+                    },
+                    {
+                      type: "text",
+                      content:
+                        "– berarti orang, atas nama pribadi maupun organisasi atau badan lainnya, yang mendaftar untuk menggunakan Layanan;",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Anda ",
+                    },
+                    {
+                      type: "text",
+                      content: "– berarti Pelanggan atau Pengguna Diundang.",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              parts: [{ type: "bold", content: "Penggunaan Software" }],
+              descriptions: [
+                {
+                  type: "paragraph",
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Barantum memberi Anda hak untuk mengakses dan memakai Layanan Barantum CRM ataupun Barantum Call Center melalui Website kami dengan peran penggunaan yang sudah ditentukan untuk Anda, sesuai dengan jenis layanan yang Anda pilih. Hak ini non-eksklusif, tidak dapat dipindah tangankan, dan bergantung pada perjanjian ini. Anda mengakui dan menyetujui, bergantung kepada perjanjian tulis apapun yang berlaku antara Pelanggan dan Pengguna Diundang, atau hukum lainnya yang berlaku:",
+                    },
+                  ],
+                },
+              ],
+              subItems: [
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Bahwa sudah menjadi tanggung jawab Pelanggan untuk menentukan siapa yang mendapat akses sebagai Pengguna Diundang dan jenis peran dan hak yang mereka punya untuk mengakses jenis data yang Anda miliki; ",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Bahwa tanggung jawab Pelanggan untuk semua penggunaan Layanan oleh Pengguna Diundang;",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Bahwa tanggung jawab Pelanggan untuk mengendalikan setiap tingkat akses untuk Pengguna Diundang kepada organisasi dan Layanan yang relevan setiap saat, dan bisa menarik atau mengubah akses atau tingkat akses Pengguna Diundang kapanpun, untuk alasan apapun;",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Jika terjadi konflik antara Pelanggan dan Pengguna Diundang mengenai akses ke organisasi dan/atau Layanan, maka Pelanggan yang harus mengatur akses dan/atau batasan akses yang diberikan kepada Pengguna Diundang terkait Data dan/atau Layanan tersebut.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Barantum mencatatkan setiap detail kegiatan penambahan, perubahan, dan penghapusan Data yang dilakukan oleh Pelanggan ke dalam log perubahan (change log) yang disimpan maksimal 1 tahun sejak tanggal kegiatan.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Barantum berhak menerapkan Fair Usage Policy (FUP) terhadap Pelanggan yang terindikasi menyalahgunakan fitur-fitur Layanan Barantum. Penyalahgunaan ini mencakup, namun tidak terbatas pada, penggunaan yang berlebihan, tidak wajar, atau tidak sesuai dengan tujuan penggunaan layanan.",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              parts: [{ type: "bold", content: "Penyalahgunaan Software" }],
+              descriptions: [
+                {
+                  type: "paragraph",
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Barantum menerapkan standar keamanan internasional, yakni ISO 27001, dan secara konsisten mematuhi kebijakan privasi, sehingga Barantum menjaga kerahasiaan data Anda dan tidak melakukan pemeriksaan mendetail terhadap setiap tindakan yang Anda lakukan sebagai pengguna sistem Barantum. Kecuali diwajibkan oleh pihak berwenang dan/atau terdapat indikasi pelanggaran terhadap peraturan hukum atau ketentuan sesuai pada Pasal ini dan Pasal VIII ayat 6, maka Barantum berhak melakukan investigasi terhadap pelanggaran tersebut dan hasil investigasi dapat digunakan Barantum melakukan penangguhan atau pembatalan akun tanpa pemberitahuan sebelumnya dengan tanpa pengembalian pembayaran yang telah dilakukan.",
+                    },
+                  ],
+                },
+                {
+                  type: "paragraph",
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Anda memiliki tanggung jawab penuh terkait penggunaan sistem dan wajib menjalankannya sesuai dengan hukum yang berlaku, seperti namun tidak terbatas, tidak menggunakan sistem untuk melakukan penipuan, perjudian, penagihan paksa hutang, pemerasan, dan segala bentuk aktivitas lain yang bertentangan dengan peraturan hukum.",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              parts: [{ type: "bold", content: "Ketersediaan Pelayanan Kami" }],
+              subItems: [
+                {
+                  parts: [{ type: "bold", content: "Layanan" }],
+                  descriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Layanan kami memiliki jaminan 95% uptime minimal perbulan. Jika layanan kami jatuh di bawah 95% uptime, maka pelanggan kami berhak mengajukan laporan dan mendapatkan kompensasi secara prorata sesuai dengan ketidak tersediaan layanan dari kami.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [{ type: "bold", content: "Layanan Support" }],
+                  descriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Pelayanan Support kami tersedia melalui 3 media:",
+                        },
+                      ],
+                    },
+                  ],
+                  subItems: [
+                    {
+                      parts: [
+                        { type: "bold", content: "Chat via Website " },
+                        {
+                          type: "text",
+                          content: ": 08.00 – 17.00 WIB, Hari Senin – Jumat",
+                        },
+                      ],
+                      descriptions: [
+                        {
+                          type: "paragraph",
+                          parts: [
+                            {
+                              type: "text",
+                              content:
+                                "*Chat yang diterima di luar jam kerja akan dibalas melalui email dalam kurun waktu 24 jam hari kerja berikutnya.",
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        { type: "bold", content: "Telepon " },
+                        {
+                          type: "text",
+                          content: ": 08.00 – 17.00, Hari Senin – Jumat",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        { type: "bold", content: "Email " },
+                        {
+                          type: "text",
+                          content: ": 08.00 – 17.00, Hari Senin – Jumat",
+                        },
+                      ],
+                      descriptions: [
+                        {
+                          type: "paragraph",
+                          parts: [
+                            {
+                              type: "text",
+                              content:
+                                "*Email yang diterima di luar jam kerja akan dibalas dalam kurun waktu 24 jam hari kerja berikutnya.",
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                  subDescriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Untuk layanan support, feedback dan komplain, Pelanggan wajib mengirimkan request ke email support@barantum.com atau WhatsApp ke nomor 0812-8188-8636, untuk mendapatkan nomor tiket antrean agar dapat dimonitor oleh Quality Service Assurance dan manajemen Barantum.",
+                        },
+                      ],
+                    },
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Semua komunikasi melalui WhatsApp pribadi atau grup WhatsApp tidak akan mendapatkan nomor tiket pengerjaan dan di luar dari garansi layanan resmi Barantum.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "bold",
+                  content: "Kewajiban Anda",
+                },
+              ],
+              subItems: [
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Kewajiban Pembayaran",
+                    },
+                  ],
+                  descriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Tagihan untuk Biaya Akses akan dibuat sesuai dengan kesepakatan periode (tahunan atau per 6 bulan) dari tanggal Anda mulai berlangganan untuk Layanan Barantum. Semua tagihan merupakan Biaya Akses untuk periode pemakaian ke depan. Kami akan terus membuat tagihan untuk Anda sesuai masa jatuh tempo sampai perjanjian ini diakhiri sesuai dengan pasal 10.",
+                        },
+                      ],
+                    },
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Setiap transaksi pembayaran yang dilakukan hanya ke nomor rekening resmi Barantum, yaitu ke BCA dengan nomor rekening 528-0299-199 atas nama ",
+                        },
+                        {
+                          type: "bold",
+                          content: "PT Kosada Group Indonesia ",
+                        },
+                        {
+                          type: "text",
+                          content:
+                            "atau melalui link rekening virtual account atas nama ",
+                        },
+                        {
+                          type: "text",
+                          content: "Barantum ",
+                        },
+                        {
+                          type: "text",
+                          content: "yang tertera pada invoice resmi Barantum.",
+                        },
+                      ],
+                    },
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Biaya yang berasal dari pihak ketiga seperti:",
+                        },
+                      ],
+                    },
+                  ],
+                  subItems: [
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Biaya panggilan telepon keluar dan/atau masuk",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Biaya pesan masuk dan/atau keluar seperti pada channel WhatsApp Business API atau channel lainnya",
+                        },
+                      ],
+                    },
+                  ],
+                  subDescriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Dapat mengalami perubahan sewaktu-waktu sesuai dengan ketentuan dari pihak ketiga penyedia layanan tersebut di atas.",
+                        },
+                      ],
+                    },
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Tagihan telepon dan pesan WhatsApp masuk/keluar yang ditagihkan Barantum bisa terjadi tambahan tagihan atau pengembalian tagihan apabila ada perubahan tagihan dari operator dan/atau Meta.",
+                        },
+                      ],
+                    },
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Informasi deposit saldo yang ditampilkan dalam Layanan Barantum bisa tidak sesuai waktu nyata (realtime) dan akan ada penyesuaian sesuai dengan tagihan terakhir dari pihak ketiga penyedia layanan. Semua rincian pemakaian saldo tersedia pada Layanan Barantum.",
+                        },
+                      ],
+                    },
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Deposit saldo dilakukan secara mandiri di dalam Layanan Barantum dan tagihan Layanan dari Barantum yang dikirim kepada Anda, atau kepada kontak penagihan yang telah Anda berikan, melalui email. Anda harus membuat pembayaran untuk seluruh nilai yang tertera di tagihan Anda sebelum melewati tanggal jatuh tempo untuk tagihannya, yang harus dilunaskan maksimal 15 hari dari saat tagihan dikirim oleh Barantum. Anda mempunyai tanggung jawab untuk pembayaran semua pajak dan bea yang ditambahkan kepada Biaya Akses tersebut. Anda juga diminta untuk menyimpan bukti transaksi. Jika layanan sempat terhenti sebelum pembayaran dilakukan, kami akan mengaktifkan layanan dalam waktu 2 hari kerja.",
+                        },
+                      ],
+                    },
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Setiap pembayaran yang Anda lakukan, baik untuk pembelian lisensi maupun pengisian saldo, bersifat final dan tidak dapat ditarik kembali (refund) dalam keadaan apapun.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Kewajiban Umum",
+                    },
+                  ],
+                  descriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Anda harus memastikan hanya memakai Layanan dan Website untuk keperluan internal bisnis Anda yang benar dan secara sah, dengan Syarat dan Ketentuan dan pemberitahuan yang diumumkan oleh Barantum atau ketentuan yang tercantum di Website. Anda boleh memakai Layanan dan Website atas nama orang atau badan lain, atau untuk memberi layanan kepada mereka, tetapi Anda harus memastikan bahwa Anda mempunyai wewenang untuk melakukannya, dan semua pihak yang menerima Layanan melalui Anda memenuhi dan menyetujui semua syarat dalam Perjanjian ini yang berlaku kepada Anda",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Syarat Akses",
+                    },
+                  ],
+                  descriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Anda harus memastikan bahwa semua username dan password yang diperlukan untuk mengakses Layanan Barantum tersimpan dengan aman dan secara rahasia. Anda harus segera memberitahu Barantum apabila ada indikasi pemakaian password Anda dari pihak yang tidak berwenang, atau pelanggaran keamanan lainnya, dan Barantum akan melakukan reset password Anda, dan Anda harus melakukan semua tindakan lainnya yang dianggap cukup penting oleh Barantum untuk mempertahankan atau meningkatkan keamanan sistem computer dan jaringan Barantum, dan juga akses Anda kepada Layanan kami.",
+                        },
+                      ],
+                    },
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Sebagai syarat dari Ketentuan-ketentuan ini, saat mengakses dan menggunakan Layanan Barantum, Anda harus:",
+                        },
+                      ],
+                    },
+                  ],
+                  subItems: [
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Tidak mencoba untuk melemahkan keamanan atau integritas dari sistem komputer atau jaringan Barantum, atau jika Layanan-nya di host oleh pihak ketiga, sistem komputer atau jaringan pihak ketiga itu;",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Tidak menggunakan atau menyalahgunakan Layanan Barantum dengan cara apapun yang dapat mengganggu kemampuan pengguna lain untuk menggunakan Layanan atau Website;",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Tidak mencoba untuk mendapatkan akses yang tidak sah kepada materi apapun selain yang sudah dinyatakan dengan jelas bahwa Anda telah mendapatkan izin untuk mengakses-nya, atau untuk mengakses sistem komputer kami dimana Layanan-nya di host;",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Tidak mengirimkan, atau memasukkan kedalam Website: file apapun yang dapat merusak alat komputer atau software orang lain, bahan-bahan yang menghina, atau materi atau Data yang melanggar hukum apapun (termasuk Data atau materi lainnya yang terlindungi oleh hak cipta atau rahasia dagang dimana Anda tidak memiliki hak untuk memakainya);",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Tidak mencoba untuk mengubah, menyalin, meniru, membongkar, atau melakukan reverse engineering untuk program komputer apapun yang dipakai untuk memberi Barantum, atau untuk menggunakan Barantum diluar penggunaan yang diperlukan dan atau yang dimaksudkan.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Batasan Penggunaan",
+                    },
+                  ],
+                  descriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Penggunaan Layanan Barantum mungkin dapat dibatasi, tapi tidak terbatas kepada, volume transaksi bulanan dan atau jumlah panggilan yang Anda diizinkan untuk gunakan dalam aplikasi Barantum. Bila ada, batasan-batasan tersebut akan ditentukan dan dicantumkan pada Layanan terkait.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Syarat Komunikasi",
+                    },
+                  ],
+                  descriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Sebagai syarat pada Ketentuan ini, jika Anda memakai alat komunikasi apapun yang tersedia melalui Website (seperti chat, telepon voip,dsb), Anda setuju untuk memakai alat-alat komunikasi tersebut hanya untuk tujuan yang sah. Anda tidak boleh memakai alat-alat komunikasi tersebut untuk memasang atau menyebarkan materi apapun yang tidak terkait dengan pemakaian Layanan-nya, termasuk (tapi tidak terbatas dengan): mengirimkan file yang dapat merusak alat komputer atau software orang lain, bahan-bahan yang mungkin dapat menghina pengguna Layanan atau Website yang lain, atau materi yang melanggar hukum apapun (termasuk materi yang terlindungi oleh hak cipta atau rahasia dagang dimana Anda tidak memiliki hak untuk memakainya).",
+                        },
+                      ],
+                    },
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Saat Anda melakukan komunikasi dalam bentuk apapun di Website, Anda menjamin bahwa Anda diperbolehkan untuk membuat komunikasi tersebut. Barantum tidak berkewajiban untuk memastikan bahwa komunikasi pada Website adalah sah dan benar, atau bahwa mereka terkait hanya pada penggunaan Layanan. Barantum berhak untuk menghapus komunikasi apapun setiap saat atas kebijakannya sendiri sesuai dengan ketentuan dan peraturan perundang-undangan yang berlaku tanpa persetujuan tertulis dari Anda.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Tanggung Jawab Ganti Rugi",
+                    },
+                  ],
+                  descriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Barantum terbebas dari semua: tuntutan, gugatan, biaya kerugian, kerusakan, dan kehilangan yang timbul sebagai hasil dari pelanggaran Anda kepada Syarat dan Ketentuan yang tertera dalam Perjanjian ini, atau kewajiban apapun yang mungkin Anda punya kepada Barantum, termasuk (tapi tidak terbatas kepada) biaya apapun yang berkaitan kepada perolehan Biaya Akses apapun yang sudah jatuh tempo tetapi belum Anda bayar.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Kerusakan Layanan",
+                    },
+                  ],
+                  descriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Jika terjadi kerusakan atas tidak berfungsinya layanan, Anda wajib melaporkannya kepada Barantum melalui email support@barantum.com atau WhatsApp 081281888636 untuk mendapat bantuan.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "bold",
+                  content: "Kerahasiaan dan Privasi",
+                },
+              ],
+              subItems: [
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Kerahasiaan",
+                    },
+                  ],
+                  descriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Masing-masing pihak berjanji untuk menjaga kerahasiaan semua Informasi Rahasia pihak lainnya sehubungan dengan ketentuan ini. Setiap pihak ",
+                        },
+                        {
+                          type: "bold",
+                          content: "TIDAK AKAN",
+                        },
+                        {
+                          type: "text",
+                          content:
+                            ", tanpa persetujuan tertulis dari pihak yang lain, mengungkapkan atau memberi Informasi Rahasia kepada siapapun, atau menggunakannya untuk kepentingan sendiri, selain sebagaimana dimaksud oleh Ketentuan ini. Kewajiban masing-masing pihak dalam ketentuan ini akan bertahan walaupun setelah pemutusan Ketentuan ini.",
+                        },
+                      ],
+                    },
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Ketentuan-ketentuan pasal tidak berlaku untuk informasi yang:",
+                        },
+                      ],
+                    },
+                  ],
+                  subItems: [
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Telah menjadi pengetahuan umum selain karena pelanggaran ketentuan ini;",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Diterima dari pihak ketiga yang dengan secara sah memperolehnya, dan tidak mempunyai kewajiban untuk membatasi pengungkapannya;",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Dikembangkan dengan sendiri tanpa akses kepada Informasi Rahasia.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "bold",
+                      content: "Privasi",
+                    },
+                  ],
+                  descriptions: [
+                    {
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Barantum memiliki dan menjaga kebijakan privasi yang menjelaskan serta menetapkan kewajiban masing-masing pihak dalam merahasiakan informasi pribadi. Anda disarankan untuk membaca kebijakan privasi kami yang dapat diakses di ",
+                        },
+                        {
+                          type: "link",
+                          content: "https://www.barantum.com/id/privacy-policy",
+                          href: "https://www.barantum.com/id/privacy-policy",
+                        },
+                        {
+                          type: "text",
+                          content:
+                            ". Dengan menyetujui syarat dan ketentuan ini, Anda dianggap telah menyetujui kebijakan privasi tersebut.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Barantum berhak untuk mengakses, mengumpulkan, memproses, dan menganalisis statistik jumlah data yang terbuat oleh pelanggan terkait penggunaan seluruh layanan/fitur/modul apapun di Barantum, termasuk namun tidak terbatas pada jumlah klik, interaksi, frekuensi penggunaan, dan/atau laporan pemakaian pengguna dengan tetap mematuhi kebijakan privasi sebagaimana diatur dalam pasal VI ayat 1 dan 2 di atas.",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "bold",
+                  content: "Kekayaan Intelektual",
+                },
+              ],
+              descriptions: [
+                {
+                  type: "paragraph",
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Kepemilikan dan semua Hak Kekayaan Intelektual yang didapat pada Layanan, Website, dan dokumentasi apapun yang terkait dengan Layanan tetap menjadi hak milik Barantum.",
+                    },
+                  ],
+                },
+                {
+                  type: "paragraph",
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Kepemilikan dan semua Hak Kekayaan Intelektual yang terdapat di Data tetap menjadi hak milik Anda. Akan tetapi, akses kepada Data Anda bergantung pada pelunasan Biaya Akses Barantum. Anda memberi izin kepada Barantum untuk memakai, menyalin, mengirim, menyimpan, dan melakukan back-up untuk informasi dan Data Anda dengan maksud dan tujuan memberi Anda akses dan agar dapat menggunakan Layanan Barantum, atau untuk tujuan lainnya yang terkait dengan penyediaan layanan Barantum untuk Anda.",
+                    },
+                  ],
+                },
+                {
+                  type: "paragraph",
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Anda sangat disarankan untuk menyimpan salinan untuk semua Data yang Anda masukkan ke dalam Layanan Barantum. Barantum mematuhi kebijakan dan menjalani prosedur terbaik untuk mencegah kehilangan data, termasuk rutinitas sistem harian untuk back-up data, tetapi tidak membuat jaminan apapun bahwa tidak akan pernah adanya kehilangan Data. Barantum dengan jelas mengesampingkan tanggung jawab untuk setiap kehilangan Data dengan sebab apapun.",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "bold",
+                  content: "Jaminan dan Pengakuan",
+                },
+              ],
+              subItems: [
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Anda menjamin bahwa, jika Anda mendaftar untuk menggunakan Layanan atas nama orang lain, Anda memiliki wewenang untuk menyetujui Ketentuan-ketentuan ini atas nama orang tersebut, dan menyetujui bahwa dengan mendaftar untuk memakai Layanan Barantum, Anda mengikat orang yang Anda atas namakan untuk, atau dengan niat untuk, membuat tindakan atas nama mereka kepada setiap kewajiban manapun yang telah Anda setujui dalam Ketentuan-ketentuan ini, tanpa membatasi kewajiban Anda sendiri kepada ketentuannya.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Anda mengakui bahwa: Anda memiliki wewenang untuk menggunakan Layanan dan Website, dan untuk mengakses informasi dan Data yang Anda masukkan kedalam Website, termasuk informasi atau Data apapun yang dimasukkan kedalam Website oleh siapapun yang telah Anda beri kewenangan untuk menggunakan Layanan Barantum.",
+                    },
+                  ],
+                  descriptions: [
+                    {
+                      isSameLevel: true,
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Anda juga berwenang untuk mengakses informasi dan data yang sudah di proses, yang disediakan untuk Anda melalui penggunaan Anda pada Website dan Layanan kami (maupun informasi dan Data itu Anda miliki sendiri atau milik orang lain).",
+                        },
+                      ],
+                    },
+                  ],
+                  subItems: [
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Barantum tidak bertanggung jawab kepada siapapun selain Anda, dan tidak ada maksud apapun dalam Perjanjian ini untuk memberi manfaat kepada siapapun selain Anda. Jika Anda memakai Layanan atau mengakses Website atas nama atau untuk manfaat seseorang selain Anda (maupun organisasi berbadan hukum atau tidak, atau lainnya), Anda menyutujui bahwa:",
+                        },
+                      ],
+                      subItems: [
+                        {
+                          parts: [
+                            {
+                              type: "text",
+                              content:
+                                "Anda bertanggung jawab untuk memastikan bahwa Anda memiliki hak untuk melakukannya;",
+                            },
+                          ],
+                        },
+                        {
+                          parts: [
+                            {
+                              type: "text",
+                              content:
+                                "Anda bertanggung jawab atas memberi wewenang kepada siapapun yang Anda berikan akses kepada informasi atau Data, dan Anda menyutujui bahwa Barantum tidak memiliki tanggung jawab untuk menyediakan siapapun akses kepada informasi atau Data tersebut tanpa otorisasi Anda, dan boleh menunjukan permohonan apapun untuk mendapatkan informasi kepada Anda untuk di layani;",
+                            },
+                          ],
+                        },
+                        {
+                          parts: [
+                            {
+                              type: "text",
+                              content:
+                                "Anda membebaskan Barantum dari klaim apapun atau kehilangan yang terkait pada: Penolakan Barantum untuk menyediakan akses pada siapapun, kepada informasi atau Data Anda sesuai dengan ketentuan ini; Penyediaan informasi atau Data oleh Barantum kepada siapapun berdasarkan otorisasi Anda.",
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Penyediaan, akses kepada, dan pemakaian Layanan Barantum tersedia sebagaimana adanya dan pada resiko Anda sendiri.",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Barantum tidak menjamin bahwa penggunaan Layanan tidak akan pernah terganggu atau bebas dari kesalahan. Di antara lain, operasi dan ketersediaan sistem yang digunakan untuk mengakses Layanan, termasuk layanan telpon umum, jaringan komputer dan internet, bisa susah diprediksi dan mungkin bisa dari waktu ke waktu mengganggu atau mencegah akses kepada Layanan. Barantum dengan bagaimanapun tidak bertanggung jawab atas gangguan tersebut, atau pencegahan akses kepada penggunaan Layanan.",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Untuk menentukan bahwa Layanan kami memenuhi keperluan bisnis Anda dan bisa digunakan sesuai dengan tujuan adalah tanggung jawab Anda sendiri.",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Anda tetap memiliki tanggung jawab untuk mematuhi semua undang-undang lainnya yang berlaku. Menjadi tanggung jawab Anda untuk memeriksa bahwa penyimpanan dan akses kepada Data Anda melalui Layanan dan Website tetap mematuhi undang-undang yang berlaku kepada Anda (termasuk undang-undang apapun yang membutuhkan Anda untuk menyimpan arsip).",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Barantum memberikan layanan sesuai dengan kesepakatan Layanan oleh Para Pihak dan tanpa mengabaikan kesepakatan tersebut, Barantum tidak menjamin bahwa Layanan Barantum akan memenuhi semua keperluan Anda, atau bahwa akan yang sesuai untuk tujuan yang Anda niatkan sebagaimana yang ditentukan dalam Perjanjian ini. Anda bertanggung jawab memberikan masukan dan menyampaikan lebih jelas keperluan dan tujuan Anda dalam penggunaan layanan Barantum. Untuk menghindari keraguan, semua ketentuan atau jaminan yang bisa diartikan dikecualikan sejauh yang diijinkan oleh hukum, termasuk (tanpa batasan) jaminan penjualan, kesesuaian untuk tujuan, dan tanpa pelanggaran.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Anda menjamin dan menunjukkan bahwa Anda sedang memperoleh hak untuk mengakses dan menggunakan Layanan untuk tujuan bisnis dan bahwa, sampai batas maksimum yang diizinkan oleh hukum, jaminan konsumen berdasarkan hukum atau undang-undang yang dimaksudkan untuk melindungi konsumen non-bisnis di yurisdiksi manapun tidak berlaku untuk penyediaan Layanan, Website, atau ketentuan ini.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Anda menyetujui bahwa Barantum dapat menggunakan nama dan logo perusahaan Anda dalam semua materi promosi, pemasaran, siaran pers, dan di situs web Barantum. Persetujuan ini mencakup segala bentuk atau format promosi dan pemasaran, termasuk namun tidak terbatas pada cetak, digital, dan media promosi lainnya.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Anda menjamin bahwa bisnis Anda legal dan memenuhi ketentuan hukum yang berlaku di Indonesia dan ketentuan dari partner Barantum, seperti namun tidak terbatas pada, Meta, WhatsApp, Telkom, Telkomsel, Indosat, SmartFren, dan partner Barantum lainnya.",
+                    },
+                  ],
+                  descriptions: [
+                    {
+                      isSameLevel: true,
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Bisnis yang terlibat dalam aktivitas ilegal atau melanggar hukum atau melanggar ketentuan dari Barantum dan partner Barantum, seperti namun tidak terbatas pada perjudian, narkoba, pencucian uang, hal-hal berhubungan dengan SARA, penjualan barang palsu, atau praktek ilegal lainnya, tidak diperbolehkan menggunakan produk Barantum.",
+                        },
+                      ],
+                    },
+                    {
+                      isSameLevel: true,
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Pelanggaran terhadap ketentuan ini akan mengakibatkan penangguhan atau pembatalan akun tanpa pemberitahuan sebelumnya dengan tanpa pengembalian pembayaran yang telah dilakukan",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "bold",
+                  content: "Batasan Kewajiban",
+                },
+              ],
+              subItems: [
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Sepanjang diperbolehkan oleh hukum yang berlaku, tidak ada pertanggungjawaban dari Barantum terhadap Pengguna (atau orang yang mengklaim hak yang berasal dari hak pihak lain) atas setiap kehilangan pendapatan, profit, kontrak atau usaha yang aktual atau dapat diantisipasi (baik secara langsung atau tidak langsung, kehilangan data, dan/atau kehilangan atau kerugian apapun yang bersifat insidentil, tidak langsung atau konsekuensial, dalam hal apapun yang timbul berdasarkan atau sehubungan dengan Syarat dan Ketentuan ini, baik dengan kontrak, perbuatan melawan hukum (termasuk kelalaian), pelanggaran atas tugas berdasarkan undang-undang atau lainnya.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Jika Anda mengalami kerugian atau kerusakan apapun karena kelalaian atau kegagalan Barantum untuk memenuhi ketentuan ini, klaim apapun dari Anda kepada Barantum yang timbul dari kelalaian atau kegagalan Barantum akan dibataskan mengenai satu kejadian, atau serangkaian kejadian yang terhubung, kepada maksimal Biaya Akses 3 bulan sebelumnya dengan menyampaikan permohonan ganti rugi kepada Barantum paling lambat 30 (tiga puluh) hari kalender sejak kerugian terjadi atau sejak Pengguna menyadari adanya kerugian yang Pengguna alami, mana yang terjadi terlebih dahulu;",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Barantum akan menentukan jumlah penggantian kerugian yang akan dibayarkan kepada Pengguna berdasarkan pengecekan internal yang dilakukan melalui sistem Barantum. Keputusan penggantian kerugian yang diberikan oleh Barantum bersifat final dan mengikat, sehingga dengan menerima penggantian kerugian dari Barantum, Pengguna menjamin bahwa tidak ada tagihan, biaya, klaim, tuntutan atau kewajiban lain apapun yang timbul atau mungkin timbul, yang dapat ditagihkan oleh Pengguna kepada Barantum sehubungan dengan hal-hal yang diatur dalam Pasal ini.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Barantum tidak akan bertanggung jawab terhadap segala kerugian, klaim, pengeluaran, kerusakan, kewajiban, atau biaya yang timbul akibat:",
+                    },
+                  ],
+                  subItems: [
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Pelanggaran Pengguna terhadap ketentuan apapun dalam Syarat dan Ketentuan ini;",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Penggunaan Produk oleh pihak yang tidak berwenang dan/atau diberikan akses oleh Pengguna secara tidak sah;",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Jika terdapat cacat atau tanggung jawab yang disebabkan oleh Pengguna termasuk adanya modifikasi atau add-on yang dilakukan tanpa persetujuan dari Barantum;",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Produk digunakan bersama-sama dengan perangkat lunak atau produk pihak ketiga manapun yang mana Pengguna tidak memiliki hak yang memadai dari vendor pihak ketiga atas penggunaan tersebut;",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Penggunaan Produk yang tidak dilakukan sesuai dengan ketentuan dalam Syarat dan Ketentuan ini maupun ketentuan teknis lainnya yang berlaku bagi Pengguna, termasuk namun tidak terbatas pada panduan pengguna.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Barantum tidak bertanggung jawab atas penggunaan akun pribadi, baik itu email, nomor HP maupun rekening, oleh staf yang terdaftar dalam sistem kami. Segala bentuk transaksi, akses, atau kegiatan yang melibatkan akun pribadi tersebut sepenuhnya menjadi tanggung jawab individu yang bersangkutan. Kami mengimbau pelanggan untuk segera melaporkan kepada Barantum apabila ada staf yang menggunakan akun pribadi untuk tujuan yang berhubungan dengan sistem atau layanan Barantum. Segala kerugian, risiko, atau konsekuensi yang timbul akibat penggunaan akun pribadi tersebut tidak akan menjadi tanggung jawab Barantum.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Barantum tidak bertanggung jawab atas segala tindakan yang dilakukan oleh staf yang berkaitan dengan pelanggaran hukum atau tindak pidana, baik yang terjadi di dalam maupun di luar lingkungan kerja. Segala bentuk kesalahan atau pelanggaran hukum yang dilakukan oleh staf, baik yang melibatkan penyalahgunaan sistem atau layanan Barantum, adalah tanggung jawab individu yang bersangkutan. Barantum tidak dapat dimintai pertanggungjawaban atas tindakan pidana yang dilakukan oleh staf, dan pelanggan setuju untuk membebaskan Barantum dari segala klaim atau tuntutan yang timbul sebagai akibat dari tindakan pidana tersebut.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Jika Anda tidak puas dengan Layanan-nya, jalur penyelesaian tunggal dan eksklusif Anda adalah untuk mengentikan ketentuan ini sesuai dengan pasal X. Pemutusan Kontrak.",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "bold",
+                  content: "Pemutusan Kontrak",
+                },
+              ],
+              subItems: [
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content: "Kebijakan Masa Percobaan:",
+                    },
+                  ],
+                  descriptions: [
+                    {
+                      isSameLevel: true,
+                      type: "paragraph",
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Saat Anda pertama mendaftar untuk mengakses Layanan, Anda bisa mengevaluasi Layanan-nya dengan ketentuan untuk masa percobaan yang sudah di tentukan, tanpa kewajiban untuk melanjutkan penggunaan Layanan-nya. Jika Anda memilih untuk melanjutkan penggunaan Layanan setelah masa percobaan selesai, Anda akan mulai ditagih pada hari yang sama dimana Anda memutuskan untuk melanjutkan masa pakai Layanan.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Barantum tidak menyediakan pengembalian uang untuk periode prabayar yang tersisa pada langganan Akses Anda.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Ketentuan ini akan berlanjut secara otomatis untuk periode selanjutnya untuk jangka watu yang sama, asalkan Anda terus membayar Biaya Akses yang sudah ditentukan saat jatuh tempo, kecuali salah satu pihak mengakhiri Ketentuan ini dengan pemberitahuan kepada pihak lainnya setidaknya 30 hari sebelum akhir periode pembayaran yang bersangkutan.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content: "Pelanggaran:",
+                    },
+                  ],
+                  subItems: [
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Jika Anda melanggar apapun dari Ketentuan ini (termasuk, tapi tidak terbatas dengan, tidak membayar Biaya Akses apapun) dan tidak menyelesaikan masalah pelanggaran dalam 14 hari setelah menerima pemberitahuan pelanggaran tersebut jika permasalahan pelanggaran tersebut bisa di selesaikan;",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Jika Anda melanggar apapun dari Ketentuan ini dan pelanggaran itu tidak bisa di selesaikan (termasuk, tapi tidak terbatas dengan) atau kegagalan untuk membayar Biaya Akses yang sudah melewati tanggal jatuh tempo lebih dari 30 hari;",
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Jika Anda atau bisnis Anda bangkrut, atau sedang melewati proses untuk mengakhiri keberadaan organisasi, Barantuml bisa mengambil salah satu atau semua tindakan berikut:",
+                        },
+                      ],
+                      subItems: [
+                        {
+                          parts: [
+                            {
+                              type: "text",
+                              content:
+                                "Mengakhiri Perjanjian ini dan penggunaan Anda untuk Layanan dan Website kami;",
+                            },
+                          ],
+                        },
+                        {
+                          parts: [
+                            {
+                              type: "text",
+                              content:
+                                "Menunda akses Anda kepada Layanan dan Website Barantum untuk periode yang tidak menentu;",
+                            },
+                          ],
+                        },
+                        {
+                          parts: [
+                            {
+                              type: "text",
+                              content:
+                                "Menunda akses atau mengakhiri akses kepada semua Data atau Data apapun;",
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      parts: [
+                        {
+                          type: "text",
+                          content:
+                            "Pemutusan Ketentuan ini tidak mengurangi hak dan kewajiban para pihak yang masih harus dibayar sampai dengan tanggal terminasi. Pada pengakhiran Perjanjian ini Anda akan tetap menanggung biaya yang masih harus dibayar dan jumlah yang jatuh tempo untuk pembayaran sebelum atau setelah pengakhiran, dan segera berhenti menggunakan Layanan dan Website kami.",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Jika Anda memutuskan untuk berhenti berlangganan penggunaan sistem Barantum atau tidak melakukan perpanjangan pembayaran masa berlangganan, maka akses ke sistem Barantum akan tertutup setelah habis masa berlaku lisensi sistem Barantum Anda dan seluruh data penggunaan Anda yang berada pada sistem Barantum akan secara otomatis dihapus permanen dari sistem Barantum dalam kurun waktu 90 hari kalender setelah tanggal lisensi sistem Barantum Anda habis.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Terkait keamanan data Anda maka Barantum tidak dapat memberikan layanan backup data dan/atau penarikan data sebagian atau seluruh data Anda. Sangat disarankan untuk melakukan backup mandiri terlebih dahulu sebelum masa lisensi sistem Barantum Anda habis.",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              parts: [
+                {
+                  type: "bold",
+                  content: "Ketentuan Umum Lainnya",
+                },
+              ],
+              subItems: [
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Syarat dan Ketentuan ini, bersama dengan Kebijakan Privasi Barantum dan ketentuan dari pemberitahuan atau instruksi yang diberikan kepada Anda dibawah Syarat dan Ketentuan ini menggantikan dan menghapus semua perjanjian sebelumnya, representasi (baik lisan maupun tulisan), dan pemahaman, dan merupakan keseluruhan perjanjian antara Anda dan Barantum yang berhubungan dengan Layanan dan hal lainnya yang dibahas dalam Ketentuan ini.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Jika salah satu pihak melepaskan tuntutan dari pelanggaran apapun pada Ketentuan ini, ini tidak akan melepaskan mereka dari tuntutan pelanggaran lainnya. Pelepasan dari tuntuntan tidak efektif kecuali dibuat secara tulisan.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Para pihak tidak harus bertanggung jawab atas keterlambatan atau kegagalan dalam menyelesaikan kewajibannya dibawah Ketentuan ini jika keterlambatan atau kegagalannya adalah karena sebab apapun yang di luar kendali. Ayat ini tidak berlaku untuk kewajiban pembayaran uang apapun.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Anda tidak dapat mengalihkan atau mentransfer hak kepada orang lain tanpa persetujuan tertulis dari Barantum.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Apabila terjadi perselisihan antara kedua belah pihak, akan coba diselesaikan secara musyawarah terlebih dahulu untuk mencapai mufakat. Apabila dengan cara tersebut tidak tercapai kata sepakat, maka kedua belah pihak sepakat untuk menyelesaikan permasalahan tersebut dilakukan melalui prosedur hukum dengan memilih kedudukan hukum Republik Indonesia di Kantor Pengadilan Negeri Jakarta Barat.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Setiap pemberitahuan yang diberikan berdasarkan Persyaratan ini oleh satu pihak ke pihak yang lain harus dilakukan secara tertulis melalui email dan akan dianggap telah diberikan pada saat transmisi dilakukan. Pemberitahuan kepada Barantum harus dikirim ke ",
+                    },
+                    {
+                      type: "bold",
+                      content: "support@barantum.com ",
+                    },
+                    {
+                      type: "text",
+                      content:
+                        "atau ke alamat email lainnya yang diberitahukan kepada Anda oleh Barantum. Pemberitahuan kepada Anda akan dikirim ke alamat email yang Anda berikan saat membuat akses Anda pada Layanan kami.",
+                    },
+                  ],
+                },
+                {
+                  parts: [
+                    {
+                      type: "text",
+                      content:
+                        "Biaya langganan akses adalah pembayaran berulang yang dibayar di muka untuk mengkonsumsi jasa aplikasi CRM dan atau Sistem Call Center yang disediakan Barantum. Setelah Anda berlangganan, Anda bisa membatalkan setiap saat tanpa biaya tambahan kecuali yang sudah dibayarkan. Pembatalan membutuhkan paling lama 31 hari sebelum efektif.",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};

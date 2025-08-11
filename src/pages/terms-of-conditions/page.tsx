@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { privacyPolicy } from "../../constants/constant";
+import { termsOfConditions } from "../../constants/constant";
 import { RenderParts } from "../../components/renders/RenderParts";
 import { RenderList } from "../../components/renders/RenderList";
 
@@ -7,25 +7,25 @@ export default function Page() {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | Agorapulse</title>
+        <title>Terms & Conditions | Agorapulse</title>
         <meta
           name="description"
-          content="Read Agorapulse's Privacy Policy to learn how we collect, use, and protect your personal information."
+          content="Read Agorapulse's Terms & Conditions to understand the rules and guidelines for using our services."
         />
-        <meta name="og:title" content="Privacy Policy | Agorapulse" />
+        <meta name="og:title" content="Terms & Conditions | Agorapulse" />
         <meta
           property="og:description"
-          content="Discover how Agorapulse safeguards your data, ensures transparency, and respects your privacy rights."
+          content="Learn about Agorapulse's service terms, user responsibilities, and policies to ensure a fair and transparent experience."
         />
       </Helmet>
       <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto">
         <section id="privacy-policy" className="px-5">
-          <h1 className="text-3xl font-bold mb-6 text-orange-600">
-            {privacyPolicy.title}
+          <h1 className="text-3xl font-bold mb-6 text-center text-orange-600">
+            {termsOfConditions.title}
           </h1>
 
           {/* Deskripsi Awal */}
-          {privacyPolicy.contents?.map((content, i) => (
+          {termsOfConditions.contents?.map((content, i) => (
             <p key={i} className="mb-4 text-gray-700">
               {typeof content === "string" ? (
                 content
@@ -36,7 +36,7 @@ export default function Page() {
           ))}
 
           {/* Loop Section */}
-          {privacyPolicy.sections.map((section, idx) => (
+          {termsOfConditions.sections.map((section, idx) => (
             <div key={idx} className="mb-8">
               <h2 className="text-xl font-semibold mb-4 text-orange-600">
                 {section.heading}
@@ -54,7 +54,7 @@ export default function Page() {
                 if (content.type === "list") {
                   return (
                     <div key={cIdx}>
-                      <RenderList list={content} level={1} />
+                      <RenderList list={content} />
                     </div>
                   );
                 }

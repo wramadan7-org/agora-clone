@@ -5,25 +5,28 @@ export type TextPart =
   | { type: "link"; content: string; href: string; isBold?: boolean };
 
 export interface ParagraphContent {
+  isSameLevel?: boolean;
   type: "paragraph";
   parts: TextPart[];
 }
 
 export interface ListItem {
   parts: TextPart[];
+  descriptions?: ParagraphContent[];
   subItems?: ListItem[];
+  subDescriptions?: ParagraphContent[];
 }
 
 export interface ListContent {
   type: "list";
-  ordered: boolean;
+  ordered?: boolean;
   items: ListItem[];
 }
 
 export type SectionContent = ParagraphContent | ListContent;
 
 export interface Section {
-  heading: string;
+  heading?: string;
   contents: SectionContent[];
 }
 
