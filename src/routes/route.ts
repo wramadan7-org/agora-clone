@@ -4,6 +4,7 @@ import DashboardPage from "../pages/dashboard/page";
 import PricingPage from "../pages/pricing/page";
 import PrivacyPolicyPage from "../pages/privacy-policy/page";
 import TermsOfConditionsPage from "../pages/terms-of-conditions/page";
+import CRMPage from "../pages/crm/page";
 
 const routers = createBrowserRouter([
   {
@@ -13,6 +14,7 @@ const routers = createBrowserRouter([
       { path: "/pricing", Component: PricingPage },
       { path: "/privacy-policy", Component: PrivacyPolicyPage },
       { path: "/terms-of-conditions", Component: TermsOfConditionsPage },
+      { path: "/crm", Component: CRMPage },
     ],
   },
 ]);

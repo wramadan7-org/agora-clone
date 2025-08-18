@@ -63,11 +63,14 @@ export default function Page() {
           <div className="flex flex-col flex-[1_1_0%] gap-5">
             <span className="text-neutral-900 text-wrap text-[40px] leading-10 md:text-4xl lg:text-5xl lg:leading-14 font-extrabold">
               Aplikasi CRM, Chat & Call Center Terlengkap.{" "}
-              <span className="text-orange-600">Untuk tingkatkan penjualan dan pelayanan bisnis</span>
+              <span className="text-orange-600">
+                Untuk tingkatkan penjualan dan pelayanan bisnis
+              </span>
             </span>
 
             <p className="text-md font-semibold text-neutral-900 text-wrap">
-Percepat sales dan layanan pelanggan dengan aplikasi Omnichannel CRM
+              Percepat sales dan layanan pelanggan dengan aplikasi Omnichannel
+              CRM
             </p>
 
             <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-4">
@@ -129,7 +132,8 @@ Percepat sales dan layanan pelanggan dengan aplikasi Omnichannel CRM
               />
 
               <p className="text-neutral-900 font-bold text-md">
-                Percepat sales dan layanan pelanggan dengan aplikasi Omnichannel CRM
+                Percepat sales dan layanan pelanggan dengan aplikasi Omnichannel
+                CRM
               </p>
             </div>
 
@@ -154,7 +158,7 @@ Percepat sales dan layanan pelanggan dengan aplikasi Omnichannel CRM
 
               <div className="col-span-6">
                 <span className="text-[10px] font-semibold text-neutral-500">
-Laporan 360 dorong keputusan bisnis efektif
+                  Laporan 360 dorong keputusan bisnis efektif
                 </span>
               </div>
             </div>
@@ -162,7 +166,7 @@ Laporan 360 dorong keputusan bisnis efektif
 
           <div className="flex flex-col gap-3 w-full">
             <span className="text-center font-bold text-lg lg:text-xl text-neutral-900 px-5">
-Kami telah dipercaya oleh 1000+ industri & instansi
+              Kami telah dipercaya oleh 1000+ industri & instansi
             </span>
 
             <AutoPlaySlide items={socialMediaManagers} />
@@ -171,7 +175,9 @@ Kami telah dipercaya oleh 1000+ industri & instansi
 
         <section id="features" className="flex flex-col gap-10 p-5">
           <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-center leading-9">
-Meningkatkan Produktivitas Penjualan dan Membuat Pelanggan Jadi Loyal          </h1>
+            Meningkatkan Produktivitas Penjualan dan Membuat Pelanggan Jadi
+            Loyal{" "}
+          </h1>
 
           <div className="flex flex-row flex-wrap items-center justify-center gap-3">
             {featureOptions.map((feature, index) => (
