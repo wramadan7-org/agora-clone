@@ -20,7 +20,7 @@ import FeatureDescription from "../../components/features/FeatureDescription";
 import { FeatureTitle } from "../../types/cardTypes";
 import GreateSlide from "../../components/slides/GreateSlide";
 import AccordionComponent from "../../components/accordions/frequently-question/AccordionComponent";
-import { BsWhatsapp } from "react-icons/bs";
+import HeroComponent from "../../components/layout/HeroComponent";
 
 export default function Page() {
   const [activeFeatureState, setActiveFeatureState] = useState<{
@@ -59,64 +59,12 @@ export default function Page() {
       </Helmet>
 
       <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto">
-        <section id="hero" className="px-5 flex flex-col md:flex-row">
-          <div className="flex flex-col flex-[1_1_0%] gap-5">
-            <span className="text-neutral-900 text-wrap text-[40px] leading-10 md:text-4xl lg:text-5xl lg:leading-14 font-extrabold">
-              Aplikasi CRM, Chat & Call Center Terlengkap.{" "}
-              <span className="text-orange-600">
-                Untuk tingkatkan penjualan dan pelayanan bisnis
-              </span>
-            </span>
-
-            <p className="text-md font-semibold text-neutral-900 text-wrap">
-              Percepat sales dan layanan pelanggan dengan aplikasi Omnichannel
-              CRM
-            </p>
-
-            <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-4">
-              <div className="w-full sm:max-w-36">
-                <WhiteButton
-                  text="Coba Gratis"
-                  icon={
-                    <HiArrowNarrowRight
-                      size={16}
-                      className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
-                    />
-                  }
-                  link="https://app.agorapulse.com/auth/signup?language=en&_gl=1*10n8f7c*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg2MzQ1JGo2MCRsMCRoMA.."
-                />
-              </div>
-
-              <div className="w-full sm:max-w-72">
-                <OrangeButton
-                  text="Hubungi Sales Kami"
-                  icon={
-                    <BsWhatsapp
-                      size={16}
-                      className="mt-1 text-white group-hover:text-orange-600 group-hover:scale-125 duration-300 ease-in-out"
-                    />
-                  }
-                  link="https://www.agorapulse.com/request-demo/"
-                />
-              </div>
-            </div>
-
-            <div className="flex items-center justify-center sm:justify-start">
-              <span className="text-xs font-semibold">
-                Uji coba 30 hari gratis - Tidak membutuhkan kartu kredit
-              </span>
-            </div>
-          </div>
-
-          <div className="flex flex-[1_1_0%]">
-            <img
-              src="https://www.agorapulse.com/assets/hv2-home2/hero-image-en-5.webp"
-              className="w-full h-full max-w-[700px] max-h-[413px] object-center object-contain"
-              alt="Hero Image"
-              decoding="async"
-            />
-          </div>
-        </section>
+        <HeroComponent
+          titleCore="Aplikasi CRM, Chat & Call Center Terlengkap. "
+          titleOrange="Untuk tingkatkan penjualan dan pelayanan bisnis"
+          description="Percepat sales dan layanan pelanggan dengan aplikasi Omnichannel CRM"
+          disclaimer="Uji coba 30 hari gratis - Tidak membutuhkan kartu kredit"
+        />
 
         <section
           id="social-media-managers"

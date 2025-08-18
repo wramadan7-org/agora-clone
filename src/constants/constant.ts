@@ -3890,3 +3890,47 @@ export const termsOfConditions: PrivacyPolicy = {
     },
   ],
 };
+
+export const featuredFeatureCRM = {
+  header:
+    "Eksplor fitur unggulan Mekari Qontak CRM untuk perkembangan bisnis dan profesional",
+  items: [
+    {
+      icon: "FaUsers",
+      title: "Sales CRM",
+      description: "Pengelolaan kebutuhan administratif sales secara optimal",
+      href: "/crm",
+    },
+    {
+      icon: "FaUsers",
+      title: "Manajemen Pipeline",
+      description: "Pengelolaan tahapan proses komersial & support",
+      href: "/crm",
+    },
+    {
+      icon: "FaUsers",
+      title: "Sales GPS Tracking",
+      description:
+        "Lacak dan monitor progress tim sales secara real-time dan akurat",
+      href: "/crm",
+    },
+    {
+      icon: "FaUsers",
+      title: "Personalisasi Laporan CRM",
+      description: "Pengelolaan kebutuhan laporan data CRM",
+      href: "/crm",
+    },
+    {
+      icon: "FaUsers",
+      title: "SalHirarki Akses Data",
+      description: "Akses khusus untuk data pelanggan ddan penjualan",
+      href: "/crm",
+    },
+    {
+      icon: "FaUsers",
+      title: "Customer Service CRM",
+      description: "Kelola llayanan pelanggan secara efektif dan efisien",
+      href: "/crm",
+    },
+  ],
+};
