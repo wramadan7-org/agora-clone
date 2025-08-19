@@ -5,9 +5,11 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import WhiteButton from "../../components/buttons/WhiteButton";
 import FeatureDescription from "../../components/features/FeatureDescription";
 import {
+  accordionDashboard,
   descriptionFeature,
   featuredFeatureCRM,
   featureOptions,
+  reasonChoosingBusinessCRM,
   socialMediaManagers,
 } from "../../constants/constant";
 import FeatureCard from "../../components/cards/FeatureCard";
@@ -19,6 +21,8 @@ import { BiLogoWhatsapp } from "react-icons/bi";
 import ExploreFeaturedFeatureSlide from "../../components/slides/ExploreFeaturedFeatureSlide";
 import Slider from "react-slick";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import DynamicIcon from "../../components/icons/DynamicIcon";
+import AccordionComponent from "../../components/accordions/frequently-question/AccordionComponent";
 
 export default function Page() {
   const sliderRef = useRef<Slider>(null);
@@ -122,6 +126,7 @@ export default function Page() {
           </h1>
 
           <div className="flex flex-row flex-wrap items-center justify-center gap-3">
+            {/* Need to create new variable for data featureOptions (because featureOptions is used in dashboard page) */}
             {featureOptions.map((feature, index) => (
               <FeatureCard
                 key={`${feature.title}-${index}`}
@@ -132,6 +137,7 @@ export default function Page() {
             ))}
           </div>
 
+          {/* Need to create new variable for data descriptionFeature (because descriptionFeature is used in dashboard page) */}
           <FeatureDescription
             {...descriptionFeature[
               activeFeatureState.title.toLowerCase() as FeatureTitle
@@ -208,6 +214,110 @@ export default function Page() {
             ref={sliderRef}
             items={featuredFeatureCRM.items}
           />
+        </section>
+
+        <section
+          id="reason-choosing-business"
+          className="flex flex-col gap-10 p-5"
+        >
+          <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-left leading-9">
+            {reasonChoosingBusinessCRM.header}
+          </h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5">
+            {reasonChoosingBusinessCRM?.items?.map((item, index) => (
+              <div
+                key={index}
+                className="p-5 space-y-3 border border-gray-300 rounded-md"
+              >
+                <DynamicIcon
+                  iconName={item.icon}
+                  className="text-orange-500"
+                  size={30}
+                />
+                <h3 className="font-bold text-gray-700 text-lg">
+                  {item.title}
+                </h3>
+                <p className="text-gray-700 text-base">{item.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
+            <div className="w-full sm:max-w-48">
+              <WhiteButton
+                text="Try for free"
+                icon={
+                  <HiArrowNarrowRight
+                    size={16}
+                    className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
+                  />
+                }
+                link="https://app.agorapulse.com/auth/signup?language=en&_gl=1*10n8f7c*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg2MzQ1JGo2MCRsMCRoMA.."
+              />
+            </div>
+            <div className="w-full sm:max-w-52">
+              <OrangeButton
+                text="Book a demo"
+                icon={
+                  <HiArrowNarrowRight
+                    size={16}
+                    className="mt-1 text-white group-hover:text-orange-600 group-hover:scale-125 duration-300 ease-in-out"
+                  />
+                }
+                link="https://www.agorapulse.com/request-demo/"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="faq" className="grid grid-cols-12 gap-10 p-5">
+          <div className="col-span-12 lg:col-span-4 text-gray-700 space-y-5">
+            <div>
+              <span>Frequently Asked Questions (FAQ)</span>
+              <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-left leading-9">
+                Apa itu Aplikasi CRM Mekari Qontak?
+              </h1>
+            </div>
+            <p className="">
+              Aplikasi CRM atau Software CRM (
+              <i>Customer Relationship Management</i>) adalah sistem yang
+              membantu Anda mengelola interaksi pelanggan dengan bisnis untuk
+              menyederhanakan proses penjualan dan pemasaran, serta meningkatkan
+              layanan pelanggan. Ini sangat penting bagi bisnis yang ingin
+              meningkatkan hubungan pelanggan, meningkatkan penjualan, dan
+              mengoptimalkan operasional secara keseluruhan.
+            </p>
+            <div className="flex flex-row flex-wrap gap-4 items-center justify-start just">
+              <div className="w-full sm:max-w-48">
+                <WhiteButton
+                  text="Try for free"
+                  icon={
+                    <HiArrowNarrowRight
+                      size={16}
+                      className="mt-1 text-orange-600 group-hover:text-white group-hover:scale-125 duration-300 ease-in-out"
+                    />
+                  }
+                  link="https://app.agorapulse.com/auth/signup?language=en&_gl=1*10n8f7c*_gcl_au*MTE3Mjg2MDM5MC4xNzQ1Mzg0NDQ3*_ga*ODEzMDE2MDM2LjE3NDUzODQ0NDg.*_ga_SJNESWBV5Q*czE3NDk5ODUwMjIkbzM5JGcxJHQxNzQ5OTg2MzQ1JGo2MCRsMCRoMA.."
+                />
+              </div>
+              <div className="w-full sm:max-w-52">
+                <OrangeButton
+                  text="Book a demo"
+                  icon={
+                    <HiArrowNarrowRight
+                      size={16}
+                      className="mt-1 text-white group-hover:text-orange-600 group-hover:scale-125 duration-300 ease-in-out"
+                    />
+                  }
+                  link="https://www.agorapulse.com/request-demo/"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-span-12 lg:col-span-8 lg:pl-36">
+            <AccordionComponent
+              data={accordionDashboard.slice(0, 7)}
+              isShowAll={true}
+            />
+          </div>
         </section>
       </main>
     </>

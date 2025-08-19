@@ -3934,3 +3934,45 @@ export const featuredFeatureCRM = {
     },
   ],
 };
+
+export const reasonChoosingBusinessCRM = {
+  header: "Mengapa bisnis memilih pengelolaan CRM dari Mekari Qontak",
+  items: [
+    {
+      icon: "FaUsers",
+      title: "Berbasis cloud",
+      description:
+        "Tidak ada beban biaya instalasi, perawatan, dan pengembangan platform.",
+    },
+    {
+      icon: "FaUsers",
+      title: "Keamanan sistem basis data",
+      description:
+        "Sistem keamanan yang bersertifikasi ISO 27001 dan berstandar internasional.",
+    },
+    {
+      icon: "FaUsers",
+      title: "Dukungan khusus pelanggan",
+      description:
+        "Dukungan konsultasi, pendampingan implementasi hingga purna jual.",
+    },
+    {
+      icon: "FaUsers",
+      title: "Mudah digunakan",
+      description:
+        "UI intuitif dengan pengalaman guna yang bersahabat dengan pengguna.",
+    },
+    {
+      icon: "FaUsers",
+      title: "Dukungan integrasi",
+      description:
+        "Sistem dengan kemudahan integrasi dan API yang fleksibel sesuai kebutuhan.",
+    },
+    {
+      icon: "FaUsers",
+      title: "Dukungan ekosistem",
+      description:
+        "Dukungan networking dan pemberdayaan dengan komunitas praktisi di Indonesia.",
+    },
+  ],
+};
