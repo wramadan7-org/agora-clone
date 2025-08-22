@@ -13,7 +13,7 @@ export default function FooterComponent() {
 
         <div className="flex flex-col flex-[1_1_0%] md:flex-row gap-5 items-start justify-start sm:items-center sm:justify-center sm:text-center md:items-start md:text-start">
           <div className="space-y-5 flex flex-col flex-[1_1_0%] w-full">
-            <h2 className="font-bold text-neutral-700 text-xl">Compare</h2>
+            <h2 className="font-bold text-neutral-900 text-xl">Compare</h2>
 
             <div className="flex flex-col gap-2">
               <a
@@ -61,7 +61,7 @@ export default function FooterComponent() {
           </div>
 
           <div className="space-y-5 flex flex-col flex-[1_1_0%] w-full">
-            <h2 className="font-bold text-neutral-700 text-xl">Product</h2>
+            <h2 className="font-bold text-neutral-900 text-xl">Product</h2>
 
             <div className="flex flex-col gap-2">
               <a
@@ -109,7 +109,7 @@ export default function FooterComponent() {
           </div>
 
           <div className="space-y-5 flex flex-col flex-[1_1_0%] w-full">
-            <h2 className="font-bold text-neutral-700 text-xl">Company</h2>
+            <h2 className="font-bold text-neutral-900 text-xl">Company</h2>
 
             <div className="flex flex-col gap-2">
               <a
@@ -143,7 +143,7 @@ export default function FooterComponent() {
           </div>
 
           <div className="space-y-5 flex flex-col flex-[1_1_0%] w-full">
-            <h2 className="font-bold text-neutral-700 text-xl">Support</h2>
+            <h2 className="font-bold text-neutral-900 text-xl">Support</h2>
 
             <div className="flex flex-col gap-2">
               <a
@@ -177,7 +177,7 @@ export default function FooterComponent() {
           </div>
 
           <div className="space-y-5 flex flex-col flex-[1_1_0%] w-full">
-            <h2 className="font-bold text-neutral-700 text-xl">Resources</h2>
+            <h2 className="font-bold text-neutral-900 text-xl">Resources</h2>
 
             <div className="flex flex-col gap-2">
               <a

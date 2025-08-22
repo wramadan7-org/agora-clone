@@ -104,3 +104,194 @@ export const comparisonOtpPlatform: {
     },
   ],
 };
+
+export const singleIntegrationOtpPlatform = {
+  header: "Connect to Your Favorite SMS Vendor with Single Integration",
+  image: "https://fazpass.com/wp-content/uploads/2023/06/Channels-otp.png",
+  items: [
+    {
+      icon: "FaUsers",
+      title: "Single API Integration",
+      description:
+        "Connect with any channel through a single flow integration, and try integrating any OTP channels in under 15 minutes.",
+    },
+    {
+      icon: "FaUsers",
+      title: "Easy Switch",
+      description:
+        "Easily switch channels and providers on our dashboard without needing technical development.",
+    },
+    {
+      icon: "FaUsers",
+      title: "Auto Generate & Verify OTP",
+      description:
+        "Generate OTP codes from our dashboard, save server resources, and get reliable verification results from any channel and service provider.",
+    },
+  ],
+};
+
+export const easyIntegrationOtpPlatform = {
+  header: "Easy Integration",
+  image: "https://fazpass.com/wp-content/uploads/2023/06/easy-integration.png",
+  items: [
+    {
+      icon: "FaUsers",
+      title: "Plug & Play SDK Integration",
+      description:
+        "Developers can easily add new features to their application or system without starting from scratch.",
+    },
+    {
+      icon: "FaUsers",
+      title: "Reduce Development Time",
+      description:
+        "Easily switch channels and providers on our dashboard without needing technical development.",
+    },
+    {
+      icon: "FaUsers",
+      title: "Flexible Integration with Single API",
+      description:
+        "Connect with any channel through a single flow integration, and try integrating any OTP channels in under 15 minutes.",
+    },
+  ],
+};
+
+export const autoOptimizeOtpPlatform = {
+  header: "Minimize Maintenance Complexity with Auto Optimize",
+  image:
+    "https://fazpass.com/wp-content/uploads/2023/06/minimize-maintenance.png",
+  items: [
+    {
+      icon: "FaUsers",
+      title: "Auto Failover",
+      description:
+        "Automatically switches to the backup system if the provider fails, ensuring uninterrupted service in case of failure.",
+    },
+    {
+      icon: "FaUsers",
+      title: "Traffic Allocation Management",
+      description:
+        "Efficiently control traffic allocation, prioritize multiple channels and OTP service providers using a single platform.",
+    },
+    {
+      icon: "FaUsers",
+      title: "Auto Generate & Verify OTP",
+      description:
+        "Generate OTP codes from our dashboard, save server resources, and get reliable verification results from any channel and service provider.",
+    },
+  ],
+};
+
+export const compareChannels = {
+  header: "Compare & Find the Right Channel",
+  headers: [
+    {
+      title: "Channel",
+    },
+    {
+      icon: "FaUsers",
+      title: "Cost",
+    },
+    {
+      icon: "FaUsers",
+      title: "Delivery Success",
+    },
+    {
+      icon: "FaUsers",
+      title: "User Experience",
+    },
+    {
+      icon: "FaUsers",
+      title: "Security",
+    },
+    {
+      icon: "FaUsers",
+      title: "Verification Success",
+    },
+  ],
+  rows: [
+    ["Password/PIN", "Free", "100%", "Very Easy", "Very Low", "90%"],
+    ["Token Device", "High Cost", "100%", "Very Hard", "Very High", "90%"],
+    ["SMS OTP", "Moderate", "95%", "Easy", "Moderate", "60% - 70%"],
+    ["WhatsApp OTP", "Moderate", "99%", "Hard", "Low", "80%"],
+    ["Voice OTP", "Moderate", "80%", "Hard", "Moderate", "20%"],
+    ["Missed Call OTP", "Low Cost", "85%", "Easy", "Moderate", "70% - 80%"],
+    [
+      "SIM Based Verification",
+      "High Cost",
+      "85%",
+      "Very Easy",
+      "Moderate",
+      "80% - 85%",
+    ],
+    [
+      "Seamless Authentication",
+      "Low Cost",
+      "100%",
+      "Very Easy",
+      "High",
+      "100%",
+    ],
+  ],
+};
+
+export const connectChannel = {
+  header: "Discover, Choose and Connect to Your Favorite channel",
+  description:
+    "Simply connect and integrate your favorite OTP service providers across multiple channels in 1 platform without repetitive integrations. Expand your verification effortlessly!",
+  channels: [
+    {
+      icon: "FaUsers",
+      text: "SMS",
+      href: "https://fazpass.com/product/otp-platform/sms-otp/",
+    },
+    {
+      icon: "FaUsers",
+      text: "Missed Call",
+      href: "https://fazpass.com/product/otp-platform/missed-call-otp/",
+    },
+    {
+      icon: "FaUsers",
+      text: "Email",
+      href: "https://fazpass.com/product/otp-platform/email-otp/",
+    },
+    {
+      icon: "FaUsers",
+      text: "Official WhatsApp",
+      href: "https://fazpass.com/product/otp-platform/whatsapp-otp/",
+    },
+    {
+      icon: "FaUsers",
+      text: "Unofficial WhatsApp",
+      href: "https://fazpass.com/product/otp-platform/unofficial-whatsapp-otp/",
+    },
+    {
+      icon: "FaUsers",
+      text: "SIM Based Verification",
+      href: "https://fazpass.com/product/otp-platform/header-enrichment/",
+    },
+  ],
+  otpProviderPartner: {
+    header: "Our OTP Provider Partner",
+    partners: [
+      "https://fazpass.com/wp-content/uploads/2023/04/image-8.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-42-1.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-10.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-12-1.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-46.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-33-1.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image0.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-43.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-44.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-45.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-45.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/6304ef7725d6dc4dd1612d6e-1.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-46.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-47.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-48.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-51.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-50.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-49.png",
+      "https://fazpass.com/wp-content/uploads/2023/04/image-52.png",
+    ],
+  },
+};
