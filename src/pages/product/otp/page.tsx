@@ -51,29 +51,31 @@ export default function Page() {
           ))}
         </section>
         <section id="comparasion" className="flex flex-col gap-10 p-5">
-          <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-center leading-9">
-            {comparisonOtpPlatform?.header}
-          </h1>
-          {comparisonOtpPlatform?.subHeaders?.map((item, index) => {
-            if (item.type === "paragraph") {
-              return (
-                <p key={index} className="mb-3 text-gray-700 text-center">
-                  <RenderParts parts={item.parts ?? []} />
-                </p>
-              );
-            }
+          <div className="max-w-lg mx-auto space-y-3">
+            <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-center leading-9">
+              {comparisonOtpPlatform?.header}
+            </h1>
+            {comparisonOtpPlatform?.subHeaders?.map((item, index) => {
+              if (item.type === "paragraph") {
+                return (
+                  <p key={index} className="mb-3 text-gray-700 text-center">
+                    <RenderParts parts={item.parts ?? []} />
+                  </p>
+                );
+              }
 
-            if (item.type === "list") {
-              return (
-                <div key={index}>
-                  <RenderList list={item} level={1} />
-                </div>
-              );
-            }
+              if (item.type === "list") {
+                return (
+                  <div key={index}>
+                    <RenderList list={item} level={1} />
+                  </div>
+                );
+              }
 
-            return null;
-          })}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-10">
+              return null;
+            })}
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-10">
             {comparisonOtpPlatform?.regulars?.map((item, index) => (
               <div
                 key={`regular-${index}`}
