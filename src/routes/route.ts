@@ -5,6 +5,7 @@ import PricingPage from "../pages/pricing/page";
 import PrivacyPolicyPage from "../pages/privacy-policy/page";
 import TermsOfConditionsPage from "../pages/terms-of-conditions/page";
 import CRMPage from "../pages/crm/page";
+import ProductOTPPage from "../pages/product/otp/page";
 
 const routers = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const routers = createBrowserRouter([
       { path: "/privacy-policy", Component: PrivacyPolicyPage },
       { path: "/terms-of-conditions", Component: TermsOfConditionsPage },
       { path: "/crm", Component: CRMPage },
+      {
+        path: "/product",
+        children: [{ path: "otp-platform", Component: ProductOTPPage }],
+      },
     ],
   },
 ]);
