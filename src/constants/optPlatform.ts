@@ -181,7 +181,7 @@ export const autoOptimizeOtpPlatform = {
   ],
 };
 
-export const compareChannels = {
+export const compareChannelsOtpPlatform = {
   header: "Compare & Find the Right Channel",
   headers: [
     {
@@ -234,7 +234,7 @@ export const compareChannels = {
   ],
 };
 
-export const connectChannel = {
+export const connectChannelOtpPlatform = {
   header: "Discover, Choose and Connect to Your Favorite channel",
   description:
     "Simply connect and integrate your favorite OTP service providers across multiple channels in 1 platform without repetitive integrations. Expand your verification effortlessly!",
@@ -292,5 +292,16 @@ export const connectChannel = {
       "https://fazpass.com/wp-content/uploads/2023/04/6304ef7725d6dc4dd1612d6e-1.png",
       "https://fazpass.com/wp-content/uploads/2023/04/image-46.png",
     ],
+  },
+};
+
+export const trustedOtpPlatform = {
+  header: "Trusted by Startups and Large Companies",
+  comment: {
+    icon: "LuSettings",
+    title: "flock",
+    text: `“Fazpass solution really simplifies the integration requirements while saving us tremendous time and cost, beyond just being another communications channel vendor.”`,
+    from: "Andre Gunawan",
+    position: "Chief Production Officer",
   },
 };

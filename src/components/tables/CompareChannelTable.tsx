@@ -1,8 +1,8 @@
-import { compareChannels } from "../../constants/optPlatform";
+import { compareChannelsOtpPlatform } from "../../constants/optPlatform";
 import DynamicIcon from "../icons/DynamicIcon";
 
 type CompareChannelTablePropsType = {
-  data: typeof compareChannels;
+  data: typeof compareChannelsOtpPlatform;
 };
 export default function CompareChannelTable({
   data,

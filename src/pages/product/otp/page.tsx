@@ -2,12 +2,13 @@ import { Helmet } from "react-helmet-async";
 import HeroComponent from "../../../components/layout/HeroComponent";
 import {
   autoOptimizeOtpPlatform,
-  compareChannels,
+  compareChannelsOtpPlatform,
   comparisonOtpPlatform,
-  connectChannel,
+  connectChannelOtpPlatform,
   easyIntegrationOtpPlatform,
   singleIntegrationOtpPlatform,
   superiorityOtpPlatform,
+  trustedOtpPlatform,
 } from "../../../constants/optPlatform";
 import DynamicIcon from "../../../components/icons/DynamicIcon";
 import { RenderParts } from "../../../components/renders/RenderParts";
@@ -31,17 +32,19 @@ export default function Page() {
         (prev) =>
           (prev + 1) %
           Math.ceil(
-            connectChannel.otpProviderPartner?.partners?.length / visibleCount
+            connectChannelOtpPlatform.otpProviderPartner?.partners?.length /
+              visibleCount
           )
       );
     }, 5000);
     return () => clearInterval(interval);
   }, []);
 
-  const visibleLogos = connectChannel.otpProviderPartner?.partners?.slice(
-    activeIndexPartnerState * visibleCount,
-    activeIndexPartnerState * visibleCount + visibleCount
-  );
+  const visibleLogos =
+    connectChannelOtpPlatform.otpProviderPartner?.partners?.slice(
+      activeIndexPartnerState * visibleCount,
+      activeIndexPartnerState * visibleCount + visibleCount
+    );
 
   return (
     <>
@@ -279,33 +282,35 @@ export default function Page() {
         </section>
         <section id="compare-channel" className="flex flex-col gap-10 p-5">
           <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-center leading-9">
-            {compareChannels.header}
+            {compareChannelsOtpPlatform.header}
           </h1>
-          <CompareChannelTable data={compareChannels} />
+          <CompareChannelTable data={compareChannelsOtpPlatform} />
           <div className="flex flex-col gap-5 lg:hidden">
-            {compareChannels?.headers?.slice(1)?.map((header, hIdx) => {
-              const lists: {
-                title: string;
-                value: string;
-              }[] = [];
+            {compareChannelsOtpPlatform?.headers
+              ?.slice(1)
+              ?.map((header, hIdx) => {
+                const lists: {
+                  title: string;
+                  value: string;
+                }[] = [];
 
-              compareChannels?.rows?.forEach((item) => {
-                const data = {
-                  title: item[0],
-                  value: item[hIdx + 1],
-                };
-                lists.push(data);
-              });
+                compareChannelsOtpPlatform?.rows?.forEach((item) => {
+                  const data = {
+                    title: item[0],
+                    value: item[hIdx + 1],
+                  };
+                  lists.push(data);
+                });
 
-              return (
-                <CompareChannelCard
-                  key={`compare-channel-${hIdx}`}
-                  header={header.title}
-                  icon={header.icon}
-                  lists={lists}
-                />
-              );
-            })}
+                return (
+                  <CompareChannelCard
+                    key={`compare-channel-${hIdx}`}
+                    header={header.title}
+                    icon={header.icon}
+                    lists={lists}
+                  />
+                );
+              })}
           </div>
           <div className="w-xs mx-auto">
             <OrangeButton
@@ -316,65 +321,95 @@ export default function Page() {
         </section>
         <section
           id="connect-to-channel"
-          className="bg-orange-50 px-5 py-8 flex flex-col gap-10 rounded-md relative mb-56 lg:mb-44"
+          className="bg-orange-50 px-5 py-8 flex flex-col gap-10 rounded-md relative mb-64 md:mb-60 lg:mb-48 w-screen -mx-[calc((100vw-98.5%)/2)]"
         >
-          <div className="grid gap-10 lg:grid-cols-2">
-            <div className="space-y-4">
-              <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-left leading-9">
-                {connectChannel?.header}
-              </h1>
-              <p className="text-gray-700 text-left">
-                {connectChannel?.description}
-              </p>
-              <div className="w-56">
-                <OrangeButton
-                  text="Start Integration"
-                  link="https://fazpass.com/developer/"
-                />
+          <div className="mx-auto w-full px-5 py-8 relative max-w-[1400px]">
+            <div className="grid gap-10 lg:grid-cols-2">
+              <div className="space-y-4">
+                <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-left leading-9">
+                  {connectChannelOtpPlatform?.header}
+                </h1>
+                <p className="text-gray-700 text-left">
+                  {connectChannelOtpPlatform?.description}
+                </p>
+                <div className="w-56">
+                  <OrangeButton
+                    text="Start Integration"
+                    link="https://fazpass.com/developer/"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <div className="w-full h-full border-2 border-orange-500 rounded-md p-5 items-center justify-center flex">
-                <div className="max-w-xl grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-3 lg:gap-y-3">
-                  {connectChannel.channels?.map((item, index) => (
-                    <div className="flex w-full items-center justify-center">
-                      <a
-                        key={`${item.text}-${index}`}
-                        href={item.href}
-                        className="border border-orange-500 text-center text-orange-500 flex min-w-3xs sm:min-w-0 flex-row gap-2 w-full sm:w-64 rounded-md items-center justify-center p-3"
-                      >
-                        <DynamicIcon iconName={item.icon} size={25} />
-                        <span className="font-bold">{item.text}</span>
-                      </a>
-                    </div>
-                  ))}
+              <div className="flex items-center justify-center">
+                <div className="w-full h-full border-2 border-orange-500 rounded-md p-5 items-center justify-center flex">
+                  <div className="max-w-xl grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-3 lg:gap-y-3">
+                    {connectChannelOtpPlatform.channels?.map((item, index) => (
+                      <div className="flex w-full items-center justify-center">
+                        <a
+                          key={`${item.text}-${index}`}
+                          href={item.href}
+                          className="border border-orange-500 text-center text-orange-500 flex min-w-3xs sm:min-w-0 flex-row gap-2 w-full sm:w-64 rounded-md items-center justify-center p-3"
+                        >
+                          <DynamicIcon iconName={item.icon} size={25} />
+                          <span className="font-bold">{item.text}</span>
+                        </a>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
+            <div className="absolute left-1/2 top-[98%] border border-orange-50 transform -translate-x-1/2 bg-white shadow-xl rounded-md p-5 h-fit w-4/5 items-center justify-center flex flex-col gap-3">
+              <h3 className="font-bold text-neutral-900 text-lg text-center">
+                {connectChannelOtpPlatform.otpProviderPartner.header}
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 w-full items-center justify-center h-fit lg:min-h-26 relative">
+                <AnimatePresence mode="wait">
+                  {visibleLogos.map((logo, index) => (
+                    <motion.div
+                      key={`${activeIndexPartnerState}-${index}`}
+                      initial={{ y: -10, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      exit={{ y: 10, opacity: 0 }}
+                      transition={{ duration: Number(`0.${index + 1}`) }}
+                      className="h-full w-full p-2 flex items-center justify-center"
+                    >
+                      <img
+                        src={logo}
+                        alt={`logo-${index}`}
+                        className="lg:w-26 lg:h-26 object-center object-contain"
+                      />
+                    </motion.div>
+                  ))}
+                </AnimatePresence>
+              </div>
+            </div>
           </div>
-          <div className="absolute left-1/2 top-[98%] md:top-[93%] lg:top-11/12 border border-orange-50 transform -translate-x-1/2 bg-white shadow-xl rounded-md p-5 h-fit w-4/5 items-center justify-center flex flex-col gap-3">
-            <h3 className="font-bold text-neutral-900 text-lg text-center">
-              {connectChannel.otpProviderPartner.header}
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 w-full items-center justify-center h-fit lg:min-h-26 relative">
-              <AnimatePresence mode="wait">
-                {visibleLogos.map((logo, index) => (
-                  <motion.div
-                    key={`${activeIndexPartnerState}-${index}`}
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: 10, opacity: 0 }}
-                    transition={{ duration: Number(`0.${index + 1}`) }}
-                    className="h-full w-full p-2 flex items-center justify-center"
-                  >
-                    <img
-                      src={logo}
-                      alt={`logo-${index}`}
-                      className="lg:w-26 lg:h-26 object-center object-contain"
-                    />
-                  </motion.div>
-                ))}
-              </AnimatePresence>
+        </section>
+        <section id="trusted" className="grid lg:grid-cols-2 gap-10 p-5">
+          <div className="flex items-center">
+            <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-5xl text-neutral-900 text-start max-w-[438px]">
+              {trustedOtpPlatform?.header}
+            </h1>
+          </div>
+          <div className="border border-orange-50 shadow-md p-5 gap-5 flex flex-col">
+            <div className="flex flex-row flex-nowrap gap-3 items-center justify-start">
+              <DynamicIcon
+                iconName={trustedOtpPlatform?.comment?.icon || "LuSettings"}
+                className="text-orange-500"
+                size={30}
+              />
+              <span className="font-bold text-xl text-orange-500">
+                {trustedOtpPlatform?.comment?.title}
+              </span>
+            </div>
+            <p className="text-lg font-semibold">
+              {trustedOtpPlatform?.comment?.text}
+            </p>
+            <div className="flex flex-col">
+              <span>{trustedOtpPlatform?.comment?.from}</span>
+              <span className="font-bold">
+                {trustedOtpPlatform?.comment?.position}
+              </span>
             </div>
           </div>
         </section>
