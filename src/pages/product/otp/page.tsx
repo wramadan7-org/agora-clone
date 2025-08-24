@@ -15,8 +15,34 @@ import { RenderList } from "../../../components/renders/RenderList";
 import OrangeButton from "../../../components/buttons/OrangeButton";
 import CompareChannelTable from "../../../components/tables/CompareChannelTable";
 import CompareChannelCard from "../../../components/cards/CompareChannelCard";
+import { useEffect, useState } from "react";
+import { AnimatePresence } from "motion/react";
+import * as motion from "motion/react-client";
+
+const visibleCount = 6;
 
 export default function Page() {
+  const [activeIndexPartnerState, setActiveIndexPartnerState] =
+    useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndexPartnerState(
+        (prev) =>
+          (prev + 1) %
+          Math.ceil(
+            connectChannel.otpProviderPartner?.partners?.length / visibleCount
+          )
+      );
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const visibleLogos = connectChannel.otpProviderPartner?.partners?.slice(
+    activeIndexPartnerState * visibleCount,
+    activeIndexPartnerState * visibleCount + visibleCount
+  );
+
   return (
     <>
       <Helmet>
@@ -290,7 +316,7 @@ export default function Page() {
         </section>
         <section
           id="connect-to-channel"
-          className="bg-orange-50 px-5 py-8 flex flex-col gap-10 rounded-md"
+          className="bg-orange-50 px-5 py-8 flex flex-col gap-10 rounded-md relative mb-56 lg:mb-44"
         >
           <div className="grid gap-10 lg:grid-cols-2">
             <div className="space-y-4">
@@ -324,6 +350,31 @@ export default function Page() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="absolute left-1/2 top-[98%] md:top-[93%] lg:top-11/12 border border-orange-50 transform -translate-x-1/2 bg-white shadow-xl rounded-md p-5 h-fit w-4/5 items-center justify-center flex flex-col gap-3">
+            <h3 className="font-bold text-neutral-900 text-lg text-center">
+              {connectChannel.otpProviderPartner.header}
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 w-full items-center justify-center h-fit lg:min-h-26 relative">
+              <AnimatePresence mode="wait">
+                {visibleLogos.map((logo, index) => (
+                  <motion.div
+                    key={`${activeIndexPartnerState}-${index}`}
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: 10, opacity: 0 }}
+                    transition={{ duration: Number(`0.${index + 1}`) }}
+                    className="h-full w-full p-2 flex items-center justify-center"
+                  >
+                    <img
+                      src={logo}
+                      alt={`logo-${index}`}
+                      className="lg:w-26 lg:h-26 object-center object-contain"
+                    />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
             </div>
           </div>
         </section>
