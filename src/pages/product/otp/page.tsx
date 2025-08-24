@@ -157,7 +157,7 @@ export default function Page() {
                     <div className="col-span-12 sm:col-span-3 justify-center items-center flex">
                       <DynamicIcon
                         iconName={item?.icon}
-                        className="text-orange-500 min-w-xl"
+                        className="text-orange-500"
                         size={35}
                       />
                     </div>
@@ -201,7 +201,7 @@ export default function Page() {
                   <div className="col-span-12 sm:col-span-3 justify-center items-center flex">
                     <DynamicIcon
                       iconName={item?.icon}
-                      className="text-orange-500 min-w-xl"
+                      className="text-orange-500"
                       size={35}
                     />
                   </div>
@@ -229,7 +229,7 @@ export default function Page() {
                     <div className="col-span-12 sm:col-span-3 justify-center items-center flex">
                       <DynamicIcon
                         iconName={item?.icon}
-                        className="text-orange-500 min-w-xl"
+                        className="text-orange-500"
                         size={35}
                       />
                     </div>
