@@ -58,7 +58,7 @@ export default function Page() {
         />
       </Helmet>
 
-      <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto">
+      <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto overflox-x-hidden">
         <HeroComponent
           titleCore="Aplikasi CRM, Chat & Call Center Terlengkap. "
           titleOrange="Untuk tingkatkan penjualan dan pelayanan bisnis"

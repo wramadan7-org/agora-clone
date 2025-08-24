@@ -18,7 +18,7 @@ export default function Page() {
           content="Learn about Agorapulse's service terms, user responsibilities, and policies to ensure a fair and transparent experience."
         />
       </Helmet>
-      <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto">
+      <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto overflox-x-hidden">
         <section id="privacy-policy" className="px-5">
           <h1 className="text-3xl font-bold mb-6 text-center text-orange-600">
             {termsOfConditions.title}

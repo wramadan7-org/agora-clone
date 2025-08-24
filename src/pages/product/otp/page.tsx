@@ -31,7 +31,7 @@ export default function Page() {
           content="Gunakan OTP Platform untuk meningkatkan keamanan transaksi dan autentikasi pengguna dengan verifikasi kode sekali pakai yang andal."
         />
       </Helmet>
-      <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto text-neutral-900">
+      <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto text-neutral-900 overflox-x-hidden">
         <HeroComponent
           titleCore="Aplikasi CRM, Chat & Call Center Terlengkap. "
           titleOrange="Untuk tingkatkan penjualan dan pelayanan bisnis"

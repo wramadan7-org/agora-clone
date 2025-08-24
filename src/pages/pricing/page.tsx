@@ -106,7 +106,7 @@ export default function Page() {
         />
       </Helmet>
 
-      <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto">
+      <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto overflox-x-hidden">
         <section id="hero-pricing" className="w-full px-5">
           <h1 className="text-neutral-900 font-extrabold text-4xl sm:text-5xl sm:text-center">
             Pricing and plans

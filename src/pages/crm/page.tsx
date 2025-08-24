@@ -56,7 +56,7 @@ export default function Page() {
         />
       </Helmet>
 
-      <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto">
+      <main className="flex flex-col gap-10 pb-10 pt-24 max-w-[1400px] mx-auto overflow-x-hidden">
         <HeroComponent
           titleCore="Aplikasi CRM, Chat & Call Center Terlengkap. "
           titleOrange="Untuk tingkatkan penjualan dan pelayanan bisnis"
@@ -268,8 +268,8 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <section id="faq" className="grid grid-cols-12 gap-10 p-5">
-          <div className="col-span-12 lg:col-span-4 text-gray-700 space-y-5">
+        <section id="faq" className="grid lg:grid-cols-12 gap-10 p-5 min-w-0">
+          <div className="lg:col-span-4 text-gray-700 space-y-5">
             <div>
               <span>Frequently Asked Questions (FAQ)</span>
               <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-left leading-9">
@@ -312,7 +312,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="col-span-12 lg:col-span-8 lg:pl-36">
+          <div className="lg:col-span-8 lg:pl-36">
             <AccordionComponent
               data={accordionDashboard.slice(0, 7)}
               isShowAll={true}
