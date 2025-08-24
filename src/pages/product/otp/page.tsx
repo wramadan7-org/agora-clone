@@ -323,7 +323,7 @@ export default function Page() {
           id="connect-to-channel"
           className="bg-orange-50 px-5 py-8 flex flex-col gap-10 rounded-md relative mb-64 md:mb-60 lg:mb-48 w-screen -mx-[calc((100vw-98.5%)/2)]"
         >
-          <div className="mx-auto w-full px-5 py-8 relative max-w-[1400px]">
+          <div className="mx-auto w-full pl-5 py-8 relative max-w-[1400px]">
             <div className="grid gap-10 lg:grid-cols-2">
               <div className="space-y-4">
                 <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-left leading-9">
