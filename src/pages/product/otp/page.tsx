@@ -1,11 +1,14 @@
 import { Helmet } from "react-helmet-async";
 import HeroComponent from "../../../components/layout/HeroComponent";
 import {
+  accordionOtpPlatform,
   autoOptimizeOtpPlatform,
   compareChannelsOtpPlatform,
   comparisonOtpPlatform,
   connectChannelOtpPlatform,
   easyIntegrationOtpPlatform,
+  reachOutOtpPlatform,
+  securityOtpPlatform,
   singleIntegrationOtpPlatform,
   superiorityOtpPlatform,
   trustedOtpPlatform,
@@ -19,12 +22,39 @@ import CompareChannelCard from "../../../components/cards/CompareChannelCard";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "motion/react";
 import * as motion from "motion/react-client";
+import WhiteButton from "../../../components/buttons/WhiteButton";
+import { Controller, useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { formSchema, FormSchemaType } from "../../../schema/reachout";
+import { companySizes, countryCodes } from "../../../constants/dropdowns";
+import {
+  Button,
+  FormControl,
+  FormHelperText,
+  InputLabel,
+  MenuItem,
+  Select,
+  TextField,
+} from "@mui/material";
+import AccordionComponent from "../../../components/accordions/frequently-question/AccordionComponent";
 
 const visibleCount = 6;
 
 export default function Page() {
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormSchemaType>({
+    resolver: zodResolver(formSchema),
+  });
+
   const [activeIndexPartnerState, setActiveIndexPartnerState] =
     useState<number>(0);
+
+  const onSubmit = (data: FormSchemaType) => {
+    console.log("Form Data:", data);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -321,9 +351,9 @@ export default function Page() {
         </section>
         <section
           id="connect-to-channel"
-          className="bg-orange-50 px-5 py-8 flex flex-col gap-10 rounded-md relative mb-64 md:mb-60 lg:mb-48 w-screen -mx-[calc((100vw-98.5%)/2)]"
+          className="bg-orange-50 py-8 relative mb-64 md:mb-60 lg:mb-48 w-screen left-1/2 right-1/2 -mx-[50vw]"
         >
-          <div className="mx-auto w-full pl-5 py-8 relative max-w-[1400px]">
+          <div className="mx-auto flex flex-col w-full py-8 relative max-w-[1400px] px-5 gap-10">
             <div className="grid gap-10 lg:grid-cols-2">
               <div className="space-y-4">
                 <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-left leading-9">
@@ -411,6 +441,280 @@ export default function Page() {
                 {trustedOtpPlatform?.comment?.position}
               </span>
             </div>
+          </div>
+        </section>
+        <section
+          id="security"
+          className="bg-orange-50 py-8 flex flex-col gap-10 rounded-md relative w-screen left-1/2 right-1/2 -mx-[50vw]"
+        >
+          <div className="mx-auto w-full px-5 py-8 relative max-w-[1400px] grid lg:grid-cols-2 gap-10">
+            <div className="flex items-center justify-center">
+              <img
+                src={securityOtpPlatform?.image}
+                alt="Security OTP"
+                className="object-contain object-center w-full h-full max-w-[700px] max-h-[413px]"
+                loading="lazy"
+              />
+            </div>
+            <div className="space-y-5 flex flex-col justify-center">
+              <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-left leading-9">
+                {securityOtpPlatform?.header}
+              </h1>
+              <p className="text-orange-700 -mt-2 text-lg font-bold text-left">
+                {securityOtpPlatform?.subHeader}
+              </p>
+              <p className="text-gray-700 text-left">
+                {securityOtpPlatform?.description}
+              </p>
+              <div className="flex flex-row flex-wrap gap-3">
+                <div className="w-full sm:w-56">
+                  <OrangeButton
+                    text="Go Seamless"
+                    link="https://fazpass.com/product/seamless-passwordless-authentication/"
+                  />
+                </div>
+                <div className="w-full sm:w-56">
+                  <WhiteButton
+                    text="Get Free Audit"
+                    link="https://fazpass.com/authentication-grade/"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="interested"
+          className="bg-interested px-5 py-20 space-y-10 w-full max-w-[1400px] rounded-md flex flex-col items-center justify-center"
+        >
+          <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-center leading-9 max-w-md">
+            Interested to Make Your Authentication Easier?
+          </h1>
+          <div className="flex flex-row flex-wrap gap-3">
+            <div className="w-full sm:w-46">
+              <OrangeButton
+                text="Start for Free"
+                link="https://dashboard.fazpass.com/register"
+              />
+            </div>
+            <div className="w-full sm:w-46">
+              <WhiteButton
+                text="Get a Demo"
+                link="https://fazpass.com/product/otp-platform/#section-914-3615"
+              />
+            </div>
+          </div>
+        </section>
+        <section
+          id="reach-out"
+          className="bg-orange-50 py-5 relative w-screen left-1/2 right-1/2 -mx-[50vw]"
+        >
+          <div className="grid lg:grid-cols-2 gap-10 p-5 mx-auto w-full max-w-[1400px]">
+            <div className="flex flex-col items-start justify-center gap-5">
+              <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-left leading-9 max-w-md">
+                {reachOutOtpPlatform.header}
+              </h1>
+              <p>{reachOutOtpPlatform.description}</p>
+            </div>
+            <div className="flex items-center justify-center">
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                className="flex flex-col w-full gap-4 bg-white max-w-xl mx-auto p-10"
+              >
+                {/* Country */}
+                <Controller
+                  name="country"
+                  control={control}
+                  render={({ field }) => (
+                    <FormControl
+                      fullWidth
+                      error={!!errors.country}
+                      size="small"
+                    >
+                      <InputLabel>Country / Region</InputLabel>
+                      <Select
+                        {...field}
+                        size="small"
+                        label="Country / Region"
+                        MenuProps={{
+                          PaperProps: {
+                            style: {
+                              maxHeight: 300, // 🔥 batasi tinggi dropdown
+                            },
+                          },
+                        }}
+                      >
+                        {countryCodes.map((country) => (
+                          <MenuItem
+                            key={`${country.name}-${country.code}`}
+                            value={country.name}
+                          >
+                            {country.name}
+                          </MenuItem>
+                        ))}
+                      </Select>
+                      <FormHelperText>{errors.country?.message}</FormHelperText>
+                    </FormControl>
+                  )}
+                />
+                {/* Name */}
+                <Controller
+                  name="name"
+                  control={control}
+                  render={({ field }) => (
+                    <TextField
+                      {...field}
+                      size="small"
+                      label="Your Name"
+                      fullWidth
+                      error={!!errors.name}
+                      helperText={errors.name?.message}
+                    />
+                  )}
+                />
+                {/* Email */}
+                <Controller
+                  name="email"
+                  control={control}
+                  render={({ field }) => (
+                    <TextField
+                      {...field}
+                      size="small"
+                      label="Your Email"
+                      fullWidth
+                      error={!!errors.email}
+                      helperText={errors.email?.message}
+                    />
+                  )}
+                />
+                {/* Job Title */}
+                <Controller
+                  name="jobTitle"
+                  control={control}
+                  render={({ field }) => (
+                    <TextField
+                      {...field}
+                      size="small"
+                      label="Job Title"
+                      fullWidth
+                      error={!!errors.jobTitle}
+                      helperText={errors.jobTitle?.message}
+                    />
+                  )}
+                />
+                {/* Contact */}
+                <Controller
+                  name="contact"
+                  control={control}
+                  render={({ field }) => (
+                    <TextField
+                      {...field}
+                      size="small"
+                      label="Contact"
+                      fullWidth
+                      error={!!errors.contact}
+                      helperText={errors.contact?.message}
+                    />
+                  )}
+                />
+                {/* Company Name */}
+                <Controller
+                  name="companyName"
+                  control={control}
+                  render={({ field }) => (
+                    <TextField
+                      {...field}
+                      size="small"
+                      label="Company Name"
+                      fullWidth
+                      error={!!errors.companyName}
+                      helperText={errors.companyName?.message}
+                    />
+                  )}
+                />
+                {/* Company Size */}
+                <Controller
+                  name="companySize"
+                  control={control}
+                  render={({ field }) => (
+                    <FormControl
+                      fullWidth
+                      error={!!errors.companySize}
+                      size="small"
+                    >
+                      <InputLabel>Company Size</InputLabel>
+                      <Select
+                        {...field}
+                        size="small"
+                        label="Company Size"
+                        MenuProps={{
+                          PaperProps: {
+                            style: {
+                              maxHeight: 200, // 🔥 dropdown juga dibatasi tingginya
+                            },
+                          },
+                        }}
+                      >
+                        {companySizes.map((company) => (
+                          <MenuItem key={company.value} value={company.value}>
+                            {company.label}
+                          </MenuItem>
+                        ))}
+                      </Select>
+                      <FormHelperText>
+                        {errors.companySize?.message}
+                      </FormHelperText>
+                    </FormControl>
+                  )}
+                />
+                {/* Website */}
+                <Controller
+                  name="website"
+                  control={control}
+                  render={({ field }) => (
+                    <TextField
+                      {...field}
+                      size="small"
+                      label="Website"
+                      fullWidth
+                      error={!!errors.website}
+                      helperText={errors.website?.message}
+                    />
+                  )}
+                />
+                <Button type="submit" variant="contained" fullWidth>
+                  Submit
+                </Button>
+                {Object.entries(errors).length !== 0 && (
+                  <p className="text-red-500 text-sm">
+                    Please fix the above errors before submitting the form.
+                  </p>
+                )}
+                <p>
+                  For information about how Fazpass handles your personal data,
+                  please see our{" "}
+                  <a
+                    href="/privacy-policy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:font-semibold"
+                  >
+                    privacy policy
+                  </a>
+                  .
+                </p>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section id="faq" className="grid grid-cols-12 gap-10 p-5">
+          <div className="col-span-12 lg:col-span-4">
+            <h1 className="font-bold text-[28px] sm:text-[32px] lg:text-4xl text-neutral-900 text-left leading-9 max-w-md">
+              Frequently Asked Question
+            </h1>
+          </div>
+          <div className="col-span-12 lg:col-span-8">
+            <AccordionComponent data={accordionOtpPlatform} isShowAll />
           </div>
         </section>
       </main>

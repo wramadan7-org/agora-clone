@@ -7,9 +7,14 @@ export type InlineContent =
       text: string;
     }
   | {
+      type: "bold";
+      text: string;
+    }
+  | {
       type: "link";
       text: string;
       url: string;
+      isSameTab?: boolean;
     };
 
 export type AccordionContent =
@@ -57,12 +62,20 @@ export default function AccordionComponent({
                       if (child.type === "text") {
                         return <span key={childIdx}>{child.text}</span>;
                       }
+                      if (child.type === "bold") {
+                        return (
+                          <strong key={childIdx} className="font-semibold">
+                            {child.text}
+                          </strong>
+                        );
+                      }
                       if (child.type === "link") {
                         return (
                           <a
                             key={childIdx}
                             href={child.url}
-                            target="_blank"
+                            target={child.isSameTab ? "_self" : "_blank"}
+                            rel="noopener noreferrer"
                             className="text-orange-600"
                           >
                             {child.text}

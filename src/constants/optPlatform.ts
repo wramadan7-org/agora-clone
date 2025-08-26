@@ -1,3 +1,4 @@
+import { AccordionItem } from "../components/accordions/frequently-question/AccordionComponent";
 import { SectionContent } from "../types/renderTypes";
 
 export const superiorityOtpPlatform = [
@@ -41,7 +42,8 @@ export const comparisonOtpPlatform: {
           type: "link",
           isBold: true,
           content: "Just a Few Clicks",
-          href: "https://fazpass.com/product/otp-platform/#section-914-3615",
+          href: "/product/otp-platform/#reach-out",
+          isSameTab: true,
         },
         {
           type: "text",
@@ -305,3 +307,312 @@ export const trustedOtpPlatform = {
     position: "Chief Production Officer",
   },
 };
+
+export const securityOtpPlatform = {
+  image: "https://fazpass.com/wp-content/uploads/2023/06/Are-you-sure-OTP.png",
+  header: "Are You Sure OTP is Enough?",
+  subHeader: "Recheck the Security Level of Your Application Again!",
+  description:
+    "Are you confident in the safety of your app? Double-check your application's security level. Don't underestimate the threat of hackers. Upgrade your security now, before it's too late. Take action today!",
+};
+
+export const reachOutOtpPlatform = {
+  header: "Reach Out to Fazpass Team",
+  description:
+    "Tell us a little about yourself and we'll connect you with Fazpass team who can share more about the product and answer any questions you have.",
+};
+
+export const accordionOtpPlatform: AccordionItem[] = [
+  {
+    title: "What is the Authentication Platform Solution?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "It is a platform to ",
+          },
+          {
+            type: "bold",
+            text: "discover the best OTP vendors or service providers worldwide",
+          },
+          {
+            type: "text",
+            text: ", all in one dashboard. It offers you greater options and flexibility when choosing the best global and local vendors.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title:
+      "Let’s be honest, Is fazpass platform truly free? Are there any hidden costs? Are there any subscription/monthly costs?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "bold",
+            text: "Great news! ",
+          },
+          {
+            type: "text",
+            text: "You can use ",
+          },
+          {
+            type: "bold",
+            text: "all of the basic features and our platform for free",
+          },
+          {
+            type: "text",
+            text: ", 100% No Hidden Cost.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "bold",
+            text: "However",
+          },
+          {
+            type: "text",
+            text: ", if you're interested in our enterprise services with additional and amazing features such as automatic OTP cost optimization, fraud detection service, and seamless authentication to go passwordless, there will be a cost. But don't worry, you'll only be charged if you decide to use these services. Discover the difference in pricing and options here!",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Does Fazpass provide OTP services?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "First of all, we want to clarify that we’re not an ",
+          },
+          {
+            type: "bold",
+            text: "OTP Vendor or Service provider",
+          },
+          {
+            type: "text",
+            text: ". We simply want to help you connect and find the best and most affordable OTP authentication prices from all channels and vendors at once in the Fazpass platform without any conditions. ",
+          },
+          {
+            type: "link",
+            text: "Try it now!",
+            url: "https://dashboard.fazpass.com/register/",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title:
+      "Can I connect to multiple channels from different OTP providers simultaneously?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "bold",
+            text: "Of course! ",
+          },
+          {
+            type: "text",
+            text: "You can choose the best channel and OTP provider options from the fazpass dashboard without any development required on your application side.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title:
+      "Why Should We Use Fazpass, If We Can or Have Already Connected Directly To The Vendor/Provider?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Connecting directly to a vendor is easy, but if we encounter issues like expensive OTP costs or unreliable delivery, we'll have to switch providers and integrate everything again.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "With fazpass, ",
+          },
+          {
+            type: "bold",
+            text: "you only need to integrate once, and you can easily transfer between channels or vendors ",
+          },
+          {
+            type: "text",
+            text: "using the Fazpass dashboard. You can also analyze and compare services for free with the analysis dashboard. So why wait? Fazpass simplifies maintaining OTP services for your business with no hidden cost at all. ",
+          },
+          {
+            type: "link",
+            text: "Contact us now",
+            url: "/product/otp-platform/#reach-out",
+            isSameTab: true,
+          },
+          {
+            type: "text",
+            text: ".",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "What if the OTP service fails to deliver?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Fazpass has an automatic failover to backup vendors, allowing you to automatically switch to backup vendors, and easily prioritize vendors using Fazpass Optimize, product optimization link feature.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title:
+      "If my desired vendor or provider isn’t available in fazpass, can it be added?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "bold",
+            text: "Absolutely! ",
+          },
+          {
+            type: "text",
+            text: "You can connect with a new vendor or provider that hasn't registered in fazpass. We'll help you connect to them within 2 weeks. Contact ",
+          },
+          {
+            type: "link",
+            text: "our team ",
+            url: "/product/otp-platform/#reach-out",
+            isSameTab: true,
+          },
+          {
+            type: "text",
+            text: "for further assistance.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "How can I do integration if I already have a fazpass account?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "bold",
+            text: "Easy peasy ",
+          },
+          {
+            type: "text",
+            text: ", you can easily integrate using the following documentation by ",
+          },
+          {
+            type: "link",
+            text: "click HERE",
+            url: "https://doc.fazpass.com/",
+          },
+          {
+            type: "text",
+            text: ".",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "How is the OTP Service Payment process in fazpass?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "Managing payments becomes easier with our central balance feature, you can conveniently make payments to all vendors or service providers. ",
+          },
+          {
+            type: "bold",
+            text: "Simplify payment management with a single central balance for all OTP vendors and channels",
+          },
+          {
+            type: "text",
+            text: ". You also can make direct payments to the related vendor, we won’t charge you anything.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "I have many channels and vendors, can you help manage them?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "bold",
+            text: "Yes",
+          },
+          {
+            type: "text",
+            text: ", you can combine all the bills into one invoice by using fazpass central balance feature. For your invoice and tax requirements, you can reach out to our ",
+          },
+          {
+            type: "link",
+            text: "sales team ",
+            url: "/product/otp-platform/#reach-out",
+            isSameTab: true,
+          },
+          {
+            type: "text",
+            text: "for further assistance.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "What if my balance runs out, will my OTP service stop?",
+    contents: [
+      {
+        type: "paragraph",
+        children: [
+          {
+            type: "text",
+            text: "To anticipate that, ",
+          },
+          {
+            type: "bold",
+            text: "you can set up balance reminder notifications in the Fazpass dashboard",
+          },
+          {
+            type: "text",
+            text: ". You will receive email notifications and reminders when your balance reaches the specified limit. Save your budget, Save your application.",
+          },
+        ],
+      },
+    ],
+  },
+];

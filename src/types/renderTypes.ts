@@ -2,7 +2,13 @@ export type TextPart =
   | { type: "text"; content: string }
   | { type: "bold"; content: string }
   | { type: "italic"; content: string }
-  | { type: "link"; content: string; href: string; isBold?: boolean };
+  | {
+      type: "link";
+      content: string;
+      href: string;
+      isBold?: boolean;
+      isSameTab?: boolean;
+    };
 
 export interface ParagraphContent {
   isSameLevel?: boolean;
